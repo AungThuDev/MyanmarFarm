@@ -531,10 +531,10 @@ border:none;
             document.getElementById('languageSelector').value = currentLanguage;
 
             function changeLanguage(lang) {
+               var currentRoute = "{{ Route::currentRouteName() }}";
                
-               var currentUrl = "{{ url()->current() }}";
-               var newUrl = `/${lang}/${currentUrl}`;
-               console.log(currentUrl);
+               var newUrl = `/${lang}/${currentRoute}`;
+               console.log(currentRoute);
                window.location.href = newUrl;
             }
 
