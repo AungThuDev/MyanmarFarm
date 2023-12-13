@@ -3,7 +3,7 @@
 @section('content')
       <main>
          <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-135" data-background="{{asset('assets/img/aboutus_cow.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
+         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-135" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                   <div class="row" >
                      <div class="col-xl-12">
@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul>
                                        <li>
-                                          <a href="{{url('/',app()->getLocale())}}"><span>{{__('home')}}</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span style="color: #fff;">{{__('home')}}</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fdd062;">About Us</span>
+                                          <span style="color: #fff;">About Us</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062!important;">About Us</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">About Us</h3>
                         </div>
                      </div>
                   </div>
@@ -109,7 +109,9 @@
             </div>
          </div>
          <!-- tp-supporter__area end -->
-
+         <div class="background">
+            <img src="{{asset('assets/img/25.png')}}" alt="" class="img-fluid" style="width: 100%;background-repeat: no-repeat; background-size: cover;">
+         </div>
          <!-- collaborative-area-start -->
          <div class="collaborative-area pt-120 pb-55">
             <h3 class="tp-section-title text-center" style="color: #9d6b34!important;">Business Summary</h3>
@@ -178,18 +180,16 @@
                <div class="row align-items-center">
                   <div class="col-xl-5 col-lg-5">
                      <div class="award-image text-center">
-                        <img src="{{asset('assets/img/features/award.png')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/img/C1.jpg')}}" alt="" class="img-fluid">
                      </div>
                   </div>
                   <div class="col-xl-7 col-lg-7">
                      <div class="tp-section-wrap tp-section-wrap-6">
-                        <span class="asub-title grace-span" style="color: #ecb41c;">- awards </span>
-                        <h3 class="tp-section-title" style="color: #9d6b34!important;"> Get More Rewards </h3>
-                        <p style="color: #000!important;">At agronix we are passionate about supporting the financial cooperative movement that currently
-                           improves the lives of hundreds of millions of people worldwide.</p>
-                     </div>
+                        <span class="asub-title grace-span" style="color: #ecb41c;">- Beef Production </span>
+                        <h3 class="tp-section-title" style="color: #9d6b34!important;"> Sustainable Beef Production </h3>
+                        
                      <div class="awards-lists mt-50">
-                        <div class="row">
+                        <!-- <div class="row">
                            <div class="col-xl-3 col-lg-6 col-md-6">
                               <div class="award-item text-center mb-30">
                                  <i class="flaticon-trophy-1"></i>
@@ -214,14 +214,64 @@
                                  <h5 class="award-title mt-15">Top Class <br> In 2021 </h5>
                               </div>
                            </div>
+                        </div> -->
+                        <div class="row">
+                           <div class="col-lg-6 d-flex justify-content-center">
+                              <ul>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:13px!important;color:#000!important;">Helps prevent local conversion</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp<span style="font-size:13px!important;color:#000!important;">Support or restores navtive vegation and wildlife habitat</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:13px!important;color:#000!important;">Support clean and aboundant water resources</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:13px!important;color:#000!important;">Emits the fewest possible GHGs</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:13px!important;color:#000!important;">Protects or enhance soil health</span></li>
+                              </ul>
+                           </div>
+                           <div class="col-lg-6 d-flex justify-content-center">
+                              <ul>
+                              <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:13px!important;color:#000!important;">Efficiently uses resources along the value chain</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp<span style="font-size:13px!important;color:#000!important;">Prioritizes animal health and well-being</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:12px!important;color:#000!important;">Supports economic livehoods and helps communities thrive</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:13px!important;color:#000!important;">Uses antibiotics judiciously</span></li>
+                                 <li><i class="fas fa-check" style="font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:13px!important;color:#000!important;">Provides unprocessed source of protein in consumers</span></li>
+                              </ul>
+                           </div>
                         </div>
+                        
                      </div>
                   </div>
                </div>
             </div>
          </div>
          <!-- award-area-end -->
-
+         <!-- collaborative-area-start -->
+         <div class="collaborative-area pt-120 pb-55" style="background-color: antiquewhite;">
+            <h3 class="tp-section-title text-center" style="color: #9d6b34!important;">Company History</h3>
+            <div class="container" style="margin-top: 100px;">
+               
+               <div class="row">
+                  <div class="col-xl-6 col-lg-6">
+                     <div class="cp-info-right mb-30">
+                        
+                        <p style="color: #000!important;text-align:justify;">Myanmar Farm Co., Ltd was established in 2005 and has been operating livestock farms since then. The company started with one farm in Magway and gradually expanded to include Meiktila Cattle Farm and Meiktila Goat Farm, all located in Myanmar.
+                        Initially, the company focused on breeding and raising goats for commercial purposes, with a focus on meeting local demand for meat and milk. However, over time, the company recognized the potential in the beef cattle market and began to shift its focus to cattle breed- ing and production.
+                        </p>
+                        <p style="color: #000!important;text-align:justify;">
+                        Today, Myanmar Farm Co., Ltd operates three livestock farms and is a major player in the local meat and dairy industry. The company has a strong commitment to quality and animal welfare, which is reflected in its breeding and production practices.
+                        The company is constantly seeking to improve and expand its operations, with a particular focus on increasing the quantity and quality of its beef cattle. This has involved investing in high-genus European bulls and implementing best practices in cattle breeding and care.
+                     </p>
+                     <p style="color: #000!important;">The company's current status is one of growth and expansion. With a strong track record of success in the livestock industry, Myanmar Farm Co., Ltd is well positioned to capitalize on the growing demand for high-quality meat and dairy products both locally and internationally. The company is committed to sustainability and responsible farm- ing practices, which will help to ensure its long-term success in the industry.</p>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                  <div class="text-center">
+                        <img src="{{asset('assets/img/Cover-F.jpg')}}" alt="" class="img-fluid">
+                     </div>
+                  </div>
+                  
+               </div>
+               
+            </div>
+         </div>
+         <!-- collaborative-area-end -->
          <!-- latest-news-area-start -->
          <div class="latest-news-area latest-news-area-ab pt-120 mb-90">
             <div class="container">

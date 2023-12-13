@@ -8,9 +8,9 @@ use App\Http\Controllers\Controller;
 
 class GalleryController extends Controller
 {
-   public function index()
+   public function index($language)
    {
     $galleries = Gallery::latest()->paginate(3);
-    return view('frontend.galleries.index',compact('galleries'));
+    return view('frontend.galleries.index',compact('galleries','language'));
    }
 }

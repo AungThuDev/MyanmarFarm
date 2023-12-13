@@ -3,7 +3,7 @@
 @section('content')
 <main>
          <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="assets/img/aboutus_cow.jpg" style="background-repeat: no-repeat; background-size:cover;">
+         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul>
                                        <li>
-                                          <a href="#"><span>Home</span></a>
+                                          <a href="#"><span style="color: #fff;">Home</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fdd062;">News</span>
+                                          <span style="color: #fff;">News</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062!important;">News</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">News</h3>
                         </div>
                      </div>
                   </div>
@@ -55,7 +55,9 @@
                                 {{ substr($blog->body, 0, 300) }}...
                            </p>
                            <div class="read-button mt-30">
-                              <a href="#" class="read-btn"><i class="fal fa-arrow-circle-right"></i>Read More</a>
+                           <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}" class="read-btn">
+                              <i class="fal fa-arrow-circle-right"></i> Read More
+                           </a>
                            </div>    
                         </div>
                      </div>

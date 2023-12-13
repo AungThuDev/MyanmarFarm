@@ -3,7 +3,7 @@
 @section('content')
 <main>
          <div>
-            <img src="{{asset('assets/myanmarfarm.jpg')}}" alt="" class="img-fluid">
+            <img src="{{asset('assets/img/bg/MyanmarFarm.png')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
          </div>
          <!-- banner-area-end -->
 
@@ -14,11 +14,11 @@
                   <div class="col-xl-8 col-lg-8">
                      <div class="tp-section-wrap tp-section-wrap-h3">
                         <span class="service-catagory">Myanmar Farm</span>
-                        <h3 class="tp-section-title-h3 tp-section-title">Strategic Business Plan</h3>
+                        <h3 class="tp-section-title-h3 tp-section-title">Nourishment Made Beatutiful For Generations</h3>
                      </div>
                      <div class="serivces-cta-info">
                         <a href="#" class="client-img"><img src="{{asset('assets/img/client/author.jpg')}}" alt=""></a>
-                        <p>Any questions? Reach us at <a href="tel:+96635596557"> info@venue36group.com </a> - Yangon/Myanmar</p>
+                        <p><a href="tel:+96635596557"> info@myanmarfarm.com.mm </a> - Yangon/Myanmar</p>
                      </div>
                   </div>
                   
@@ -68,7 +68,10 @@
             </div>
          </div>
          <!-- about-area-end -->
-
+         <!--photo section -->
+         <div class="company-features company-features-2 pt-110 pb-90" data-background="{{asset('assets/img/8.png')}}" style="height: 90vh;">
+            
+         </div>
          <!-- company-features-start -->
          <div class="company-features company-features-2 pt-110 pb-90" data-background="{{asset('assets/img/service/services-bg.png')}}">
             <div class="container">
@@ -242,7 +245,7 @@
             </div>
          </div> -->
          <div class="background">
-            <img src="{{asset('assets/img/bg/MyanmarFarm.png')}}" alt="" class="img-fluid" style="width: 100%;background-repeat: no-repeat; background-size: cover;">
+            <img src="{{asset('assets/img/1.png')}}" alt="" class="img-fluid" style="width: 100%;background-repeat: no-repeat; background-size: cover;">
          </div>
          <!-- news-letter-area-end -->
 

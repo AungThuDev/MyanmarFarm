@@ -100,6 +100,8 @@ select option {
             position: fixed;
             bottom: 10px; /* Adjust this value to control the distance from the bottom */
             right: 10px; /* Adjust this value to control the distance from the right */
+            color: #ecb41c;
+            border-color: #ecb41c;
         }
         p{
             color: #fff!important;
@@ -264,10 +266,10 @@ border:none;
                         </div>
                            </div>
                            <div class="col-lg-3">
-                           <select id="languageSelector" onchange="changeLanguage(this.value)">
-                              <option value="en">English 🇺🇸</option>
-                              <option value="my">Myanmar 🇲🇲</option>
-                           </select>
+                           <!-- <select id="languageSelector" onchange="changeLanguage(this.value)" >
+                              <option value="en" {{ $language === 'en' ? 'selected' : '' }}>English 🇺🇸</option>
+                              <option value="my" {{ $language === 'my' ? 'selected' : '' }}>Myanmar 🇲🇲</option>
+                           </select> -->
                            </div>
                         </div>
                   </select>
@@ -531,19 +533,36 @@ border:none;
             document.getElementById('languageSelector').value = currentLanguage;
 
             function changeLanguage(lang) {
-               var currentRoute = "{{ Route::currentRouteName() }}";
-               
-               var newUrl = `/${lang}/${currentRoute}`;
-               console.log(currentRoute);
-               window.location.href = newUrl;
-            }
+        // Get all URL segments after the language segment
+        var pathSegments = window.location.pathname.split('/');
+        var languageIndex = pathSegments.indexOf(currentLanguage);
+
+        if (languageIndex !== -1) {
+            // Replace the language with the new language
+            pathSegments[languageIndex] = lang;
+
+            // Construct the new URL with the updated language and original URL segments
+            var newUrl = pathSegments.join('/');
+            console.log(newUrl);
+
+            // Append the existing query parameters
+            var queryParams = window.location.search;
+            newUrl += queryParams;
+
+            // Redirect to the new URL
+            window.location.href = newUrl;
+        } else {
+            console.error('Language segment not found in URL.');
+        }
+    }
+    
 
             
         
       </script>
    </body>
-   <!-- <select id="languageSelector" onchange="changeLanguage(this.value)">
-         <option value="en">English 🇺🇸</option>
-         <option value="my">Myanmar 🇲🇲</option>
-   </select> -->
+   <select id="languageSelector" onchange="changeLanguage(this.value)">
+                              <option value="en" {{ $language === 'en' ? 'selected' : '' }}>English 🇺🇸</option>
+                              <option value="my" {{ $language === 'my' ? 'selected' : '' }}>Myanmar 🇲🇲</option>
+                           </select>
 </html>

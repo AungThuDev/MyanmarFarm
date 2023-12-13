@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('layouts.master');
 });
-Route::prefix('admin')->name('admin.')->group(function(){
-    Route::get('/',[App\Http\Controllers\Backend\HomeController::class,'index'])->name('dashboard');
+Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
+    Route::get('/',[App\Http\Controllers\Backend\HomeController::class,'index'])->name('home');
     Route::resource('/blogs',App\Http\Controllers\Backend\BlogController::class);
     Route::resource('/vacancies',App\Http\Controllers\Backend\VacancyController::class);
     Route::resource('/galleries',App\Http\Controllers\Backend\GalleryController::class);
@@ -27,20 +29,23 @@ Route::prefix('admin')->name('admin.')->group(function(){
     Route::redirect('/','/en');
 
     Route::prefix('/{language}')->group(function(){
-    Route::get('/',function(){
-        return view('frontend.index');
+    // Route::get('/',function($language){
+    //     return view('frontend.templage',compact('language'));
+    // });
+    Route::get('/',function($language){
+        return view('frontend.index',compact('language'));
     });
-    Route::get('/about',function(){
+    Route::get('/about',function($language){
         $aboutblogs = Blog::latest()->take(3)->get();
-        return view('frontend.about',compact('aboutblogs'));
+        return view('frontend.about',compact('aboutblogs','language'));
     })->name('about');
-    Route::get('/news',function(){
+    Route::get('/news',function($language){
         $blogs = Blog::latest()->paginate(2);
         $popularblogs = Blog::latest()->take(4)->get();
-        return view('frontend.blogs.index',compact('popularblogs','blogs'));
+        return view('frontend.blogs.index',compact('popularblogs','blogs','language'));
     })->name('news');
-    Route::get('/contact',function(){
-        return view('frontend.contact');
+    Route::get('/contact',function($language){
+        return view('frontend.contact',compact('language'));
     })->name('contact');
     Route::get('/shop',function()
     {
@@ -59,6 +64,6 @@ Route::prefix('admin')->name('admin.')->group(function(){
     
 
 
-Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

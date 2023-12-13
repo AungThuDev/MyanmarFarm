@@ -23,7 +23,41 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        <h2>Hello Dashboard</h2>
+        <div class="row">
+          <div class="col-lg-4">
+          <div class="card mb-3 bg-success" style="height: 200px;">
+                    <div class="card-body">
+                        <h3><i class="fas fa-newspaper"></i>&nbsp;News</h3>
+                        <span class="text-light">
+                            Total News : 2
+                        </span><br>
+                        <a href="{{route('admin.blogs.index')}}" class="text-light">View Detail >></a>
+                    </div>
+                </div>
+          </div>
+          <div class="col-lg-4">
+          <div class="card mb-3 bg-warning" style="height: 200px;">
+                    <div class="card-body">
+                        <h3><i class="fas fa-clipboard-list"></i>&nbsp;Vacancy</h3>
+                        <span class="text-light">
+                            Total Vacancies : 2
+                        </span><br>
+                        <a href="{{route('admin.vacancies.index')}}" class="text-light">View Detail >></a>
+                    </div>
+                </div>
+          </div>
+          <div class="col-lg-4">
+          <div class="card mb-3 bg-primary" style="height: 200px;">
+                    <div class="card-body">
+                        <h3><i class="fas fa-images"></i>&nbsp;Gallery</h3>
+                        <span class="text-light">
+                            Total Photos : 2
+                        </span><br>
+                        <a href="{{route('admin.galleries.index')}}" class="text-light">View Detail >></a>
+                    </div>
+                </div>
+          </div>
+        </div>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->

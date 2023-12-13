@@ -3,7 +3,7 @@
 @section('content')
 <main>
          <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="assets/img/aboutus_cow.jpg" style="background-repeat: no-repeat; background-size:cover;">
+         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul>
                                        <li>
-                                          <a href="#" ><span>Home</span></a>
+                                          <a href="#" ><span style="color: #fff;">Home</span></a>
                                        </li>
                                        <li>
-                                          <span style="color: #9d6b34;">News Details</span>
+                                          <span style="color: #fff;">News Details</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062!important;">News Details</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">News Details</h3>
                         </div>
                      </div>
                   </div>
@@ -47,7 +47,9 @@
                            {{$blog->title}}
                         </h4>
                         <p class="mt-25 mb-50" style="color: #000!important;">{{$blog->body}}</p>
-                        
+                        <a href="{{ url(app()->getLocale() . '/news') }}" class="read-btn">
+                              <i class="fal fa-arrow-circle-left"></i> Back
+                        </a>
                         
                         
                         

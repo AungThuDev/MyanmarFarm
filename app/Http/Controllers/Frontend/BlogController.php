@@ -18,16 +18,16 @@ class BlogController extends Controller
    {
         $blog = Blog::findOrFail($id);
         $popularblogs = Blog::latest()->take(4)->get();
-        return view('frontend.blogs.detail',compact('blog','popularblogs'));
+        return view('frontend.blogs.detail',compact('blog','popularblogs','language'));
    }
    
-   public function search()
+   public function search($language)
    {
         
-        $search_text = $_GET['search'];
-        
+        //$search_text = $_GET['search'];
+        $search_text = isset($_GET['search']) ? $_GET['search'] : '';
         $blogs = Blog::where('title','LIKE','%'.$search_text.'%')->get();
         $popularblogs = Blog::latest()->take(4)->get();
-        return view('frontend.blogs.search-blogs',compact('blogs','popularblogs'));
+        return view('frontend.blogs.search-blogs',compact('blogs','popularblogs','language'));
    }
 }

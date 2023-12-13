@@ -3,7 +3,7 @@
 @section('content')
 <main>
          <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="assets/img/aboutus_cow.jpg" style="background-repeat: no-repeat; background-size:cover;">
+         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul class="trail-items">
                                        <li>
-                                          <a href="#"><span>Home</span></a>
+                                          <a href="#"><span style="color: #fff;">Home</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fdd062;">Vacancy</span>
+                                          <span style="color: #fff;">Vacancy</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062!important;">Vacancy Announcement</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">Vacancy Announcement</h3>
                         </div>
                      </div>
                   </div>
@@ -53,8 +53,9 @@
                       <div class="project-img mb-70">
                           <div class="inner-img"><a href="#"><img src="{{asset('assets/img/job.jpeg')}}" alt="" class="fluid"></a></div>
                           <div class="project-img-content">
-                              <h4 class="project-sm-title"><a href="project-details.html">{{$vacancy->type}}</a></h4>
-                          </div>
+                              <h4 class="project-sm-title"><a href="{{ url(app()->getLocale() . '/vacancies/' . $vacancy->id . '/detail') }}">
+                               {{$vacancy->type}}
+                           </a></h4>
                       </div>
                   </div>
                   @empty

@@ -43,9 +43,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       
       <!-- Notifications Dropdown Menu -->
       
-      <li class="nav-item">
-        <a href="" class="btn btn-outline-info">Logout</a>
-      </li>
+      <form action="{{route('logout')}}" method="POST">
+            @csrf
+            <button class="btn btn-outline-success"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Logout</button>
+        </form>
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -90,7 +91,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <li class="nav-item menu-open">
             <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="{{route('admin.dashboard')}}" class="nav-link @yield('home')">
+                <a href="{{route('admin.home')}}" class="nav-link @yield('home')">
                 <i class="fas fa-home"></i>&nbsp;
                   <p>Dashboard</p>
                 </a>
