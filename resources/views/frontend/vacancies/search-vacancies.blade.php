@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul class="trail-items">
                                        <li>
-                                          <a href="#"><span style="color: #fff;">Home</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span style="color: #fff;">{{__('home')}}</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fff;">Vacancy</span>
+                                          <span style="color: #fff;">{{__('vacancy')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">Vacancy Announcement</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('vacancy-announcement')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -42,7 +42,6 @@
                               <input type="text" name="search" id="search" class="form-control form-input" placeholder="Search anything...">
                               <span class="left-pan"><i class="fa fa-microphone"></i></span>
                            </form>
-  
                         </div>
                      </div>
                   </div>
@@ -50,21 +49,20 @@
                <div class="row grid">
                   @forelse($vacancies as $vacancy)
                   <div class="col-lg-4 col-md-6 c2 c3 c4 c5">
-                      <div class="project-img mb-70">
-                          <div class="inner-img"><a href="#"><img src="{{asset('assets/img/job.jpeg')}}" alt="" class="fluid"></a></div>
-                          <div class="project-img-content">
+                        <div class="project-img mb-70">
+                           <div class="inner-img"><a href="#"><img src="{{asset('assets/img/job.jpeg')}}" alt="" class="fluid"></a></div>
+                           <div class="project-img-content">
                               <h4 class="project-sm-title"><a href="{{ url(app()->getLocale() . '/vacancies/' . $vacancy->id . '/detail') }}">
-                               {{$vacancy->type}}
+                               {{$vacancy->title}}
                            </a></h4>
-                      </div>
+                           </div>
+                        </div>
                   </div>
                   @empty
-                     <div class="col-lg-12 col-lg-4 c2 c3 c4 c5">
-                        <h3 style="color: #9d6b34!important;" class="d-flex justify-content-center">No Vacancy Announcement Found!...</h3>
-                     </div>
-                  @endforelse
-                  
+                  <div class="col-lg-12 col-lg-4 c2 c3 c4 c5">
+                     <h3 style="color: #9d6b34!important;" class="d-flex justify-content-center">No Vacancy Announcement Found!...</h3>
                   </div>
+                  @endforelse
                   <!-- <div class="col-lg-4 col-md-6 c2 c3 c4 c5">
                      <div class="project-img mb-70">
                          <div class="inner-img"><a href="project-details.html"><img src="assets/img/project/project-5.jpg" alt="" class="fluid"></a></div>

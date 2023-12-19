@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Place favicon.ico in the root directory -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/img/Myanmar Farm-A.png">
+      <link rel="shortcut icon" type="image/x-icon" href={{asset("assets/img/logo/MyanmarFarm.png")}}>
       <!-- CSS here -->
       <link rel="stylesheet" href="{{asset('assets/css/preloader.css')}}">
       <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
@@ -234,7 +234,12 @@ border:none;
                            <nav id="mobile-menu">
                               <ul>
                                  <li><a href="{{url('/',app()->getLocale())}}" class="@yield('home-active')">{{__('home')}}</a></li>
-                                 <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about')}}</a></li>
+                                 <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about')}}</a>
+                                    <ul class="sub-menu-h1 sub-menu">
+                                       <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
+                                       <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
+                                    </ul>
+                                 </li>
                                  <li><a href="{{route('gallery',app()->getLocale())}}" class="@yield('gallery-active')">{{__('gallery')}}</a></li>
                                  
                                  <li><a href="{{route('vacancies',app()->getLocale())}}" class="@yield('vacancy-active')">{{__('vacancy')}}</a></li>
@@ -260,16 +265,12 @@ border:none;
                         <div class="header-cta" style="margin-right: 40px;">
                            <a href="#"><i class="fas fa-phone-alt"></i></a>
                            <div class="phone-number">
-                              <span>Phone Number</span>
-                              <p><a href="tel:09-888828181" style="color: #9d6b34;">09-888828181</a></p>
+                              <span>{{__('phone')}}</span>
+                              <p><a href="tel:09-888828181" style="color: #9d6b34;">{{__('no')}}</a></p>
                            </div>
                         </div>
                            </div>
                            <div class="col-lg-3">
-                           <!-- <select id="languageSelector" onchange="changeLanguage(this.value)" >
-                              <option value="en" {{ $language === 'en' ? 'selected' : '' }}>English 🇺🇸</option>
-                              <option value="my" {{ $language === 'my' ? 'selected' : '' }}>Myanmar 🇲🇲</option>
-                           </select> -->
                            </div>
                         </div>
                   </select>
@@ -304,7 +305,7 @@ border:none;
                <!-- <div class="sidebar__text d-none d-lg-block">
                   <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you a complete account of the system and expound the actual teachings of the great explore</p>
                </div> -->
-               <div class="sidebar__img d-none d-lg-block mb-20">
+               <!-- <div class="sidebar__img d-none d-lg-block mb-20">
                   <div class="row gx-2">
                      <div class="col-4">
                         <div class="sidebar__single-img w-img mb-10">
@@ -349,10 +350,10 @@ border:none;
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="sidebar__map d-none d-lg-block mb-15">
+               </div> -->
+               <!-- <div class="sidebar__map d-none d-lg-block mb-15">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
-               </div>
+               </div> -->
                <div class="sidebar__contact sidebar__contact-3 mt-30 mb-20">
                   <h4>Contact Info</h4>
                   <ul>
@@ -361,7 +362,7 @@ border:none;
                            <i class="fal fa-map-marker-alt"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A, Mirnada City Tower, NYC</a>
+                           <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">{{__('address-no')}} <br>{{__('township')}}</a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -369,7 +370,7 @@ border:none;
                            <i class="far fa-phone"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a href="tel:+012-345-6789">088889797697</a>
+                           <a href="tel:09-888828181">{{__('no')}}</a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -377,7 +378,7 @@ border:none;
                            <i class="fal fa-envelope"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a href="mailto:support@gmail.com">support@mail.com</a>
+                           <a href="mailto:@info@venue36group.com">@info@venue36group.com</a>
                         </div>
                      </li>
                   </ul>
@@ -444,7 +445,7 @@ border:none;
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-6 footer-col-5 mb-40">
-                        <h5 class="footer-sm-title footer-title-h3 footer-title mb-30">Services</h5>
+                        <h5 class="footer-sm-title footer-title-h3 footer-title mb-30">{{__('service')}}</h5>
                         <div class="footer-menu footer-menu-3">
                            <ul>
                                <li><a href="">Selling Calves & Cattles</a></li>
@@ -457,21 +458,19 @@ border:none;
                   </div>
                   <div class="col-xl-5 col-lg-5 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-5 mb-40">
-                        <h5 class="footer-sm-title footer-title-h3 footer-title mb-30">Essential Pages</h5>
+                        <h5 class="footer-sm-title footer-title-h3 footer-title mb-30">{{__('page')}}</h5>
                            <ul class="footer-menu footer-menu-3 footer-menu-c"> 
-                              <li><a href="index.html">Home</a></li>
-                               
-                               
-                               <li><a href="about.html">About</a></li>
-                               <li><a href="#">Pages</a></li>
-                               <li><a href="#">News</a></li>
-                               <li><a href="#">Gallery</a></li>
-                               <li><a href="#">Vacancies</a></li>
-                               <li><a href="#">Contact Us</a></li>
-                               
-                              
-                              
-                              
+                                 <li><a href="{{url('/',app()->getLocale())}}" class="@yield('home-active')">{{__('home')}}</a></li>
+                                 <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about')}}</a>
+                                    <!-- <ul class="sub-menu-h1 sub-menu">
+                                       <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
+                                       <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
+                                    </ul> -->
+                                 </li>
+                                 <li><a href="{{route('gallery',app()->getLocale())}}" class="@yield('gallery-active')">{{__('gallery')}}</a></li>
+                                 <li><a href="{{route('vacancies',app()->getLocale())}}" class="@yield('vacancy-active')">{{__('vacancy')}}</a></li>
+                                 <li><a href="{{route('news',app()->getLocale())}}" class="@yield('blog-active')">{{__('news')}}</a></li>
+                                 <li><a href="{{route('contact',app()->getLocale())}}" class="@yield('contact-active')">{{__('contact')}}</a></li>  
                            </ul>
                      </div>
                   </div>

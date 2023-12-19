@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('blog','nav-link active')
+@section('title','News')
 @section('content')
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

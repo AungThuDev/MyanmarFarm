@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul>
                                        <li>
-                                          <a href="#"><span>Home</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span>{{__('home')}}</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fdd062;">News</span>
+                                          <span style="color: #fdd062;">{{__('news')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062;">News</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062;">{{__('news')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -43,10 +43,10 @@
                         </div>
                         <div class="news-detalis-content news-detalis-content-2">
                            <ul class="blog-meta mb-20">
-                              <li><a href="#"><i class="fal fa-calendar-alt"></i>{{$blog->created_at}}</a></li>
+                              <li><i class="fal fa-calendar-alt"></i>{{$blog->created_at}}</li>
                            </ul>
                            <h4 class="news-title mt-20 mb-20" style="color: #9d6b34;">
-                              <a href="news-details.html">{{$blog->title}}</a>
+                              <a href="">{{$blog->title}}</a>
                            </h4>
                            <p style="color: #000!important;">
                                 {{ substr($blog->body, 0, 300) }}...
@@ -112,10 +112,10 @@
                                           @foreach($popularblogs as $blog)
                                           <li>
                                              <div class="feed-number">
-                                                   <a href="news-details.html"><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="288" height="" alt=""></a>
+                                                   <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="288" height="" alt=""></a>
                                              </div>
                                              <div class="feed-content">
-                                                   <h6><a href="news-details.html">{{$blog->title}}</a></h6>
+                                                   <h6><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a></h6>
                                                    <span class="feed-date">
                                                       <i class="fal fa-calendar-alt"></i> {{$blog->created_at}}
                                                    </span>

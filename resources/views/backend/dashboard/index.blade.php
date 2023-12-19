@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('home','nav-link active')
+@section('title','Dashboard')
 @section('content')
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -29,7 +30,7 @@
                     <div class="card-body">
                         <h3><i class="fas fa-newspaper"></i>&nbsp;News</h3>
                         <span class="text-light">
-                            Total News : 2
+                            Total News : {{$blogcount > 0 ? $blogcount : 0}}
                         </span><br>
                         <a href="{{route('admin.blogs.index')}}" class="text-light">View Detail >></a>
                     </div>
@@ -40,7 +41,7 @@
                     <div class="card-body">
                         <h3><i class="fas fa-clipboard-list"></i>&nbsp;Vacancy</h3>
                         <span class="text-light">
-                            Total Vacancies : 2
+                            Total Vacancies : {{$vacancycount > 0 ? $vacancycount :  0}}
                         </span><br>
                         <a href="{{route('admin.vacancies.index')}}" class="text-light">View Detail >></a>
                     </div>
@@ -51,7 +52,7 @@
                     <div class="card-body">
                         <h3><i class="fas fa-images"></i>&nbsp;Gallery</h3>
                         <span class="text-light">
-                            Total Photos : 2
+                            Total Photos : {{$gallerycount > 0 ? $gallerycount : 0}}
                         </span><br>
                         <a href="{{route('admin.galleries.index')}}" class="text-light">View Detail >></a>
                     </div>

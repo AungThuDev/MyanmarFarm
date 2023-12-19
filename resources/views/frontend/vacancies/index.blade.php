@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul class="trail-items">
                                        <li>
-                                          <a href="#"><span style="color:#fff;">Home</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span style="color:#fff;">{{__('home')}}</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fff;">Vacancy</span>
+                                          <span style="color: #fff;">{{__('vacancy')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">Vacancy Announcement</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('vacancy-announcement')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -55,7 +55,7 @@
                           <div class="inner-img"><a href="{{route('vacancies.detail',['id'=>$vacancy->id,'language'=>app()->getLocale()])}}"><img src="{{asset('assets/img/job.jpeg')}}" alt="" class="fluid"></a></div>
                           <div class="project-img-content">
                               <h4 class="project-sm-title"><a href="{{ url(app()->getLocale() . '/vacancies/' . $vacancy->id . '/detail') }}">
-                               {{$vacancy->type}}
+                               {{$vacancy->title}}
                            </a></h4>
                           </div>
 

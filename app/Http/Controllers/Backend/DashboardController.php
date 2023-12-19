@@ -12,9 +12,9 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $blog = Blog::count();
-        $vacancy = Vacancy::count();
-        $gallery = Gallery::count();
-        return view('backend.dashboard.index', compact('blog', 'vacancy', 'gallery'));
+        $blogcount = Blog::count();
+        $vacancycount = Vacancy::count();
+        $gallerycount = Gallery::count();
+        return view('backend.dashboard.index', compact('blogcount', 'vacancycount', 'gallerycount'));
     }
 }

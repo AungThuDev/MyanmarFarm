@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul>
                                        <li>
-                                          <a href="#"><span style="color: #fff;">Home</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span style="color: #fff;">Home</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fff;">Showcast</span>
+                                          <span style="color: #fff;">{{__('gallery')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">Photo Gallary</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('gallery')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -36,10 +36,18 @@
                <div class="row">
 
                   @forelse($galleries as $gallery)
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                     <div class="gallery-item mb-30">
+                  
+                     <!-- <div class="gallery-item mb-30">
                         <img src="{{ asset('storage/gallery/' . $gallery->image) }}" alt="" class="img-fluid">
                         
+                     </div> -->
+                  
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                     <div class="card mb-30" style="width: 25rem;">
+                        <img src="{{asset('storage/gallery/' . $gallery->image)}}" width="250px" height="240px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <p class="card-text text-dark">{{$gallery->name}}</p>
+                        </div>
                      </div>
                   </div>
                   @empty

@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul class="trail-items">
                                        <li>
-                                          <a href="#"><span style="color: #fff;">Home</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span style="color: #fff;">{{__('home')}}</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fff;">Vacancy</span>
+                                          <span style="color: #fff;">{{__('vacancy')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">Vacancy Announcement</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('vacancy-announcement')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -106,6 +106,8 @@
                            <div class="project-img-content project-img-content-d">
                                <h4 class="project-sm-title project-title-d"><a href="project.html">Requirements</a></h4>
                                <p style="color:#000!important;">{{$vacancy->requirements}}</p>
+                               <h4 class="project-sm-title project-title-d"><a href="project.html">Benefits</a></h4>
+                               <p style="color:#000!important;">{{$vacancy->benefits}}</p>
                                  <div class="bg-shape">
                                     <span>02</span>
                                  </div>
@@ -114,7 +116,9 @@
                      </div>
                   </div>
                </div>
-               
+               <a href="{{ url(app()->getLocale() . '/vacancies') }}" class="read-btn mb-10" style="margin-left:43px;">
+                  <i class="fal fa-arrow-circle-left"></i> Back
+               </a>
                <div class="services-nevigation services-nevigation-2">
                   
                </div>

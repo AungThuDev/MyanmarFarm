@@ -14,13 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset' => false, // Password Reset Routes...
+    'verify' => false, // Email Verification Routes...
+    'confirm' => false,
+]);
 
 Route::get('/', function () {
     return view('layouts.master');
 });
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
-    Route::get('/',[App\Http\Controllers\Backend\HomeController::class,'index'])->name('home');
+    Route::get('/',[App\Http\Controllers\Backend\DashboardController::class,'index'])->name('home');
     Route::resource('/blogs',App\Http\Controllers\Backend\BlogController::class);
     Route::resource('/vacancies',App\Http\Controllers\Backend\VacancyController::class);
     Route::resource('/galleries',App\Http\Controllers\Backend\GalleryController::class);
@@ -39,6 +44,12 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
         $aboutblogs = Blog::latest()->take(3)->get();
         return view('frontend.about',compact('aboutblogs','language'));
     })->name('about');
+    Route::get('/about/csr-strategy',function($language){
+        return view('frontend.csr',compact('language'));
+    })->name('csr');
+    Route::get('/partnership-programme',function($language){
+        return view('frontend.partner',compact('language'));
+    })->name('partner');
     Route::get('/news',function($language){
         $blogs = Blog::latest()->paginate(2);
         $popularblogs = Blog::latest()->take(4)->get();

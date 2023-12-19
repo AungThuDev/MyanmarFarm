@@ -41,23 +41,23 @@
                      <div class="tp-about-content tp-about-content-h3">
                         <div class="tp-section-wrap tp-section-wrap-h3">
                            <span class="asub-title">- About Myanmar Farm -</span>
-                           <h3 class="tp-section-title tp-section-title-h3-d tp-section-title-ab-3" style="color: #9d6b34!important;">Business Summary</h3>
-                           <p class="description" style="color: #000!important;">Myanmar Farm Co., Ltd. is a leading cattle breeding and farming company based in Meikhtila, Mandalay Division, and Myanmar. We specialize in producing high-quality cattle for export to China and Thailand, as well as providing milk and dairy products for the local market. Our commitment to sustainability and ethical practices has earned us a strong reputation in the industry and the trust of our customers.</p>
+                           <h3 class="tp-section-title tp-section-title-h3-d tp-section-title-ab-3" style="color: #9d6b34!important;">{{__('business-summery')}}</h3>
+                           <p class="description" style="color: #000!important;">{{__('summery-body')}}</p>
                         </div>
                         <div class="row no-gutters mt-50">
                            <div class="col-xl-6 col-md-6 col-sm-6 col-12">
                               <div class="tp-about-list tp-about-list-2 mt-20">
                                  <div class="tp-about-list-text">
-                                    <h5 class="ab-list-title ab-list-title-2">Our Mission</h5>
-                                    <p style="color: #000!important;">Our mission is to provide high-quality livestock products to meet the growing demand of our customers, while prioritizing the health and well-being of our animals and the sustainability of our farming practices. We strive to implement innovative breeding and farming techniques to increase the quantity and quality of our products, while minimizing our impact on the environment.</p>
+                                    <h5 class="ab-list-title ab-list-title-2">{{__('mission')}}</h5>
+                                    <p style="color: #000!important;">{{__('our-mission')}}</p>
                                  </div>
                               </div>
                            </div>
                            <div class="col-xl-6 col-md-6 col-sm-6 col-12">
                               <div class="tp-about-list  tp-about-list-2 mt-20">
                                  <div class="tp-about-list-text">
-                                    <h5 class="ab-list-title ab-list-title-2">Our Vision</h5>
-                                    <p style="color: #000!important;">Our vision is to be a leading provider of premium livestock products, known for our commitment to sustainability, ethical animal treatment, and innovative farming practices. We aim to build a culturethroughout the industry. We will continue to invest in research and development to improve our products and practices, and to expand our operations to meet the needs of our customers while remaining true to our mission and values.</p>
+                                    <h5 class="ab-list-title ab-list-title-2">{{__('vision')}}</h5>
+                                    <p style="color: #000!important;">{{__('our-vision')}}</p>
                                  </div>
                               </div>
                            </div>
@@ -69,7 +69,9 @@
          </div>
          <!-- about-area-end -->
          <!--photo section -->
-         <div class="company-features company-features-2 pt-110 pb-90" data-background="{{asset('assets/img/8.png')}}" style="height: 90vh;">
+         <div>
+            <img src="{{asset('assets/img/8.png')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
+         </div>
             
          </div>
          <!-- company-features-start -->

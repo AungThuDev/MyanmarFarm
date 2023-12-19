@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul>
                                        <li>
-                                          <a href="#"><span style="color: #fff;">Home</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span style="color: #fff;">{{__('home')}}</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fff;">News</span>
+                                          <span style="color: #fff;">{{__('news')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">News</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('news')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -46,10 +46,10 @@
                         </div>
                         <div class="news-detalis-content news-detalis-content-2">
                            <ul class="blog-meta mb-20">
-                              <li><a href="#"><i class="fal fa-calendar-alt"></i>{{$blog->created_at}}</a></li>
+                              <li><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><i class="fal fa-calendar-alt"></i>{{$blog->created_at}}</a></li>
                            </ul>
                            <h4 class="news-title mt-20 mb-20" style="color: #9d6b34;">
-                              <a href="news-details.html">{{$blog->title}}</a>
+                              <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a>
                            </h4>
                            <p style="color: #000!important;">
                                 {{ substr($blog->body, 0, 300) }}...
@@ -97,17 +97,17 @@
                             </div>
                             <div class="col-lg-12 col-md-12">
                               <div class="widget">
-                                 <h6 class="sidebar-title" style="color: #9d6b34;">Popular Feeds</h6>
+                                 <h6 class="sidebar-title" style="color: #9d6b34;">Popular News</h6>
                                  <div class="n-sidebar-feed">
                                        <ul>
                                           @if(count($blogs)>0)
                                           @foreach($popularblogs as $blog)
                                           <li>
                                              <div class="feed-number">
-                                                   <a href="{{route('news.detail',['id'=>$blog->id,'language'=>app()->getLocale()])}}"><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="288" height="" alt=""></a>
+                                                   <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="288" height="" alt=""></a>
                                              </div>
                                              <div class="feed-content">
-                                                   <h6><a href="news-details.html">{{$blog->title}}</a></h6>
+                                                   <h6><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a></h6>
                                                    <span class="feed-date">
                                                       <i class="fal fa-calendar-alt"></i> {{$blog->created_at}}
                                                    </span>

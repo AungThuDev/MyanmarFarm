@@ -2,6 +2,7 @@
 
 @section('article', 'nav-link active')
 @section('title','Article-detail')
+@section('title','News')
 @section('content')
 
     <div class="content-wrapper">

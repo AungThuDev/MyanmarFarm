@@ -22,7 +22,7 @@ class VacancyController extends Controller
     {
         $search_text = $_GET['search'];
         
-        $vacancies = Vacancy::where('type','LIKE','%'.$search_text.'%')->get();
+        $vacancies = Vacancy::where('title','LIKE','%'.$search_text.'%')->get();
         return view('frontend.vacancies.search-vacancies',compact('vacancies','language'));
     }
 }

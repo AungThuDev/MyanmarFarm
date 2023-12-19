@@ -3,7 +3,7 @@
 @section('content')
       <main>
          <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-135" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
+         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-135" data-background="{{asset('assets/img/beefcattle3.jpg')}}" class="img-fluid" style="width:100%;background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                   <div class="row" >
                      <div class="col-xl-12">
@@ -16,18 +16,19 @@
                                           <a href="{{url('/',app()->getLocale())}}"><span style="color: #fff;">{{__('home')}}</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fff;">About Us</span>
+                                          <span style="color: #fff;">{{__('about-us')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">About Us</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('about-us')}}</h3>
                         </div>
                      </div>
                   </div>
             </div>
          </div>
+         
          <!-- page__title -end -->
 
          <!-- about-area-start -->
@@ -36,34 +37,27 @@
                <div class="row">
                   <div class="col-xl-6 col-lg-6">
                      <div class="tp-section-wrap">
-                        <span class="asub-title grace-span" style="color: #ecb41c;">- About Myanmar Farm </span>
-                        <h3 class="tp-section-title" style="color: #9d6b34!important;"> About Myanmar Farm </h3>
+                        <span class="asub-title grace-span" style="color: #ecb41c;">- {{__('AboutMyanmarFarm')}} - </span>
+                        <h3 class="tp-section-title" style="color: #9d6b34!important;"> {{__('AboutMyanmarFarm')}} </h3>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-6">
                      <div class="about-info">
-                        <p style="color: #000!important;">Myanmar Farm Co., Ltd is a livestock farming company that operates three livestock farms in Myanmar - Magway Cattle Farm, 
-                           Meiktila Cattle Farm, and Meiktila Goat Farm. The company's main business is to supply local meat demands and export to 
-                           foreign countries such as China and Thailand.
+                        <p style="color: #000!important;">{{__('para1')}}
                         </p>
-                           <p style="color: #000!important;">In the case of beef cattle, Myanmar Farm Co., Ltd is focused on increasing the quantity and quality of their cattle in 
-                              Magway and Meiktila farms. To achieve this, the company is putting emphasis on the reproduction and breeding of cows and 
-                              maintaining them in good health to increase cattle numbers. The company uses high-genus European bulls to breed with cows 
-                              to obtain good quality cattle.
+                           <p style="color: #000!important;">{{__('para2')}}
                         </p>
                         <p style="color: #000!important;">
-                           The cows are kept systematically in cowsheds and allowed to graze on pastures. The company also feeds fodder like dried hay/straw 
-                           with managers in their farms to ensure the proper nutrition of their livestock.
-                        </p>
-                        <p style="color: #000!important;">On the other hand, Meiktila Goat Farm is a profitable commercial goat farming operation that focuses on raising and breeding domestic goats.
-                           The farm rears goats to obtain specific weights with age for mainly meat and milk production.
+                           {{__('para3')}}
                         </p>
                         <p style="color: #000!important;">
-                           At Myanmar Farm Co., Ltd, we are committed to promoting sustainable and responsible farming practices in order to achieve our vision of being a 
-                           leading provider of high-quality livestock products in local and international markets.
+                           {{__('para4')}}
+                        </p>
+                        <p style="color: #000!important;">
+                           {{(__('para5'))}}
                         </p>
                         <div class="about-button mt-30">
-                           <a href="contact.html" class="tp-btn-ab">Get In Touch <i class="fal fa-long-arrow-right"></i></a>
+                           <a href="{{route('contact',app()->getLocale())}}" class="tp-btn-ab">Get In Touch <i class="fal fa-long-arrow-right"></i></a>
                         </div>
                      </div>
                   </div>
@@ -114,25 +108,22 @@
          </div>
          <!-- collaborative-area-start -->
          <div class="collaborative-area pt-120 pb-55">
-            <h3 class="tp-section-title text-center" style="color: #9d6b34!important;">Business Summary</h3>
+            <h3 class="tp-section-title text-center" style="color: #9d6b34!important;">{{__('business-summery')}}</h3>
             <div class="container" style="margin-top: 100px;">
                
                <div class="row">
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-right mb-30">
-                        <h4 class="cp-title mb-15">Breeding and Production</h4>
-                        <p style="color: #000!important;">Our farm spans six acres and houses a thousand breeding cattle and two hundred dairy cows. We utilize both free grazing and
-                            intensive breeding methods to ensure the best possible health and quality of our livestock. Our farm features four buildings: 
-                            one for housing cattle breeding, one for dairy cows, one for veterinary care and quarantine, and one for staff housing and office.
+                        <h4 class="cp-title mb-15">{{__('breeding')}}</h4>
+                        <p style="color: #000!important;">{{__('our-farm')}}
                         </p>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-left">
-                        <h4 class="cp-title mb-15">Sustainability and Responsibility</h4>
-                        <p style="color: #000!important;">We are committed to providing high-quality and ethically sourced livestock, as well as promoting sustainable and environmentally responsible 
-                           farming practices. We believe that our commitment to quality and sustainability will make us a leading player in the cattle breeding and farming 
-                           industry. Our long-term partnership with locals who are interested in cattle farming aims to promote sustainability and charitable causes.
+                        <h4 class="cp-title mb-15">{{__('sustainability')}}</h4>
+                        <p style="color: #000!important;">
+                           {{__('commited')}}
                         </p>
                      </div>
                   </div>
@@ -140,19 +131,17 @@
                <div class="row">
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-right mb-30">
-                        <h4 class="cp-title mb-15">Recreational Activities</h4>
-                        <p style="color: #000!important;">In addition to the core business activities of breeding and raising livestock, the company plans to expand into the recreational sector by creating 
-                           a new area that is open to the public in the future. This will allow visitors to interact with the animals and learn about sustainable farming practices 
-                           while providing a unique experience that sets the business apart from others in the industry.
+                        <h4 class="cp-title mb-15">{{__('recreational')}}</h4>
+                        <p style="color: #000!important;">
+                           {{__('addition')}}
                         </p>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-left">
-                        <h4 class="cp-title mb-15">Expansion and Partnership</h4>
-                        <p style="color: #000!important;">We aim to expand our market reach by entering new geographic markets and establishing part- nerships with contractors, distributors, and retail- ers in order 
-                           to increase our market share. By prior- itizing diversity, equity, and inclusion, we will be able to attract and retain top talent and foster a more innovative 
-                           and productive workplace.
+                        <h4 class="cp-title mb-15">{{__('expansion')}}</h4>
+                        <p style="color: #000!important;">
+                           {{__('we-aim')}}
                         </p>
                      </div>
                   </div>
@@ -160,7 +149,6 @@
             </div>
          </div>
          <!-- collaborative-area-end -->
-
          <!-- video-area-start -->
          <div class="video-area-ab">
             <div class="container">
@@ -173,6 +161,8 @@
             </div>
          </div>
          <!-- video-area-end -->
+
+        
 
          <!-- award-area-start -->
          <div class="award-area pt-120 pb-120">
@@ -189,32 +179,6 @@
                         <h3 class="tp-section-title" style="color: #9d6b34!important;"> Sustainable Beef Production </h3>
                         
                      <div class="awards-lists mt-50">
-                        <!-- <div class="row">
-                           <div class="col-xl-3 col-lg-6 col-md-6">
-                              <div class="award-item text-center mb-30">
-                                 <i class="flaticon-trophy-1"></i>
-                                 <h5 class="award-title mt-15">Quality Design 2021</h5>
-                              </div>
-                           </div>
-                           <div class="col-xl-3 col-lg-6 col-md-6">
-                              <div class="award-item text-center mb-30">
-                                 <i class="flaticon-medal-1"></i>
-                                 <h5 class="award-title mt-15">Best Milk Award 2021</h5>
-                              </div>
-                           </div>
-                           <div class="col-xl-3 col-lg-6 col-md-6">
-                              <div class="award-item text-center mb-30">
-                                 <i class="flaticon-high-quality"></i>
-                                 <h5 class="award-title mt-15">Best <br> Quality 2021</h5>
-                              </div>
-                           </div>
-                           <div class="col-xl-3 col-lg-6 col-md-6">
-                              <div class="award-item text-center mb-30">
-                                 <i class="flaticon-badge"></i>
-                                 <h5 class="award-title mt-15">Top Class <br> In 2021 </h5>
-                              </div>
-                           </div>
-                        </div> -->
                         <div class="row">
                            <div class="col-lg-6 d-flex justify-content-center">
                               <ul>
@@ -243,7 +207,7 @@
          </div>
          <!-- award-area-end -->
          <!-- collaborative-area-start -->
-         <div class="collaborative-area pt-120 pb-55" style="background-color: antiquewhite;">
+         <div class="collaborative-area pt-120 pb-55" style="background-color: whitesmoke;">
             <h3 class="tp-section-title text-center" style="color: #9d6b34!important;">Company History</h3>
             <div class="container" style="margin-top: 100px;">
                
@@ -263,7 +227,7 @@
                   </div>
                   <div class="col-xl-6 col-lg-6">
                   <div class="text-center">
-                        <img src="{{asset('assets/img/Cover-F.jpg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/img/Cover-F.jpg')}}" style="width:500px;height: 700px;" alt="" class="img-fluid">
                      </div>
                   </div>
                   
@@ -271,13 +235,110 @@
                
             </div>
          </div>
-         <!-- collaborative-area-end -->
+         <!-- company-history-end -->
+
+          <!-- corporate gaovernance structure -->
+          <div class="collaborative-area pt-120 pb-55">
+            <h3 class="tp-section-title text-center" style="color: #9d6b34!important;">Corporate Governace Structure</h3>
+            <div class="container" style="margin-top: 100px;">
+               
+               <div class="row">
+                  <div class="col-xl-12 col-lg-12">
+                     <div class="cp-info-right mb-30">
+                        <h4 class="cp-title mb-15">Board of Directors:</h4>
+                        <p style="color: #000!important;">Our strategic
+                           compass is led by a dynamic Board of
+                           Directors, comprising three adept
+                           individuals. This visionary team is
+                           committed to steering the corporate
+                           ship, ensuring sound decision-making,
+                           and charting a course for sustained
+                           success. In their deliberations, they are
+                           fortified by the insights and support of
+                           our esteemed Advisory Board, a two-
+                           member body of seasoned
+                           professionals.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-xl-12 col-lg-12">
+                     <div class="cp-info-right mb-30">
+                        <h4 class="cp-title mb-15">Executive Committee:</h4>
+                        <p style="color: #000!important;">
+                           Driving operational efficacy, our Executive
+                           Committee stands as the operational
+                           backbone of the organization.
+                           Comprised of representatives from key
+                           businesses and units within the
+                           Myanmar Farm Business Group, this
+                           committee is the heartbeat of our day-
+                           to-day activities. It orchestrates the
+                           execution of strategies, ensuring the
+                           seamless integration of diverse
+                           business units. Notably, Venue 36
+                           Business Group, as Myanmar Farm's
+                           primary investee, plays a significant
+                           role in this comprehensive governance
+                           framework.
+                        </p>
+                        <p style="color: #000!important;">
+                           Through this intricate yet streamlined
+                           governance architecture, we fortify our
+                           commitment to excellence,
+                           transparency, and prudent decision-
+                           making at every level of the Myanmar
+                           Farm Business Group.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- corporate-area-end -->
+         <!-- video-area-start -->
+         <div class="video-area-ab">
+            <div class="container">
+               <div class="chosse-video">
+                  <div class="chosse-video-bg position-relative">
+                     <img src="{{asset('assets/img/C3.jpg')}}" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- video-area-end -->
+
+         <!--project-location-->
+         <div class="collaborative-area pt-120 pb-55" style="background-color: whitesmoke;">
+         <span class="asub-title grace-span" style="color: #ecb41c;text-align:center;">- {{__('location')}} </span>
+            <h3 class="tp-section-title text-center" style="color: #9d6b34!important;">{{__('project-location')}}</h3>
+            <div class="container" style="margin-top: 100px;">
+               
+               <div class="row">
+                  <div class="col-xl-6 col-lg-6">
+                  <div class="text-center">
+                        <img src="{{asset('assets/img/location1.jpg')}}" style="width:750px;height: 420px;"  alt="" class="img-fluid mb-2">
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                  <div class="text-center">
+                        <img src="{{asset('assets/img/location2.jpg')}}" style="width:750px;height: 418px;"  alt="" class="img-fluid">
+                     </div>
+                  </div>
+                  </div>
+                  
+                  
+               </div>
+               
+            </div>
+         </div>
+         <!--end-project-location-->
+
          <!-- latest-news-area-start -->
          <div class="latest-news-area latest-news-area-ab pt-120 mb-90">
             <div class="container">
                <div class="tp-section-wrap text-center">
-                  <span class="asub-title grace-span" style="color: #ecb41c;"> - News - </span>
-                  <h3 class="tp-section-title" style="color: #9d6b34!important;"> Blog Insights </h3>
+                  <span class="asub-title grace-span" style="color: #ecb41c;"> - {{__('news')}} - </span>
+                  <h3 class="tp-section-title" style="color: #9d6b34!important;"> {{__('blog')}} </h3>
                </div>
                <div class="row mt-50">
                      @foreach($aboutblogs as $blog)
@@ -286,7 +347,7 @@
                               <div class="latest-blog-img">
                               <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="Blog Image" width="410" height="220">
                                     <div class="top-catagory">
-                                       <a href="" class="postbox__meta">cattle farm</a>
+                                       <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}" class="postbox__meta">cattle farm</a>
                                     </div>    
                               </div>
                               <div class="latest-blog-content">
@@ -294,57 +355,15 @@
                                     <span class="blog-date">{{$blog->created_at}}</span>
                                  </div>
                                  <h3 class="latest-blog-title">
-                                    <a href="news-details.html" style="color: #9d6b34!important;">{{$blog->title}}</a>
+                                    <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}" style="color: #9d6b34!important;">{{$blog->title}}</a>
                                  </h3>
                                  <div class="blog-btn mt-20">
-                                    <a href="#">Read More</a>
+                                    <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">Read More</a>
                                  </div>
                               </div>
                         </div>
                      </div>
                      @endforeach
-                     <!-- <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="latest-blog mb-30">
-                              <div class="latest-blog-img">
-                                    <a href="news-details.html"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></a>
-                                    <div class="top-catagory">
-                                       <a href="shop-details.html" class="postbox__meta">cow farm</a>
-                                    </div>    
-                              </div>
-                              <div class="latest-blog-content">
-                                 <div class="latest-post-meta mb-15">
-                                    <span class="blog-date"><a href="news-details.html">november 21, 2021</a></span>
-                                 </div>
-                                 <h3 class="latest-blog-title">
-                                    <a href="news-details.html">Angus. Black Angus cattle, also called Aberdeen Angus</a>
-                                 </h3>
-                                 <div class="blog-btn mt-20">
-                                    <a href="news-details.html">Read More</a>
-                                 </div>
-                              </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="latest-blog mb-30">
-                              <div class="latest-blog-img">
-                                    <a href="news-details.html"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></a>
-                                    <div class="top-catagory">
-                                       <a href="shop-details.html" class="postbox__meta">cow farm</a>
-                                    </div>    
-                              </div>
-                              <div class="latest-blog-content">
-                                 <div class="latest-post-meta mb-15">
-                                    <span class="blog-date"><a href="news-details.html">november 21, 2021</a></span>
-                                 </div>
-                                 <h3 class="latest-blog-title">
-                                    <a href="news-details.html">Are the most popular breed in the U.S., and thanks to some</a>
-                                 </h3>
-                                 <div class="blog-btn mt-20">
-                                    <a href="news-details.html">Read More</a>
-                                 </div>
-                              </div>
-                        </div>
-                     </div> -->
                </div>
             </div>
          </div>

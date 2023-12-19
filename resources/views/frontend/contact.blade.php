@@ -13,16 +13,16 @@
                                  <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
                                     <ul>
                                        <li>
-                                          <a href="{{url('/')}}"><span style="color: #fff;">Home</span></a>
+                                          <a href="{{url('/',app()->getLocale())}}"><span style="color: #fff;">Home</span></a>
                                        </li>
                                        <li class="trail-item trail-end">
-                                          <span style="color: #fff;">Contact</span>
+                                          <span style="color: #fff;">{{__('contact')}}</span>
                                        </li>
                                     </ul>
                                  </nav> 
                               </nav>
                             </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">Contact Us</h3>
+                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('contact')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -37,7 +37,7 @@
                      <div class="col-lg-10">
                         <div class="tp-section-wrap">
                            <span><i class="flaticon-grass" style="color: #9d6b34;"></i></span>
-                           <h3 class="tp-section-title" style="color: #9d6b34!important;">If you Have Any Query, Don’t Hesitate Contact with us </h3>
+                           <h3 class="tp-section-title" style="color: #9d6b34!important;">{{__('contact-title')}}</h3>
                         </div>
                      </div>
                   </div>
@@ -50,8 +50,8 @@
                                           <i class="fas fa-map-marker-alt" style="color: #9d6b34;"></i>
                                        </div>
                                        <div class="tp-contact-info-text">
-                                          <h4 class="tp-contact-info-title mb-15">Address</h4>
-                                          <p><a href="#">No.(36), Alanpya Pagoda Road, <br>Mingalar Taung Nyunt Tsp.,<br>Yangon, Myanmar</a></p>
+                                          <h4 class="tp-contact-info-title mb-15">{{__('address')}}</h4>
+                                          <p><a href="#" class="text-dark">{{__('address-no')}} <br>{{__('township')}}<br>{{__('region')}}</a></p>
                                        </div>
                                  </div>
                               </div>
@@ -61,8 +61,8 @@
                                        <i class="fas fa-phone-alt" style="color: #9d6b34;"></i>
                                     </div>
                                     <div class="tp-contact-info-text">
-                                       <h4 class="tp-contact-info-title mb-15">Phone</h4>
-                                       <p><a href="tel:09-888828181">09-888828181</a>
+                                       <h4 class="tp-contact-info-title mb-15">{{__('phone')}}</h4>
+                                       <p><a href="tel:09-888828181" class="text-dark">{{__('no')}}</a>
                                       
                                     </div>
                               </div>
@@ -73,9 +73,9 @@
                                        <i class="fas fa-envelope-open" style="color: #9d6b34;"></i>
                                     </div>
                                     <div class="tp-contact-info-text">
-                                       <h4 class="tp-contact-info-title mb-15">Email</h4>
-                                       <p><a href="mailto:info@themepure.com">info@venue36group.com</a>
-                                       <br> <a href="mailto:info@themepure.com">aungmyatkhaing@venue36group.com</a></p>
+                                       <h4 class="tp-contact-info-title mb-15">{{__('mail-address')}}</h4>
+                                       <p><a href="mailto:info@themepure.com" class="text-dark">info@venue36group.com</a>
+                                       <br> <a href="mailto:info@themepure.com" class="text-dark">aungmyatkhaing@venue36group.com</a></p>
                                     </div>
                                  </div>
                               </div>
@@ -86,23 +86,23 @@
                               <div class="row custom-mar-20">
                                  <div class="col-md-6 custom-pad-20">
                                        <div class="tp-contact-form-field mb-20">
-                                          <input type="text" placeholder="Full name">
+                                          <input type="text" placeholder="{{__('full-name')}}">
                                        </div>
                                  </div>
                                  <div class="col-md-6 custom-pad-20">
                                        <div class="tp-contact-form-field mb-20">
-                                          <input type="email" placeholder="Email Address">
+                                          <input type="email" placeholder="{{__('email-address')}}">
                                        </div>
                                  </div>
                                  <div class="col-md-6 custom-pad-20">
                                        <div class="tp-contact-form-field mb-20">
-                                          <input type="text" placeholder="Phone">
+                                          <input type="text" placeholder="{{__('phone')}}">
                                        </div>
                                  </div>
                                  <div class="col-md-6 custom-pad-20">
                                        <div class="tp-contact-form-field select-field-arrow mb-20">
                                           <select>
-                                             <option value="">Choose Subject</option>
+                                             <option value="">{{__('choose')}}</option>
                                              <option value="">Organic Food</option>
                                              <option value="">Cow Meat</option>
                                              <option value="">Cow Milk</option>
@@ -112,12 +112,12 @@
                                  </div>
                                  <div class="col-md-12 custom-pad-20">
                                        <div class="tp-contact-form-field mb-20">
-                                          <textarea placeholder="Your Message"></textarea>
+                                          <textarea placeholder="{{__('message')}}"></textarea>
                                        </div>
                                  </div>
                                  <div class="col-md-12 custom-pad-20">
                                        <div class="tp-contact-form-field">
-                                          <button type="submit" class="read-btn sumit-btn"><i class="flaticon-enter"></i> Send Message</button>
+                                          <button type="submit" class="read-btn sumit-btn"><i class="flaticon-enter"></i>{{__('send')}}</button>
                                        </div>
                                  </div>
                               </div>
