@@ -18,7 +18,9 @@ class GalleryController extends Controller
     public function index(Request $request)
     {
         if($request->ajax()){
+            
             $gallery = Gallery::query();
+            dd($gallery);
             return DataTables::of($gallery)
             ->editColumn('image',function($each){
                 

@@ -47,7 +47,7 @@
     <script>
         $(document).ready(function(){
         var table = $('#table').DataTable({
-            'serverSide': true,
+            'serverSide': false,
             'processing': true,
             'ajax': {
                 url: '/admin/galleries/',
