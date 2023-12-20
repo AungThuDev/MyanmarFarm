@@ -45,7 +45,7 @@
 @endsection
 @section('script')
     <script>
-        $(document).ready(function(){
+        
         var table = $('#table').DataTable({
             'serverSide': false,
             'processing': true,
@@ -70,7 +70,7 @@
                 }
             ]
         });
-        });
+       
         $(document).on('click', '.delete', function(a) {
             a.preventDefault();
             const id = $(this).data('id');
