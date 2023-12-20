@@ -43,7 +43,7 @@
   </div>
   <!-- /.content-wrapper -->
 @endsection
-@section('script')
+@section('after-script')
     <script>
         $(document).ready(function(){
         var table = $('#table').DataTable({
@@ -55,8 +55,8 @@
 
                 }
             },
-
-            "columns": [{
+            "columns": [
+                {
                 "data": "id"
                 },
                 {
@@ -71,8 +71,6 @@
             ]
         });
         });
-
-
         $(document).on('click', '.delete', function(a) {
             a.preventDefault();
             const id = $(this).data('id');
