@@ -43,7 +43,7 @@
                            <span class="asub-title">- About Myanmar Farm -</span>
                            <h3 class="tp-section-title tp-section-title-h3-d tp-section-title-ab-3" style="color: #9d6b34!important;">{{__('business-summery')}}</h3>
                            <p class="description mb-2" style="color: #000!important;font-size:18px;">{{__('summery-body')}}</p>
-                           <a href="{{asset('assets/img/MyanmarFarm.pdf')}}" class="tp-btn-ab">About MyanmarFarm</a>
+                           <a href="{{asset('assets/img/MyanmarFarm.pdf')}}" class="tp-btn-ab" download="MyanmarFarm">About MyanmarFarm</a>
                         </div>
                         <div class="row no-gutters mt-50">
                            <div class="col-xl-6 col-md-6 col-sm-6 col-12">
