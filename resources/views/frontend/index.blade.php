@@ -270,41 +270,40 @@
          <div class="tp-supporter__area tp-supporter__area-2 pt-110 pb-90">
             <div class="container">
                <div class="tp-section-wrap tp-section-wrap-h3">
-                  <span class="asub-title">- Sponsors</span>
-                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">Happy Sponsors</h3>
+                  <span class="asub-title">- Partners</span>
+                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">Happy Partners</h3>
                </div>
                <div class="row no-gutters mt-50">
                   <div class="col-xl-12">
                      <div class="tp-supporter__slider tp-supporter__slider-2 tp-supporter__slider-active owl-carousel text-center">
+                           
                            <div class="tp-supporter__thumb">
-                              <a href="#"><img src="{{asset('assets/img/supporters/sponsor-1.png')}}" alt="client-1"></a>
+                              <a href=""><img src="{{asset('assets/img/partner-logo/venue36.jpg')}}" width="150" height="150" alt="client-1"></a>
                            </div>
                            <div class="tp-supporter__thumb">
-                              <a href="#"><img src="{{asset('assets/img/supporters/sponsor-2.png')}}" alt="client-1"></a>
+                              <a href=""><img src="{{asset('assets/img/partner-logo/mboss.png')}}" width="150" height="150" alt="client-1"></a>
                            </div>
                            <div class="tp-supporter__thumb">
-                              <a href="#"><img src="{{asset('assets/img/supporters/sponsor-3.png')}}" alt="client-1"></a>
+                              <a href=""><img src="{{asset('assets/img/partner-logo/british.png')}}" width="150" height="150" alt="client-1"></a>
                            </div>
                            <div class="tp-supporter__thumb">
-                              <a href="#"><img src="{{asset('assets/img/supporters/sponsor-4.png')}}" alt="client-1"></a>
+                              <a href=""><img src="{{asset('assets/img/partner-logo/golden.jpg')}}"  width="150" height="150" alt="client-1"></a>
                            </div>
                            <div class="tp-supporter__thumb">
-                              <a href="#"><img src="{{asset('assets/img/supporters/sponsor-5.png')}}" alt="client-1"></a>
-                           </div>
-                           <div class="tp-supporter__thumb">
-                           <a href="#"><img src="{{asset('assets/img/supporters/sponsor-6.png')}}" alt="client-1"></a>
+                           <a href=""><img src="{{asset('assets/img/partner-logo/M.jpg')}}" style="margin-top: 40px;" width="50" height="50" alt="client-1"></a>
                         </div>
                         <div class="tp-supporter__thumb">
-                           <a href="#"><img src="{{asset('assets/img/supporters/sponsor-3.png')}}" alt="client-1"></a>
+                           <a href=""><img src="{{asset('assets/img/partner-logo/magency.jpg')}}" width="150" height="150" alt="client-1"></a>
                         </div>
                         <div class="tp-supporter__thumb">
-                           <a href="#"><img src="{{asset('assets/img/supporters/sponsor-1.png')}}" alt="client-1"></a>
+                           <a href=""><img src="{{asset('assets/img/partner-logo/farm.jpg')}}" width="150" height="150" alt="client-1"></a>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+         
          <!-- client area end -->
 
          <!-- faq-area-start -->

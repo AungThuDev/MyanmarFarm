@@ -74,8 +74,9 @@
                                     </div>
                                     <div class="tp-contact-info-text">
                                        <h4 class="tp-contact-info-title mb-15">{{__('mail-address')}}</h4>
-                                       <p><a href="mailto:info@themepure.com" class="text-dark">info@myanmarfarm.com.mm</a>
-                                      
+                                       <p><a href="mailto:info@themepure.com" class="text-dark">info@myanmarfarm.com.mm</a><br>
+                                       <p><a href="mailto:info@themepure.com" class="text-dark">finance@myanmarfarm.com.mm</a><br>
+                                       <p><a href="mailto:info@themepure.com" class="text-dark">gm@myanmarfarm.com.mm</a>
                                     </div>
                                  </div>
                               </div>
