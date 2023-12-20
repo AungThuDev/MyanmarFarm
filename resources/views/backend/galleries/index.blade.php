@@ -45,6 +45,7 @@
 @endsection
 @section('script')
     <script>
+        $(document).ready(function(){
         var table = $('#table').DataTable({
             'serverSide': true,
             'processing': true,
@@ -68,6 +69,7 @@
                     "data": "action"
                 }
             ]
+        });
         });
 
 
