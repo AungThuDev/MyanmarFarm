@@ -207,7 +207,7 @@ border:none;
                      <div class="col-xl-6 col-lg-6 col-md-8 col-sm-6">
                         <div class="headerinfo">
                            <ul>
-                              <li><a href="mailto:info@webmail.com"><i class="fal fa-envelope"></i>info@venue36group.com</a></li>
+                              <li><a href="mailto:info@webmail.com"><i class="fal fa-envelope"></i>info@myanmarfarm.com.mm</a></li>
                               <li class="d-none d-md-inline-block"><a href="#"><i class="fal fa-map-marker-alt"></i>No.(36), Alanpya Pagoda Road, Yangon, Myanmar</a></li>
                            </ul>
                         </div>
@@ -378,7 +378,7 @@ border:none;
                            <i class="fal fa-envelope"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a href="mailto:@info@venue36group.com">@info@venue36group.com</a>
+                           <a href="mailto:@info@venue36group.com">@info@myanmarfarm.com.mm</a>
                         </div>
                      </li>
                   </ul>

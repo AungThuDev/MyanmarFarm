@@ -42,14 +42,15 @@
                         <div class="tp-section-wrap tp-section-wrap-h3">
                            <span class="asub-title">- About Myanmar Farm -</span>
                            <h3 class="tp-section-title tp-section-title-h3-d tp-section-title-ab-3" style="color: #9d6b34!important;">{{__('business-summery')}}</h3>
-                           <p class="description" style="color: #000!important;">{{__('summery-body')}}</p>
+                           <p class="description mb-2" style="color: #000!important;font-size:18px;">{{__('summery-body')}}</p>
+                           <a href="{{asset('assets/img/MyanmarFarm.pdf')}}" class="tp-btn-ab">About MyanmarFarm</a>
                         </div>
                         <div class="row no-gutters mt-50">
                            <div class="col-xl-6 col-md-6 col-sm-6 col-12">
                               <div class="tp-about-list tp-about-list-2 mt-20">
                                  <div class="tp-about-list-text">
                                     <h5 class="ab-list-title ab-list-title-2">{{__('mission')}}</h5>
-                                    <p style="color: #000!important;">{{__('our-mission')}}</p>
+                                    <p class="description" style="color: #000!important;font-size:18px;">{{__('our-mission')}}</p>
                                  </div>
                               </div>
                            </div>
@@ -57,7 +58,7 @@
                               <div class="tp-about-list  tp-about-list-2 mt-20">
                                  <div class="tp-about-list-text">
                                     <h5 class="ab-list-title ab-list-title-2">{{__('vision')}}</h5>
-                                    <p style="color: #000!important;">{{__('our-vision')}}</p>
+                                    <p class="description" style="color: #000!important;font-size:18px;">{{__('our-vision')}}</p>
                                  </div>
                               </div>
                            </div>
