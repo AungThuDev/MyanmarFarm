@@ -866,11 +866,11 @@ body:not(.modal-open) {
 .main-menu ul li:hover > a {
   color: #fdd062;
 }
-.main-menu ul li:hover > a::before {
+/* .main-menu ul li:hover > a::before {
   width: 100%;
   left: 0;
   right: auto;
-}
+} */
 .main-menu ul li .active {
   color: #fdd062;
 }
@@ -964,7 +964,7 @@ body:not(.modal-open) {
 }
 
 .main-menu-h3 ul li a::before {
-  background: #d1bead;
+  background: transparent;
 }
 
 .main-menu-h3 .sub-menu-h3 li .active {

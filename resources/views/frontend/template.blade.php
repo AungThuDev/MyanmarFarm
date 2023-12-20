@@ -467,6 +467,8 @@ border:none;
                                        <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
                                     </ul> -->
                                  </li>
+                                 <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
+                                 <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
                                  <li><a href="{{route('gallery',app()->getLocale())}}" class="@yield('gallery-active')">{{__('gallery')}}</a></li>
                                  <li><a href="{{route('vacancies',app()->getLocale())}}" class="@yield('vacancy-active')">{{__('vacancy')}}</a></li>
                                  <li><a href="{{route('news',app()->getLocale())}}" class="@yield('blog-active')">{{__('news')}}</a></li>

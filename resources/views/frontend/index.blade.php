@@ -75,6 +75,21 @@
          </div>
             
          </div>
+         <!-- Partnership Summary -->
+         <div class="team-area pt-110 pb-90">
+            <div class="container">
+               <div class="tp-section-wrap tp-section-wrap-h3 text-center">
+                  <span class="asub-title">- Meiktila Cattle Farm Collaborative Livestock Partnership Program: -</span>
+                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">Empowering Livestock Agriculture for Sustainable Socio-Economic Development</h3>
+               </div>
+               <div class="row mt-65">
+                  <h3 class="text-dark">Program Overview:</h3>
+                  <p class="text-dark">At Myanmar Farm, our unwavering commitment to excellence in livestock agriculture is embodied in our Collaborative Livestock Partnership Program, a proven initiative that has flourished since its inception in 2008. Drawing from this rich experience, we proudly present the Meikhtila Cattle Farm Collaborative Livestock Partnership Program.</p>
+                  <span class="asub-title"><a href="{{route('partner',app()->getLocale())}}">Read More&rarr;</a></span>
+               </div>
+            </div>
+         </div>
+         <!-- partnership summary end -->
          <!-- company-features-start -->
          <div class="company-features company-features-2 pt-110 pb-90" data-background="{{asset('assets/img/service/services-bg.png')}}">
             <div class="container">
@@ -160,21 +175,20 @@
          </div>
          <!-- company-features-end -->
 
-         <!-- team-area-start -->
+         <!-- CSR Summary -->
          <div class="team-area pt-110 pb-90">
             <div class="container">
                <div class="tp-section-wrap tp-section-wrap-h3 text-center">
-                  <span class="asub-title">- Executive Summary -</span>
-                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">Executive Summary</h3>
+                  <span class="asub-title">- CSR STRATEGY -</span>
+                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">EXECUTIVE SUMMARY</h3>
                </div>
                <div class="row mt-65">
-                  <p class="text-dark">Myanmar Farm Co., Ltd is an livestock company that exists and operates three farms in Myanmar - Magway Cattle Farm, Meiktila Cattle Farm, and Meiktila Goat Farm. The company has plans to expand the new cattle breeding and farm in Meikhtila region, Mandalay Division, and Myanmar. This new project's main focus is on breeding high-quality cattle and producing dairy products.</p>
-                  <p class="text-dark">To achieve this, Myanmar Farm Co., Ltd is putting emphasis on the reproduction and breeding of cows, using high-genus cattle to breed with cows to obtain good quality cattle. The company also maintains the cows in good health and allows them to graze on pastures. Fodder like dried hay/straw is provided to ensure proper nutrition for the animals.</p>
-                  <p class="text-dark">Moreover, Myanmar Farm Co., Ltd is also planning to develop a recreation park on one of its farms to provide an enjoyable and educational experience for visitors in future. At Myanmar Farm Co., Ltd, we are committed to promoting sustainable and responsi- ble farming practices in order to achieve our vision of being a leading provider of high-quality agricultural products and creating a positive impact on the environment and society.</p>
+                  <p class="text-dark">Recognizing our responsibility to contribute positively to society, Myanmar Farm Co., Ltd has developed a comprehensive CSR strategy that aligns with the United Nations Sustainable Development Goals (SDGs). Our strategic focus encompasses sustainable agricultural practices, community empowerment, and environmental stewardship, reflecting a commitment to fostering enduring social and environmental impact in line with global sustainability objectives. This document outlines our guiding principles, highlights key focus areas, and details the strategies we will employ, harmonizing our efforts with the broader framework of SDGs.</p>
+                  <span class="asub-title"><a href="{{route('csr',app()->getLocale())}}">Read More&rarr;</a></span>
                </div>
             </div>
          </div>
-         <!-- team-area-end -->
+         <!-- CSR summary end -->
 
          <!-- chosse-us-area-start -->
          <div class="chosse-us-area h3-gray-bg pt-120 pb-90">
