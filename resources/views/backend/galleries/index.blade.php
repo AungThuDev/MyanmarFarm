@@ -43,7 +43,7 @@
   </div>
   <!-- /.content-wrapper -->
 @endsection
-@section('after-script')
+@section('script')
     <script>
         $(document).ready(function(){
         var table = $('#table').DataTable({

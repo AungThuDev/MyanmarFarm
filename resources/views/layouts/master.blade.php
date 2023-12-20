@@ -189,6 +189,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
             @endif
         });
     </script>
-  @yield('after-script')
+
 </body>
 </html>
