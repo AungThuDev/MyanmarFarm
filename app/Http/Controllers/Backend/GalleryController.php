@@ -20,7 +20,6 @@ class GalleryController extends Controller
         if($request->ajax()){
             
             $gallery = Gallery::query();
-            dd($gallery);
             return DataTables::of($gallery)
             ->editColumn('image',function($each){
                 

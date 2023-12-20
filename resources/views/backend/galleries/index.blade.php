@@ -45,19 +45,17 @@
 @endsection
 @section('script')
     <script>
-        
         var table = $('#table').DataTable({
             'serverSide': false,
             'processing': true,
             'ajax': {
                 url: '/admin/galleries/',
                 error: function(xhr, testStatus, errorThrown) {
-
                 }
             },
             "columns": [
                 {
-                "data": "id"
+                    "data": "id"
                 },
                 {
                     "data": "name"
@@ -69,8 +67,7 @@
                     "data": "action"
                 }
             ]
-        });
-       
+        });       
         $(document).on('click', '.delete', function(a) {
             a.preventDefault();
             const id = $(this).data('id');
