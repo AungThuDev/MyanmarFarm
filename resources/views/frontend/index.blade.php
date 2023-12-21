@@ -2,9 +2,15 @@
 @section('home-active','active')
 @section('content')
 <main>
+         @if(app()->getLocale() == 'en')
          <div>
             <img src="{{asset('assets/img/cows4.png')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
          </div>
+         @elseif(app()->getLocale() == 'my')
+         <div>
+            <img src="{{asset('assets/img/banner.jpg')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
+         </div>
+         @endif
          <!-- banner-area-end -->
 
          <!-- serivces-cta-start -->
@@ -79,13 +85,13 @@
          <div class="team-area pt-110 pb-90">
             <div class="container">
                <div class="tp-section-wrap tp-section-wrap-h3 text-center">
-                  <span class="asub-title">- Meiktila Cattle Farm Collaborative Livestock Partnership Program: -</span>
-                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">Empowering Livestock Agriculture for Sustainable Socio-Economic Development</h3>
+                  <span class="asub-title">- {{__('partner')}} -</span>
+                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">{{__('empower')}}</h3>
                </div>
                <div class="row mt-65">
-                  <h3 class="text-dark">Program Overview:</h3>
-                  <p class="text-dark" style="text-align: justify;">At Myanmar Farm, our unwavering commitment to excellence in livestock agriculture is embodied in our Collaborative Livestock Partnership Program, a proven initiative that has flourished since its inception in 2008. Drawing from this rich experience, we proudly present the Meikhtila Cattle Farm Collaborative Livestock Partnership Program.</p>
-                  <span class="asub-title"><a href="{{route('partner',app()->getLocale())}}">Read More&rarr;</a></span>
+                  <h3 class="text-dark">{{__('partner-subtitle')}}</h3>
+                  <p class="text-dark" style="text-align: justify;">{{__('partner-body')}}</p>
+                  <span class="asub-title"><a href="{{route('partner',app()->getLocale())}}">{{__('read')}}&rarr;</a></span>
                </div>
             </div>
          </div>
@@ -179,12 +185,12 @@
          <div class="team-area pt-110 pb-90">
             <div class="container">
                <div class="tp-section-wrap tp-section-wrap-h3 text-center">
-                  <span class="asub-title">- CSR STRATEGY -</span>
-                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">CSR STRATEGY</h3>
+                  <span class="asub-title">- {{__('csr')}} -</span>
+                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">{{__('csr')}}</h3>
                </div>
                <div class="row mt-65">
-                  <p class="text-dark" style="text-align: justify;">Recognizing our responsibility to contribute positively to society, Myanmar Farm Co., Ltd has developed a comprehensive CSR strategy that aligns with the United Nations Sustainable Development Goals (SDGs). Our strategic focus encompasses sustainable agricultural practices, community empowerment, and environmental stewardship, reflecting a commitment to fostering enduring social and environmental impact in line with global sustainability objectives. This document outlines our guiding principles, highlights key focus areas, and details the strategies we will employ, harmonizing our efforts with the broader framework of SDGs.</p>
-                  <span class="asub-title"><a href="{{route('csr',app()->getLocale())}}">Read More&rarr;</a></span>
+                  <p class="text-dark" style="text-align: justify;">{{__('csr-body')}}</p>
+                  <span class="asub-title"><a href="{{route('csr',app()->getLocale())}}">{{__('read')}}&rarr;</a></span>
                </div>
             </div>
          </div>

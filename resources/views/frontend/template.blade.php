@@ -414,8 +414,8 @@ border:none;
                <div class="row">
                   <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="footer-widget footer-widget-2 footer-col-1 mb-40">
-                        <h5 class="footer-title-white footer-title mb-35">Conclusion</h5>
-                        <p>Despite the highly competitive nature of the market, Myanmar Farm Co., Ltd can establish a strong foothold by offering high-quality meat and dairy products at competitive prices, and providing breeding and farming services to farmers and businesses.</p>
+                        <h5 class="footer-title-white footer-title mb-35">{{__('conclusion')}}</h5>
+                        <p style="text-align: justify;">{{__('con-body')}}</p>
                         <div class="footer-social-icon-3 footer-social-icon mt-35">
                            <h4 class="social-icon-title">Social Connect</h4>
                            <a href="https://www.facebook.com/MyanmarFarm.2007/"><i class="fab fa-facebook-f"></i></a>
