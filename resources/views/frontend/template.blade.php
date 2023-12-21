@@ -39,19 +39,6 @@
             align-items: center;
          }
 
-
-
-         .en-icon {
-            background-color: #007bff;
-            
-         }
-
-
-
-
-
-
-
 /* Style for select dropdown arrow */
 select::-ms-expand {
     display: none;
@@ -71,7 +58,7 @@ select option:checked {
 
 /* Style for the dropdown menu */
 select option {
-    background-color: red;
+    background-color: black;
     color: #fff;
 }
 
