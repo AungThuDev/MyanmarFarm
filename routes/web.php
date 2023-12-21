@@ -14,16 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Auth::routes([
     'register' => false, // Registration Routes...
     'reset' => false, // Password Reset Routes...
     'verify' => false, // Email Verification Routes...
     'confirm' => false,
 ]);
+Route::redirect('/','/en');
 
-Route::get('/', function () {
-    return view('layouts.master');
-});
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
     Route::get('/',[App\Http\Controllers\Backend\DashboardController::class,'index'])->name('home');
     Route::resource('/blogs',App\Http\Controllers\Backend\BlogController::class);
@@ -31,12 +30,9 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
     Route::resource('/galleries',App\Http\Controllers\Backend\GalleryController::class);
 });
 
+    
     Route::redirect('/','/en');
-
     Route::prefix('/{language}')->group(function(){
-    // Route::get('/',function($language){
-    //     return view('frontend.templage',compact('language'));
-    // });
     Route::get('/',function($language){
         return view('frontend.index',compact('language'));
     });
@@ -51,7 +47,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
         return view('frontend.partner',compact('language'));
     })->name('partner');
     Route::get('/news',function($language){
-        $blogs = Blog::latest()->paginate(2);
+        $blogs = Blog::latest()->paginate(5);
         $popularblogs = Blog::latest()->take(4)->get();
         return view('frontend.blogs.index',compact('popularblogs','blogs','language'));
     })->name('news');

@@ -9,11 +9,11 @@ use Illuminate\Cache\RateLimiting\Limit;
 
 class BlogController extends Controller
 {
-   public function index()
-   {
-        $blogs = Blog::latest()->paginate(2);
-        return view('frontend.blogs.index',compact('blogs'));
-   }
+//    public function index()
+//    {
+//         $blogs = Blog::latest()->paginate(5);
+//         return view('frontend.blogs.index',compact('blogs'));
+//    }
    public function detail($language,$id)
    {
         $blog = Blog::findOrFail($id);
