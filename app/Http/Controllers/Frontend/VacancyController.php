@@ -18,11 +18,14 @@ class VacancyController extends Controller
         $vacancy = Vacancy::findOrFail($id);
         return view('frontend.vacancies.detail',compact('vacancy','language'));
     }
-    public function search($language)
+    public function search(Request $request,$language)
     {
-        $search_text = $_GET['search'];
         
-        $vacancies = Vacancy::where('title','LIKE','%'.$search_text.'%')->get();
-        return view('frontend.vacancies.search-vacancies',compact('vacancies','language'));
+
+
+    $search_text = $request->input('search');
+    
+    $vacancies = Vacancy::where('title', 'LIKE', '%' . $search_text . '%')->get();
+    return view('frontend.vacancies.search-vacancies', compact('vacancies', 'language'));
     }
 }

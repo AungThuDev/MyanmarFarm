@@ -523,7 +523,7 @@ border:none;
       <script src="{{asset('assets/js/main.js')}}"></script>
 
       
-      @yield('extra-js')
+     
 
       <script>
          
@@ -531,39 +531,43 @@ border:none;
             console.log(currentLanguage);
 
             // Set the selected option in the language selector
-            document.getElementById('languageSelector').value = currentLanguage;
+            //document.getElementById('languageSelector').value = currentLanguage;
 
             function changeLanguage(lang) {
         // Get all URL segments after the language segment
-        var pathSegments = window.location.pathname.split('/');
-        var languageIndex = pathSegments.indexOf(currentLanguage);
+               var pathSegments = window.location.pathname.split('/');
+               var languageIndex = pathSegments.indexOf(currentLanguage);
 
-        if (languageIndex !== -1) {
-            // Replace the language with the new language
-            pathSegments[languageIndex] = lang;
+               if (languageIndex !== -1) {
+                  // Replace the language with the new language
+                  pathSegments[languageIndex] = lang;
 
-            // Construct the new URL with the updated language and original URL segments
-            var newUrl = pathSegments.join('/');
-            console.log(newUrl);
+                  // Construct the new URL with the updated language and original URL segments
+                  var newUrl = pathSegments.join('/');
+                  //console.log(newUrl);
 
-            // Append the existing query parameters
-            var queryParams = window.location.search;
-            newUrl += queryParams;
+                  // Append the existing query parameters
+                  var queryParams = window.location.search;
 
-            // Redirect to the new URL
-            window.location.href = newUrl;
-        } else {
-            console.error('Language segment not found in URL.');
-        }
+                  newUrl += queryParams;
+                  console.log(newUrl);
+
+                  // Redirect to the new URL
+                  window.location.href = newUrl;
+                  } else {
+                     console.error('Language segment not found in URL.');
+                  }
     }
     
 
             
         
       </script>
+      @yield('extra-js')
+      
    </body>
    <select id="languageSelector" onchange="changeLanguage(this.value)">
-                              <option value="en" {{ $language === 'en' ? 'selected' : '' }}>English 🇺🇸</option>
-                              <option value="my" {{ $language === 'my' ? 'selected' : '' }}>Myanmar 🇲🇲</option>
-                           </select>
+      <option value="en" {{ $language === 'en' ? 'selected' : '' }}>English 🇺🇸</option>
+      <option value="my" {{ $language === 'my' ? 'selected' : '' }}>Myanmar 🇲🇲</option>
+   </select>
 </html>

@@ -37,7 +37,7 @@
                   <div class="col-lg-12 justify-content-center mb-60">
                      <div class="row height d-flex justify-content-center align-items-center">
                         <div class="col-md-6">
-                           <form action="{{route('search-vacancies',['language'=>app()->getLocale()])}}" class="form">
+                           <form action="{{route('search-vacancies',['language'=>app()->getLocale()])}}" class="form" method="GET">
                               <i class="fa fa-search"></i>
                               <input type="text" name="search" id="search" class="form-control form-input" placeholder="Search anything...">
                               <span class="left-pan"><i class="fa fa-microphone"></i></span>

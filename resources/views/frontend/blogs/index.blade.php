@@ -78,13 +78,13 @@
                                 <div class="widget">
                                     <h6 class="sidebar-title" style="color: #9d6b34;"> Search Here</h6>
                                     <div class="n-sidebar-search">
-                                       <form action="{{route('search-news',app()->getLocale())}}">
+                                       <form action="{{route('search-news',app()->getLocale())}}" method="GET">
                                        <div class="row">
                                           <div class="col-10">
-                                             <input type="text" name="search" placeholder="Search your keyword...">
+                                             <input type="text" id="searchInput" name="search" placeholder="Search your keyword...">
                                           </div>
                                           <div class="col-2" style="margin-left: -22px; ">
-                                             <button class="btn btn-success" style="padding: 17px; background-color: #9d6b34!important;border-color: #9d6b34;"><i class="fal fa-search"></i></button>
+                                             <button type="submit" class="btn btn-success" style="padding: 17px; background-color: #9d6b34!important;border-color: #9d6b34;"><i class="fal fa-search"></i></button>
                                           </div>
                                        </div>
                                        
@@ -136,3 +136,4 @@
       </main>
       
 @endsection
+

@@ -71,28 +71,13 @@
                                 <div class="widget">
                                     <h6 class="sidebar-title" style="color: #9d6b34;"> Search Here</h6>
                                     <div class="n-sidebar-search">
-                                       
-                                    <!-- <form action="#">
-                                    <div class="form-inner">
+                                       <form action="{{route('search-news',app()->getLocale())}}" method="GET">
                                        <div class="row">
                                           <div class="col-10">
-                                             <input type="text" name="search" placeholder="Search Articles here...">
-                                          </div>
-                                          <div class="col-2">
-                                          <button type="submit" ><i class="far fa-search"></i></button>
-                                          </div>
-                                       </div>
-                                       
-                                       
-                                    </div>
-                            </form> -->
-                                       <form action="{{route('search-news',app()->getLocale())}}">
-                                       <div class="row">
-                                          <div class="col-10">
-                                             <input type="text" name="search" placeholder="Search your keyword...">
+                                             <input type="text" id="searchInput" name="search" placeholder="Search your keyword...">
                                           </div>
                                           <div class="col-2" style="margin-left: -22px; ">
-                                             <button class="btn btn-success" style="padding: 17px; background-color: #9d6b34!important;border-color: #9d6b34;"><i class="fal fa-search"></i></button>
+                                             <button type="submit" class="btn btn-success" style="padding: 17px; background-color: #9d6b34!important;border-color: #9d6b34;"><i class="fal fa-search"></i></button>
                                           </div>
                                        </div>
                                        
@@ -143,3 +128,4 @@
 
       </main>
 @endsection
+
