@@ -3,7 +3,7 @@
 @section('content')
 <main>
          <div>
-            <img src="{{asset('assets/img/bg/MyanmarFarm.png')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
+            <img src="{{asset('assets/img/banner.jpg')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
          </div>
          <!-- banner-area-end -->
 
