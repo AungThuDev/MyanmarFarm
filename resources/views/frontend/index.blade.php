@@ -180,7 +180,7 @@
             <div class="container">
                <div class="tp-section-wrap tp-section-wrap-h3 text-center">
                   <span class="asub-title">- CSR STRATEGY -</span>
-                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">EXECUTIVE SUMMARY</h3>
+                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">CSR STRATEGY</h3>
                </div>
                <div class="row mt-65">
                   <p class="text-dark">Recognizing our responsibility to contribute positively to society, Myanmar Farm Co., Ltd has developed a comprehensive CSR strategy that aligns with the United Nations Sustainable Development Goals (SDGs). Our strategic focus encompasses sustainable agricultural practices, community empowerment, and environmental stewardship, reflecting a commitment to fostering enduring social and environmental impact in line with global sustainability objectives. This document outlines our guiding principles, highlights key focus areas, and details the strategies we will employ, harmonizing our efforts with the broader framework of SDGs.</p>
@@ -519,7 +519,7 @@
          <!-- latest-news-area-end -->
  
          <!-- modal-search-start -->
-         <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+         <!-- <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">×</span>
             </button>
@@ -533,7 +533,7 @@
                   </form>
                </div>
             </div>
-         </div>
+         </div> -->
          <!-- modal-search-end -->
 
       </main>
