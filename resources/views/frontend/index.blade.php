@@ -18,7 +18,7 @@
                      </div>
                      <div class="serivces-cta-info">
                         <a href="#" class="client-img"><img src="{{asset('assets/img/client/author.jpg')}}" alt=""></a>
-                        <p><a href="tel:+96635596557"> info@myanmarfarm.com.mm </a> - Yangon/Myanmar</p>
+                        <p><a href="mailto:info@myanmarfarm.com.mm"> info@myanmarfarm.com.mm </a> - Yangon/Myanmar</p>
                      </div>
                   </div>
                   
@@ -41,8 +41,8 @@
                      <div class="tp-about-content tp-about-content-h3">
                         <div class="tp-section-wrap tp-section-wrap-h3">
                            <span class="asub-title">- About Myanmar Farm -</span>
-                           <h3 class="tp-section-title tp-section-title-h3-d tp-section-title-ab-3" style="color: #9d6b34!important;">{{__('business-summery')}}</h3>
-                           <p class="description mb-2" style="color: #000!important;font-size:18px;">{{__('summery-body')}}</p>
+                           <h3 class="tp-section-title tp-section-title-h3-d tp-section-title-ab-3" style="color: #9d6b34!important;text-align:justify;">{{__('business-summery')}}</h3>
+                           <p class="description mb-2" style="color: #000!important;font-size:18px;text-align:justify;">{{__('summery-body')}}</p>
                            <a href="{{asset('assets/img/MyanmarFarm.pdf')}}" class="tp-btn-ab" download="MyanmarFarm">About MyanmarFarm</a>
                         </div>
                         <div class="row no-gutters mt-50">
@@ -50,7 +50,7 @@
                               <div class="tp-about-list tp-about-list-2 mt-20">
                                  <div class="tp-about-list-text">
                                     <h5 class="ab-list-title ab-list-title-2">{{__('mission')}}</h5>
-                                    <p class="description" style="color: #000!important;font-size:18px;">{{__('our-mission')}}</p>
+                                    <p class="description" style="color: #000!important;font-size:18px;text-align:justify;">{{__('our-mission')}}</p>
                                  </div>
                               </div>
                            </div>
@@ -58,7 +58,7 @@
                               <div class="tp-about-list  tp-about-list-2 mt-20">
                                  <div class="tp-about-list-text">
                                     <h5 class="ab-list-title ab-list-title-2">{{__('vision')}}</h5>
-                                    <p class="description" style="color: #000!important;font-size:18px;">{{__('our-vision')}}</p>
+                                    <p class="description" style="color: #000!important;font-size:18px;text-align:justify;">{{__('our-vision')}}</p>
                                  </div>
                               </div>
                            </div>
@@ -84,7 +84,7 @@
                </div>
                <div class="row mt-65">
                   <h3 class="text-dark">Program Overview:</h3>
-                  <p class="text-dark">At Myanmar Farm, our unwavering commitment to excellence in livestock agriculture is embodied in our Collaborative Livestock Partnership Program, a proven initiative that has flourished since its inception in 2008. Drawing from this rich experience, we proudly present the Meikhtila Cattle Farm Collaborative Livestock Partnership Program.</p>
+                  <p class="text-dark" style="text-align: justify;">At Myanmar Farm, our unwavering commitment to excellence in livestock agriculture is embodied in our Collaborative Livestock Partnership Program, a proven initiative that has flourished since its inception in 2008. Drawing from this rich experience, we proudly present the Meikhtila Cattle Farm Collaborative Livestock Partnership Program.</p>
                   <span class="asub-title"><a href="{{route('partner',app()->getLocale())}}">Read More&rarr;</a></span>
                </div>
             </div>
@@ -107,7 +107,7 @@
                               </div>
                               <h5 class="features-item-title-2"><a href="services-details.html">Selling Calves & Cattles:</a></h5>
                               <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;">We sell calves and dairy cows to the local market and also export
+                              <p class="mt-50" style="color: #000!important;text-align: justify;">We sell calves and dairy cows to the local market and also export
                                  cattles to China and Thiland through border trade, providing our customers healthy
                                  and well-bred animals.
                               </p>
@@ -125,7 +125,7 @@
                               </div>
                               <h4 class="features-item-title-2"><a href="services-details.html">Premium Dairy Products:</a></h4>
                               <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;">Our Farm produces high-quality milk and plan to introduce other dairy products such as yogurt and
+                              <p class="mt-50" style="color: #000!important;text-align: justify;">Our Farm produces high-quality milk and plan to introduce other dairy products such as yogurt and
                                  cheese in the future.
                               </p>
                            </div>
@@ -142,7 +142,7 @@
                               </div>
                               <h4 class="features-item-title-2"><a href="services-details.html">Cattle Share Lease:</a></h4>
                               <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;">We offer a revenue-sharing model to operators and businesses looking to improve the quality of
+                              <p class="mt-50" style="color: #000!important;text-align: justify;">We offer a revenue-sharing model to operators and businesses looking to improve the quality of
                                  their cattles stock. Our breeding services cater to clients looking for over a hundred calves. A cattle shares Lease
                                  is one way to reduce an operator's capital needs.
                               </p>
@@ -160,7 +160,7 @@
                               </div>
                               <h4 class="features-item-title-2"><a href="services-details.html">Farm Visits:</a></h4>
                               <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;">Our Farm provides guided tours and educational visits for school groups and other interested parties,
+                              <p class="mt-50" style="color: #000!important;text-align: justify;">Our Farm provides guided tours and educational visits for school groups and other interested parties,
                                  teaching them about sustainable farming practices and animal walfare.
                               </p>
                            </div>
@@ -183,7 +183,7 @@
                   <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">CSR STRATEGY</h3>
                </div>
                <div class="row mt-65">
-                  <p class="text-dark">Recognizing our responsibility to contribute positively to society, Myanmar Farm Co., Ltd has developed a comprehensive CSR strategy that aligns with the United Nations Sustainable Development Goals (SDGs). Our strategic focus encompasses sustainable agricultural practices, community empowerment, and environmental stewardship, reflecting a commitment to fostering enduring social and environmental impact in line with global sustainability objectives. This document outlines our guiding principles, highlights key focus areas, and details the strategies we will employ, harmonizing our efforts with the broader framework of SDGs.</p>
+                  <p class="text-dark" style="text-align: justify;">Recognizing our responsibility to contribute positively to society, Myanmar Farm Co., Ltd has developed a comprehensive CSR strategy that aligns with the United Nations Sustainable Development Goals (SDGs). Our strategic focus encompasses sustainable agricultural practices, community empowerment, and environmental stewardship, reflecting a commitment to fostering enduring social and environmental impact in line with global sustainability objectives. This document outlines our guiding principles, highlights key focus areas, and details the strategies we will employ, harmonizing our efforts with the broader framework of SDGs.</p>
                   <span class="asub-title"><a href="{{route('csr',app()->getLocale())}}">Read More&rarr;</a></span>
                </div>
             </div>

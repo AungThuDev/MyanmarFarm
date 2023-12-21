@@ -24,28 +24,27 @@
       <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
       <style>
          select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: transparent;
-    border: none;
-    padding: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    color: black;
-}
-
-.language-select {
-    display: flex;
-    align-items: center;
-}
-
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: transparent;
+            border: none;
+            padding: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            color: black;
+         }
+         .language-select {
+            display: flex;
+            align-items: center;
+         }
 
 
-.en-icon {
-    background-color: #007bff;
-    color: black;
-}
+
+         .en-icon {
+            background-color: #007bff;
+            
+         }
 
 
 
@@ -67,12 +66,12 @@ select {
 /* Style for the selected option */
 select option:checked {
     background-color: black;
-    color: black;
+    color: white;
 }
 
 /* Style for the dropdown menu */
 select option {
-    background-color: white;
+    background-color: red;
     color: #fff;
 }
 
@@ -207,7 +206,7 @@ border:none;
                      <div class="col-xl-6 col-lg-6 col-md-8 col-sm-6">
                         <div class="headerinfo">
                            <ul>
-                              <li><a href="mailto:info@webmail.com"><i class="fal fa-envelope"></i>info@myanmarfarm.com.mm</a></li>
+                              <li><a href="mailto:info@myanmarfarm.com.mm"><i class="fal fa-envelope"></i>info@myanmarfarm.com.mm</a></li>
                               <li class="d-none d-md-inline-block"><a href="#"><i class="fal fa-map-marker-alt"></i>No.(36), Alanpya Pagoda Road, Yangon, Myanmar</a></li>
                            </ul>
                         </div>

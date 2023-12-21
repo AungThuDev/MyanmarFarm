@@ -74,9 +74,9 @@
                                     </div>
                                     <div class="tp-contact-info-text">
                                        <h4 class="tp-contact-info-title mb-15">{{__('mail-address')}}</h4>
-                                       <p><a href="mailto:info@themepure.com" class="text-dark">info@myanmarfarm.com.mm</a><br>
-                                       <p><a href="mailto:info@themepure.com" class="text-dark">finance@myanmarfarm.com.mm</a><br>
-                                       <p><a href="mailto:info@themepure.com" class="text-dark">gm@myanmarfarm.com.mm</a>
+                                       <p><a href="mailto:info@myanmarfarm.com.mm" class="text-dark">info@myanmarfarm.com.mm</a><br>
+                                       <p><a href="mailto:finance@myanmarfarm.com.mm" class="text-dark">finance@myanmarfarm.com.mm</a><br>
+                                       <p><a href="mailto:gm@myanmarfarm.com.mm" class="text-dark">gm@myanmarfarm.com.mm</a>
                                     </div>
                                  </div>
                               </div>
@@ -136,7 +136,8 @@
                      <div class="col-12">
                            <div class="tp-contact-map">
                               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894612!2d-74.11976383964465!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1636888514620!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.85204436746!2d96.1562828113382!3d16.7840351198382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed933b34c801%3A0x38a4de5f667ee716!2sVenue%2036%20Co.%2C%20Ltd.!5e0!3m2!1sen!2smm!4v1694771853071!5m2!1sen!2smm" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.85204436746!2d96.1562828113382!3d16.7840351198382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed933b34c801%3A0x38a4de5f667ee716!2sVenue%2036%20Co.%2C%20Ltd.!5e0!3m2!1sen!2smm!4v1694771853071!5m2!1sen!2smm" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122203.57331695381!2d96.14458865932639!3d16.83321737865308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e83e1d33c92a86d%3A0x6cdd1581f95f2b98!2sMyanmar%20Farm!5e0!3m2!1sen!2smm!4v1703152532943!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                            </div>
                      </div>
                   </div>

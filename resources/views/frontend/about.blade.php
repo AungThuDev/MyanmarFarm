@@ -43,17 +43,17 @@
                   </div>
                   <div class="col-xl-6 col-lg-6">
                      <div class="about-info">
-                        <p style="color: #000!important;">{{__('para1')}}
+                        <p style="color: #000!important;text-align:justify;">{{__('para1')}}
                         </p>
-                           <p style="color: #000!important;">{{__('para2')}}
+                           <p style="color: #000!important;text-align:justify;">{{__('para2')}}
                         </p>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            {{__('para3')}}
                         </p>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            {{__('para4')}}
                         </p>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            {{(__('para5'))}}
                         </p>
                         <div class="about-button mt-30">
@@ -115,14 +115,14 @@
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-right mb-30">
                         <h4 class="cp-title mb-15">{{__('breeding')}}</h4>
-                        <p style="color: #000!important;">{{__('our-farm')}}
+                        <p style="color: #000!important;text-align:justify;">{{__('our-farm')}}
                         </p>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-left">
                         <h4 class="cp-title mb-15">{{__('sustainability')}}</h4>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            {{__('commited')}}
                         </p>
                      </div>
@@ -132,7 +132,7 @@
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-right mb-30">
                         <h4 class="cp-title mb-15">{{__('recreational')}}</h4>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            {{__('addition')}}
                         </p>
                      </div>
@@ -140,7 +140,7 @@
                   <div class="col-xl-6 col-lg-6">
                      <div class="cp-info-left">
                         <h4 class="cp-title mb-15">{{__('expansion')}}</h4>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            {{__('we-aim')}}
                         </p>
                      </div>
@@ -222,7 +222,7 @@
                         Today, Myanmar Farm Co., Ltd operates three livestock farms and is a major player in the local meat and dairy industry. The company has a strong commitment to quality and animal welfare, which is reflected in its breeding and production practices.
                         The company is constantly seeking to improve and expand its operations, with a particular focus on increasing the quantity and quality of its beef cattle. This has involved investing in high-genus European bulls and implementing best practices in cattle breeding and care.
                      </p>
-                     <p style="color: #000!important;">The company's current status is one of growth and expansion. With a strong track record of success in the livestock industry, Myanmar Farm Co., Ltd is well positioned to capitalize on the growing demand for high-quality meat and dairy products both locally and internationally. The company is committed to sustainability and responsible farm- ing practices, which will help to ensure its long-term success in the industry.</p>
+                     <p style="color: #000!important;text-align:justify;">The company's current status is one of growth and expansion. With a strong track record of success in the livestock industry, Myanmar Farm Co., Ltd is well positioned to capitalize on the growing demand for high-quality meat and dairy products both locally and internationally. The company is committed to sustainability and responsible farm- ing practices, which will help to ensure its long-term success in the industry.</p>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-6">
@@ -246,7 +246,7 @@
                   <div class="col-xl-12 col-lg-12">
                      <div class="cp-info-right mb-30">
                         <h4 class="cp-title mb-15">Board of Directors:</h4>
-                        <p style="color: #000!important;">Our strategic
+                        <p style="color: #000!important;text-align:justify;">Our strategic
                            compass is led by a dynamic Board of
                            Directors, comprising three adept
                            individuals. This visionary team is
@@ -264,7 +264,7 @@
                   <div class="col-xl-12 col-lg-12">
                      <div class="cp-info-right mb-30">
                         <h4 class="cp-title mb-15">Executive Committee:</h4>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            Driving operational efficacy, our Executive
                            Committee stands as the operational
                            backbone of the organization.
@@ -281,7 +281,7 @@
                            role in this comprehensive governance
                            framework.
                         </p>
-                        <p style="color: #000!important;">
+                        <p style="color: #000!important;text-align:justify;">
                            Through this intricate yet streamlined
                            governance architecture, we fortify our
                            commitment to excellence,

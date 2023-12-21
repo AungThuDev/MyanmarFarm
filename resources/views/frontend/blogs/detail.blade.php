@@ -46,7 +46,7 @@
                         <h4 class="news-title mt-60" style="color: #9d6b34;">
                            {{$blog->title}}
                         </h4>
-                        <p class="mt-25 mb-50" style="color: #000!important;">{!! nl2br($blog->body) !!}</p>
+                        <p class="mt-25 mb-50" style="color: #000!important;text-align:justify;">{!! nl2br($blog->body) !!}</p>
                         <a href="{{ url(app()->getLocale() . '/news') }}" class="read-btn">
                               <i class="fal fa-arrow-circle-left"></i> Back
                         </a>
