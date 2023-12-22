@@ -202,7 +202,7 @@ border:none;
                         <div class="soical__icon">
                            <ul>
                               <li><a href="https://www.facebook.com/MyanmarFarm.2007/"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                              <li><a href="https://www.youtube.com/@MyanmarFarm"><i class="fab fa-youtube"></i></a></li>
                               <li><a href="https://www.linkedin.com/company/myanmarfarm/"><i class="fab fa-linkedin"></i></a></li>
                            </ul>
                         </div>
@@ -370,7 +370,7 @@ border:none;
                <div class="sidebar__social sidebar__social-3">
                   <ul>
                      <li><a href="https://www.facebook.com/MyanmarFarm.2007/"><i class="fab fa-facebook-f"></i></a></li>
-                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                     <li><a href="https://www.youtube.com/@MyanmarFarm"><i class="fab fa-youtube"></i></a></li>
                      <li><a href="https://www.linkedin.com/company/myanmarfarm/"><i class="fab fa-linkedin"></i></a></li>
                   </ul>
                </div>
@@ -420,7 +420,7 @@ border:none;
                            <h4 class="social-icon-title">Social Connect</h4>
                            <a href="https://www.facebook.com/MyanmarFarm.2007/"><i class="fab fa-facebook-f"></i></a>
                           
-                           <a href=""><i class="fab fa-youtube"></i></a>
+                           <a href="https://www.youtube.com/@MyanmarFarm"><i class="fab fa-youtube"></i></a>
                            <a href="https://www.linkedin.com/company/myanmarfarm/"><i class="fab fa-linkedin"></i></a>
                         </div>
                       </div>

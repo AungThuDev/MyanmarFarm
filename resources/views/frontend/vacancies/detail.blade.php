@@ -69,19 +69,20 @@
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
                         <i class="fas fa-phone-alt" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title">Job Title <br> {{$vacancy->phone}}</h6>
+                           <h6 class="icon-box-title">Phone No. <br> {{$vacancy->phone}}</h6>
                         </div>
                      </div>
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
                            <i class="far fa-envelope-open" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title" style="font-size: 20px;">Job Type <br>{{$vacancy->email}}</h6>
+                           <!-- <h6 class="icon-box-title" style="font-size: 20px;">Email Address <br>{{$vacancy->email}}</h6> -->
+                           <a href="mailto:{{$vacancy->email}}" class="icon-box-title" style="font-size: 20px;">Email Address <br>{{$vacancy->email}}</a>
                         </div>
                      </div>
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
                            <i class="fas fa-map-marker-alt" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title">Working Hours <br>{{$vacancy->working_hours}}</h6>
+                           <h6 class="icon-box-title"> Address <br>{{$vacancy->address}}</h6>
                         </div>
                      </div>
                   </div>

@@ -8,7 +8,7 @@
          </div>
          @elseif(app()->getLocale() == 'my')
          <div>
-            <img src="{{asset('assets/img/banner.jpg')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
+            <img src="{{asset('assets/img/cows_myanmar.png')}}" style="width: 100%;background-repeat: no-repeat; background-size: cover;" alt="" class="img-fluid">
          </div>
          @endif
          <!-- banner-area-end -->
