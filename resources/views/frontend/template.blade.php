@@ -220,6 +220,7 @@ border:none;
                                  <li><a href="{{url('/',app()->getLocale())}}" class="@yield('home-active')">{{__('home')}}</a></li>
                                  <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about')}}</a>
                                     <ul class="sub-menu-h1 sub-menu">
+                                       <li><a href="{{route('business',app()->getLocale())}}">{{__('our-business')}}</a></li>
                                        <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
                                        <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
                                     </ul>
@@ -430,10 +431,10 @@ border:none;
                         <h5 class="footer-sm-title footer-title-h3 footer-title mb-30">{{__('service')}}</h5>
                         <div class="footer-menu footer-menu-3">
                            <ul>
-                               <li><a href="">Selling Calves & Cattles</a></li>
-                               <li><a href="">Premium Dairy Products</a></li>
-                               <li><a href="">Cattle Share Lease</a></li>
-                               <li><a href="">Farm Visits</a></li>
+                               <li><a href="">{{__('sell')}}</a></li>
+                               <li><a href="">{{__('dairy')}}</a></li>
+                               <li><a href="">{{__('cattle')}}</a></li>
+                               <li><a href="">{{__('farm')}}</a></li>
                            </ul>
                         </div>
                      </div>

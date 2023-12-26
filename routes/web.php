@@ -46,6 +46,9 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
     Route::get('/partnership-programme',function($language){
         return view('frontend.partner',compact('language'));
     })->name('partner');
+    Route::get('/our-business',function($language){
+        return view('frontend.business',compact('language'));
+    })->name('business');
     Route::get('/news',function($language){
         $blogs = Blog::latest()->paginate(5);
         $popularblogs = Blog::latest()->take(4)->get();
