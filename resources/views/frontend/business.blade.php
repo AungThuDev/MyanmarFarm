@@ -37,7 +37,7 @@
                   <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">{{__('cultivate')}}</h3>
                </div>
                <div class="row mt-65">
-                  <p class="text-dark">{{__('cultivate-body')}}</p>
+                  <p class="text-dark" style="text-align:justify;">{{__('cultivate-body')}}</p>
                </div>
             </div>
          </div>
@@ -72,7 +72,7 @@
                   <h5 class="tp-section-title tp-section-title-h3-d"  style="font-weight:900;font-size:20px;color:#9d6b34!important;">{{__('embrassing')}}</h5>
                </div>
                <div class="row mt-10">
-                  <p class="text-dark">{{__('embrassing-body')}}</p>
+                  <p class="text-dark" style="text-align: justify;">{{__('embrassing-body')}}</p>
                </div>
             </div>
          </div>
@@ -83,7 +83,7 @@
                   <h5 class="tp-section-title tp-section-title-h3-d"  style="font-weight:900;font-size:20px;color:#9d6b34!important;">{{__('innovation')}}</h5>
                </div>
                <div class="row mt-10">
-                  <p class="text-dark">{{__('innovation-body')}}</p>
+                  <p class="text-dark" style="text-align: justify;">{{__('innovation-body')}}</p>
                </div>
             </div>
          </div>
@@ -103,7 +103,7 @@
                   <h5 class="tp-section-title tp-section-title-h3-d"  style="font-weight:900;font-size:20px;color:#9d6b34!important;">{{__('future')}}</h5>
                </div>
                <div class="row mt-10">
-                  <p class="text-dark">{{__('future-body')}}</p>
+                  <p class="text-dark" style="text-align: justify;">{{__('future-body')}}</p>
                </div>
             </div>
          </div>
@@ -113,7 +113,7 @@
                   <h5 class="tp-section-title tp-section-title-h3-d"  style="font-weight:900;font-size:20px;color:#9d6b34!important;">{{__('strategic')}}</h5>
                </div>
                <div class="row mt-10">
-                  <p class="text-dark">{{__('strategic-body')}}</p>
+                  <p class="text-dark" style="text-align: justify;">{{__('strategic-body')}}</p>
                </div>
             </div>
          </div>
