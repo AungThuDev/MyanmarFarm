@@ -38,7 +38,7 @@
         </div>
         <div class="row mt-65">
             <h3 class="text-dark mb-3">{{__('partner-subtitle')}}</h3>
-            <p class="text-dark">{{__('partner-body')}}</p>
+            <p class="text-dark" style="text-align: justify;">{{__('partner-body')}}</p>
         </div>
     </div>
 </div>
@@ -205,7 +205,7 @@
             <h5 class="tp-section-title tp-section-title-h3-d" style="font-weight:900;font-size:20px;color:#9d6b34!important;">{{__('conclusion')}}</h5>
         </div>
         <div class="row mt-10">
-            <p class="text-dark">{{__('conclusion-body')}}</p>
+            <p class="text-dark" style="text-align: justify;">{{__('conclusion-body')}}</p>
         </div>
     </div>
 </div>

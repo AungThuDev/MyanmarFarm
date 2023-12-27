@@ -213,18 +213,19 @@ border:none;
             <div class="header__area__menu bg-white" id="header-sticky">
                <div class="container-fluid" style="margin-left: 30px;">
                   <div class="row align-items-center">
+                     @if(app()->getLocale() == 'en')
                      <div class="col-xl-6 col-lg-6">
                         <div class="main-menu-h3 main-menu">
                            <nav id="mobile-menu">
                               <ul>
                                  <li><a href="{{url('/',app()->getLocale())}}" class="@yield('home-active')">{{__('home')}}</a></li>
-                                 <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about')}}</a>
+                                 <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about-us')}}</a>
                                     <ul class="sub-menu-h1 sub-menu">
-                                       <li><a href="{{route('business',app()->getLocale())}}">{{__('our-business')}}</a></li>
                                        <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
                                        <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
                                     </ul>
                                  </li>
+                                 <li><a href="{{route('business',app()->getLocale())}}" class="@yield('business')">{{__('our-business')}}</a></li>
                                  <li><a href="{{route('gallery',app()->getLocale())}}" class="@yield('gallery-active')">{{__('gallery')}}</a></li>
                                  
                                  <li><a href="{{route('vacancies',app()->getLocale())}}" class="@yield('vacancy-active')">{{__('vacancy')}}</a></li>
@@ -240,8 +241,6 @@ border:none;
                         </div>
                      </div>
                      <div class="col-xl-5 col-lg-5 col-6">
-                        
-                        
                         <div class="row">
                            <div class="col-lg-9">
                            <div class="side-menu-icon d-lg-none text-end" style="margin-right: 40px;">
@@ -260,6 +259,41 @@ border:none;
                         </div>
                   </select>
                      </div>
+                     @elseif(app()->getLocale() == 'my')
+                     <div class="col-xl-10 col-lg-10">
+                        <div class="main-menu-h3 main-menu">
+                           <nav id="mobile-menu">
+                              <ul>
+                                 <li><a href="{{url('/',app()->getLocale())}}" class="@yield('home-active')">{{__('home')}}</a></li>
+                                 <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about-us')}}</a>
+                                    <ul class="sub-menu-h1 sub-menu">
+                                       <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
+                                       <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
+                                    </ul>
+                                 </li>
+                                 <li><a href="{{route('business',app()->getLocale())}}" class="@yield('business')">{{__('our-business')}}</a></li>
+                                 <li><a href="{{route('gallery',app()->getLocale())}}" class="@yield('gallery-active')">{{__('gallery')}}</a></li>
+                                 
+                                 <li><a href="{{route('vacancies',app()->getLocale())}}" class="@yield('vacancy-active')">{{__('vacancy')}}</a></li>
+                                 <li><a href="{{route('news',app()->getLocale())}}" class="@yield('blog-active')">{{__('news')}}</a></li>
+                                 <li><a href="{{route('contact',app()->getLocale())}}" class="@yield('contact-active')">{{__('contact')}}</a></li>  
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-2 col-6">
+                        <div class="logo">
+                           <a href=""><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt=""></a>
+                        </div>
+                     </div>
+                     <div class="col-xl-0 col-lg-0 col-6">
+                        <div class="row">
+                           <div class="col-lg-9">
+                           <div class="side-menu-icon d-lg-none text-end" style="margin-right: 40px;">
+                           <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn" ><i class="fal fa-bars" style="color: #9d6b34!important;"></i></a>
+                        </div>
+                     </div>
+                     @endif
                   </div>
                </div>
             </div>
@@ -415,7 +449,7 @@ border:none;
                <div class="row">
                   <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="footer-widget footer-widget-2 footer-col-1 mb-40">
-                        <h5 class="footer-title-white footer-title mb-35">{{__('conclusion')}}</h5>
+                        <!-- <h5 class="footer-title-white footer-title mb-35">{{__('conclusion')}}</h5> -->
                         <p style="text-align: justify;">{{__('con-body')}}</p>
                         <div class="footer-social-icon-3 footer-social-icon mt-35">
                            <h4 class="social-icon-title">Social Connect</h4>

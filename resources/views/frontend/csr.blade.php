@@ -37,7 +37,7 @@
                   <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">{{__('csr')}}</h3>
                </div>
                <div class="row mt-65">
-                  <p class="text-dark">{{__('csr-body')}}</p>
+                  <p class="text-dark" style="text-align: justify;">{{__('csr-body')}}</p>
                </div>
             </div>
          </div>
@@ -182,7 +182,7 @@
                   <h5 class="tp-section-title tp-section-title-h3-d"  style="font-weight:900;font-size:20px;color:#9d6b34!important;">{{__('MONITORING')}}</h5>
                </div>
                <div class="row mt-10">
-                  <p class="text-dark">{{__('Regular')}}</p>
+                  <p class="text-dark" style="text-align: justify;">{{__('Regular')}}</p>
                </div>
             </div>
          </div>
@@ -192,7 +192,7 @@
                   <h5 class="tp-section-title tp-section-title-h3-d"  style="font-weight:900;font-size:20px;color:#9d6b34!important;">{{__('COLLABORATION')}}</h5>
                </div>
                <div class="row mt-10">
-                  <p class="text-dark">{{__('we')}}</p>
+                  <p class="text-dark" style="text-align: justify;">{{__('we')}}</p>
                </div>
             </div>
          </div>

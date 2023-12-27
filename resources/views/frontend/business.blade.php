@@ -1,5 +1,5 @@
 @extends('frontend.template')
-@section('about-active','active')
+@section('business','active')
 @section('content')
     <!-- page__title -start -->
     <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-135" data-background="{{asset('assets/img/beefcattle3.jpg')}}" class="img-fluid" style="background-repeat: no-repeat; background-size:cover;">

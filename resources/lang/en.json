@@ -5,7 +5,7 @@
     "about" : "About",
     "gallery" : "Gallery",
     "vacancy" : "Careers",
-    "news" : "News",
+    "news" : "News & Articles",
     "blog" : "Blog Insights",
     "contant" : "Contact",
     "phone" : "Phone Number",
@@ -157,8 +157,10 @@
     "future" : "A VISION FOR THE FUTURE:",
     "future-body" : "Since the inception of Myanmar Farm Business Group, our vision has been rooted in sustainability. We are dedicated to emerging as a premier supplier of certified, high-quality premium livestock products, guided by principles of ethical animal treatment and innovative farming practices. Our industry leadership is not just about business; it's about being responsible and forward-thinking. We aim to create a positive impact on both society and the environment through our conscientious and visionary apprach.",
     "strategic" : "STRATEGIC EXPANSION FOR SUSTAINABLE GROWTH",
-    "strategic-body" : "In the pursuit of sustained and strategic growth, Myanmar Farm is charting a course for expansion across two pivotal regions in Myanmar—Mandalay and Magway. This ambitious direction, initiated in late 2023, signifies a significant step toward continual growth. At the heart of this expansion lies a dedicated focus on high-quality breeding and meat production, particularly in beef and goat meat, marking a crucial milestone for our conglomerate. This expansion is a testament to our commitment to meeting the evolving market demands, especially in the realm of lamb and related products."
-
+    "strategic-body" : "In the pursuit of sustained and strategic growth, Myanmar Farm is charting a course for expansion across two pivotal regions in Myanmar—Mandalay and Magway. This ambitious direction, initiated in late 2023, signifies a significant step toward continual growth. At the heart of this expansion lies a dedicated focus on high-quality breeding and meat production, particularly in beef and goat meat, marking a crucial milestone for our conglomerate. This expansion is a testament to our commitment to meeting the evolving market demands, especially in the realm of lamb and related products.",
+    "agriculture" : "We would like to invite those who love agriculture and believe in the importance of the agriculture sector in improving the quality of life through agriculture.",
+    "job" : "To find a job",
+    "search" : "Job Search Section"
 }
 
 

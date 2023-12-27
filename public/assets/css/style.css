@@ -7965,4 +7965,63 @@ p.checkout-coupon input[type=text]::placeholder {
   color: #9d6b34;
 }
 
+
+@media(max-width:375px)
+{
+  #service{
+    height: 50vh!important;
+  }
+  #service-sell{
+    height: 45vh!important;
+  }
+  #service-dairy{
+    height: 40vh!important;
+  }
+}
+@media(max-width:414px)
+{
+  #service{
+    height: 40vh!important;
+  }
+  
+}
+@media(max-width:360px)
+{
+  #service{
+    height: 48vh!important;
+  }
+  
+}
+@media(max-width:540px)
+{
+  #service{
+    height: 48vh!important;
+  }
+  
+}
+@media(max-width:1024px)
+{
+  #service{
+    height: 52vh!important;
+  }
+  #service-sell{
+    height: 45vh!important;
+  }
+  #service-dairy{
+    height: 45vh!important;
+  }
+}
+@media(max-width:280px)
+{
+  #service{
+    height: 62vh!important;
+  }
+  #service-sell{
+    height: 62vh!important;
+  }
+  #service-dairy{
+    height: 55vh!important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

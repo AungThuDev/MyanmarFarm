@@ -105,15 +105,15 @@
                </div>
                <div class="company-features-list mt-100">
                   <div class="row">
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-80">
-                        <div class="company-features-item company-features-item-2 mb-30">
-                           <div class="features-item features-item-2 text-center" style="height: 35vh;">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-30">
+                        <div class="company-features-item company-features-item-2 mb-50">
+                           <div class="features-item features-item-2 text-center" id="service-sell" style="height: 35vh;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/cow.png')}}" alt="">
                               </div>
                               <h5 class="features-item-title-2"><a href="services-details.html">Selling Calves & Cattles:</a></h5>
-                              <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;text-align: justify;">We sell calves and dairy cows to the local market and also export
+                              
+                              <p class="mt-30" style="color: #000!important;text-align: justify;">We sell calves and dairy cows to the local market and also export
                                  cattles to China and Thiland through border trade, providing our customers healthy
                                  and well-bred animals.
                               </p>
@@ -124,14 +124,14 @@
                         </div>
                      </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="company-features-item company-features-item-2 mb-30">
-                           <div class="features-item features-item-2 text-center" style="height: 35vh;">
+                        <div class="company-features-item company-features-item-2 mb-50">
+                           <div class="features-item features-item-2 text-center" id="service-dairy" style="height: 35vh;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/product.png')}}" alt="">
                               </div>
                               <h4 class="features-item-title-2"><a href="services-details.html">Premium Dairy Products:</a></h4>
-                              <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;text-align: justify;">Our Farm produces high-quality milk and plan to introduce other dairy products such as yogurt and
+                             
+                              <p class="mt-30" style="color: #000!important;text-align: justify;">Our Farm produces high-quality milk and plan to introduce other dairy products such as yogurt and
                                  cheese in the future.
                               </p>
                            </div>
@@ -141,14 +141,14 @@
                         </div>
                      </div>
                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="company-features-item company-features-item-2 mb-30">
-                           <div class="features-item features-item-2 text-center" style="height: 35vh;">
+                        <div class="company-features-item company-features-item-2 mb-50">
+                           <div class="features-item features-item-2 text-center" id="service" style="height: 35vh;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/shake.png')}}" alt="">
                               </div>
                               <h4 class="features-item-title-2"><a href="services-details.html">Cattle Share Lease:</a></h4>
-                              <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;text-align: justify;">We offer a revenue-sharing model to operators and businesses looking to improve the quality of
+                             
+                              <p class="mt-30" style="color: #000!important;text-align: justify;">We offer a revenue-sharing model to operators and businesses looking to improve the quality of
                                  their cattles stock. Our breeding services cater to clients looking for over a hundred calves. A cattle shares Lease
                                  is one way to reduce an operator's capital needs.
                               </p>
@@ -159,14 +159,14 @@
                         </div>
                      </div>
                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="company-features-item company-features-item-2 mb-30">
-                           <div class="features-item features-item-2 text-center" style="height: 35vh;">
+                        <div class="company-features-item company-features-item-2 mb-50">
+                           <div class="features-item features-item-2 text-center" id="service" style="height: 35vh;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/children.png')}}" alt="">
                               </div>
                               <h4 class="features-item-title-2"><a href="services-details.html">Farm Visits:</a></h4>
-                              <span class="features-item-title-border"></span>
-                              <p class="mt-50" style="color: #000!important;text-align: justify;">Our Farm provides guided tours and educational visits for school groups and other interested parties,
+                              
+                              <p class="mt-30" style="color: #000!important;text-align: justify;">Our Farm provides guided tours and educational visits for school groups and other interested parties,
                                  teaching them about sustainable farming practices and animal walfare.
                               </p>
                            </div>
@@ -541,6 +541,20 @@
             </div>
          </div> -->
          <!-- modal-search-end -->
+         <!-- to find a job -->
+         <!-- CSR Summary -->
+         <div class="team-area pt-110 pb-90">
+            <div class="container">
+               <div class="tp-section-wrap tp-section-wrap-h3 text-center">
+                  <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">{{__('search')}}</h3>
+               </div>
+               <div class="row mt-65">
+                  <p class="text-dark" style="text-align: justify;">{{__('agriculture')}}</p>
+                  <span class="asub-title"><a href="{{route('vacancies',app()->getLocale())}}">{{__('job')}}&rarr;</a></span>
+               </div>
+            </div>
+         </div>
+         <!-- CSR summary end -->
 
       </main>
 @endsection
