@@ -48,7 +48,8 @@
     <div class="container">
         <div class="chosse-video">
             <div class="chosse-video-bg position-relative">
-                <img src="{{asset('assets/img/20.png')}}" alt="">
+                <img src="{{asset('assets/img/20.png')}}" alt="Cultivating Change - Myanmar Farm Initiatives">
+                
                 <!-- <a href="https://www.youtube.com/watch?v=L4CpMr5BNls" class="play-icon play-icon-ab popup-video"><i class="fas fa-play"></i></a> -->
             </div>
         </div>

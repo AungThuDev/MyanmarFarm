@@ -36,15 +36,9 @@
                <div class="row">
 
                   @forelse($galleries as $gallery)
-                  
-                     <!-- <div class="gallery-item mb-30">
-                        <img src="{{ asset('storage/gallery/' . $gallery->image) }}" alt="" class="img-fluid">
-                        
-                     </div> -->
-                  
                   <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                      <div class="card mb-30" style="width: 25rem;">
-                        <img src="{{asset('storage/gallery/' . $gallery->image)}}" width="250px" height="240px" class="card-img-top" alt="...">
+                        <img src="{{asset('storage/gallery/' . $gallery->image)}}" width="250px" height="240px" class="card-img-top" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                         <div class="card-body">
                            <p class="card-text text-dark">{{$gallery->name}}</p>
                         </div>

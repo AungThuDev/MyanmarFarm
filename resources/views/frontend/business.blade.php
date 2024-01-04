@@ -47,7 +47,7 @@
             <div class="container">
                <div class="chosse-video">
                   <div class="chosse-video-bg position-relative">
-                     <img src="{{asset('assets/img/4.png')}}" alt="">
+                     <img src="{{asset('assets/img/4.png')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                      <!-- <a href="https://www.youtube.com/watch?v=L4CpMr5BNls" class="play-icon play-icon-ab popup-video"><i class="fas fa-play"></i></a> -->
                   </div>
                </div>
@@ -91,7 +91,7 @@
             <div class="container">
                <div class="chosse-video">
                   <div class="chosse-video-bg position-relative">
-                     <img src="{{asset('assets/img/9.png')}}" alt="">
+                     <img src="{{asset('assets/img/9.png')}}" alt= "Harmonious Livestock Grazing in Our Sustainable Farm">
                      <!-- <a href="https://www.youtube.com/watch?v=L4CpMr5BNls" class="play-icon play-icon-ab popup-video"><i class="fas fa-play"></i></a> -->
                   </div>
                </div>
@@ -127,13 +127,13 @@
             <div class="row">
                <div class="col-xl-6 col-lg-6">
                   <div class="text-center">
-                     <img src="{{asset('assets/img/location1.jpg')}}" style="width:750px;height: 420px;" alt="" class="img-fluid mb-2">
+                     <img src="{{asset('assets/img/location1.jpg')}}" style="width:750px;height: 420px;" alt="Empowering Communities - Impactful Agricultural Programs" class="img-fluid mb-2">
                      <h6 style="font-weight: 900;">Location : Latitude:20.697663,Longitude: 95.792921</h6>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="text-center">
-                     <img src="{{asset('assets/img/location2.jpg')}}" style="width:750px;height: 418px;" alt="" class="img-fluid mb-2">
+                     <img src="{{asset('assets/img/location2.jpg')}}" style="width:750px;height: 418px;" alt="Cultivating Change - Myanmar Farm Initiatives" class="img-fluid mb-2">
                      <h6 style="font-weight: 900;">Location : Latitude:20.728874,Longitude: 95.781719</h6>
                   </div>
                </div>

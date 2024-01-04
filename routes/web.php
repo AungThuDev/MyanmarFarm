@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes([
-    'register' => false, // Registration Routes...
+     // Registration Routes...
     'reset' => false, // Password Reset Routes...
     'verify' => false, // Email Verification Routes...
     'confirm' => false,
@@ -50,7 +50,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
         return view('frontend.business',compact('language'));
     })->name('business');
     Route::get('/news',function($language){
-        $blogs = Blog::latest()->paginate(5);
+        $blogs = Blog::latest()->paginate(9);
         $popularblogs = Blog::latest()->take(4)->get();
         return view('frontend.blogs.index',compact('popularblogs','blogs','language'));
     })->name('news');

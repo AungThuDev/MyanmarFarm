@@ -2,130 +2,61 @@
 @section('blog-active','active')
 @section('content')
 <main>
-         <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
-            <div class="container">
-                  <div class="row">
-                     <div class="col-xl-12">
-                        <div class="page__title-content text-center">
-                            <div class="page_title__bread-crumb">
-                              <nav aria-label="breadcrumb">
-                                 <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
-                                    <ul>
-                                       <li>
-                                          <a href="{{url('/',app()->getLocale())}}"><span>{{__('home')}}</span></a>
-                                       </li>
-                                       <li class="trail-item trail-end">
-                                          <span style="color: #fdd062;">{{__('news')}}</span>
-                                       </li>
-                                    </ul>
-                                 </nav> 
-                              </nav>
-                            </div>
-                            <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062;">{{__('news')}}</h3>
-                        </div>
-                     </div>
-                  </div>
-            </div>
-         </div>
-         <!-- page__title -end -->
-
-         <!-- news-detalis-area-start -->
-         <div class="news-detalis-area mt-120 mb-65">
-            <div class="container">
-               <div class="row">
-                  
-                  <div class="col-xl-8 col-lg-8">
-                  @forelse($blogs as $blog)
-                     <div class="single-news mb-55">
-                        <div class="news-thumb">
-                           <a href=""><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="850" height="450" alt="blog" class="img-fluid"></a>
-                        </div>
-                        <div class="news-detalis-content news-detalis-content-2">
-                           <ul class="blog-meta mb-20">
-                              <li><i class="fal fa-calendar-alt"></i>{{$blog->created_at}}</li>
+   <!-- page__title -start -->
+   <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-12">
+               <div class="page__title-content text-center">
+                  <div class="page_title__bread-crumb">
+                     <nav aria-label="breadcrumb">
+                        <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
+                           <ul>
+                              <li>
+                                 <a href="{{url('/',app()->getLocale())}}"><span>{{__('home')}}</span></a>
+                              </li>
+                              <li class="trail-item trail-end">
+                                 <span style="color: #fdd062;">{{__('news')}}</span>
+                              </li>
                            </ul>
-                           <h4 class="news-title mt-20 mb-20" style="color: #9d6b34;">
-                              <a href="">{{$blog->title}}</a>
-                           </h4>
-                           <p style="color: #000!important;">
-                                {{ substr($blog->body, 0, 300) }}...
-                           </p>
-                           <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}" class="read-btn">
-                              <i class="fal fa-arrow-circle-right"></i> Read More
-                           </a>    
-                        </div>
-                     </div>
-                     @empty
-                     <div class="single-news mb-55">
-                           <h3 class="d-flex justify-content-center" style="color: #9d6b34!important;">No Posts Found.....</h3>
-                        </div>
-                     @endforelse
-                     
+                        </nav>
+                     </nav>
                   </div>
-                  
-                  <div class="col-xl-4 col-lg-4">
-                     <div class="news-sidebar pl-10">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="widget">
-                                    <h6 class="sidebar-title" style="color: #9d6b34;"> Search Here</h6>
-                                    <div class="n-sidebar-search">
-                                       <form action="{{route('search-news',app()->getLocale())}}" method="GET">
-                                       <div class="row">
-                                          <div class="col-10">
-                                             <input type="text" id="searchInput" name="search" placeholder="Search your keyword...">
-                                          </div>
-                                          <div class="col-2" style="margin-left: -22px; ">
-                                             <button type="submit" class="btn btn-success" style="padding: 17px; background-color: #9d6b34!important;border-color: #9d6b34;"><i class="fal fa-search"></i></button>
-                                          </div>
-                                       </div>
-                                       
-                                        
-                                       </form>
-                                        
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                              <div class="widget">
-                                 <h6 class="sidebar-title" style="color: #9d6b34;">Popular Feeds</h6>
-                                 <div class="n-sidebar-feed">
-                                    <ul>
-                                 @if(count($blogs)>0)
-                                          @foreach($popularblogs as $blog)
-                                          <li>
-                                             <div class="feed-number">
-                                                   <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="288" height="" alt=""></a>
-                                             </div>
-                                             <div class="feed-content">
-                                                   <h6><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a></h6>
-                                                   <span class="feed-date">
-                                                      <i class="fal fa-calendar-alt"></i> {{$blog->created_at}}
-                                                   </span>
-                                             </div>
-                                             @endforeach
-                                             @else
-                                             <h6 class="d-flex justify-content-center" style="color: #9d6b34!important;">No Popular Feeds.....</h6>
-                                             @endif
-                                          </li>
-                                          
-                                          
-                                       </ul>
-                                 </div>
-                              </div>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                  </div>
+                  <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fdd062;">{{__('news')}}</h3>
                </div>
             </div>
          </div>
-         <!-- news-detalis-area-end  -->
+      </div>
+   </div>
+   <!-- page__title -end -->
 
-      </main>
+   <!-- news-detalis-area-start -->
+   <div class="news-detalis-area mt-120 mb-65">
+      <div class="container">
+         <div class="col-lg-12 justify-content-center mb-60">
+            <div class="row height d-flex justify-content-center align-items-center">
+               <div class="col-md-6">
+                  <form action="{{route('search-news',['language'=>app()->getLocale()])}}" class="form" method="GET">
+                     <i class="fa fa-search"></i>
+                     <input type="text" name="search" id="search" class="form-control form-input" placeholder="Search anything...">
+                     <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                  </form>
+               </div>
+            </div>
+         </div>
+         @foreach($blogs as $blog)
+         <div class="col-lg-4 col-md-6 c2 c3 c4 c5">
+            <div class="project-img mb-70">
+               <div class="inner-img"><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ asset('storage/blogs/' . $blog->image) }}" style="width:420px;height:270px;" alt="Cultivating Change - Myanmar Farm Initiatives" class="fluid"></a></div>
+               <div class="project-img-content">
+                  <h4 class="project-sm-title" style="color:#9d6b34;font-size: 15px!important;font-weight:900;"><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a></h4>
+               </div>
+            </div>
+         </div>
+         @endforeach
+      </div>
+   </div>
+   <!-- news-detalis-area-end  -->
+
+</main>
 @endsection
-

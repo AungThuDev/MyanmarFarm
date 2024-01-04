@@ -36,8 +36,7 @@
                <div class="row">
                   <div class="col-xl-10 col-lg-10 col-md-10">
                      <div class="project-details-image">
-                        <img src="{{asset('assets/img/project/job.jpeg')}}" width="1105" height="570" alt="" class="img-fluid">
-                        
+                        <img src="{{asset('assets/img/project/job.jpeg')}}" width="1105" height="570" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="img-fluid">
                      </div>
                   </div>
                </div>
@@ -91,7 +90,7 @@
                   <div class="row">
                      <div class="col-xl-6 col-lg-6 mt-200">
                         <div class="project-img project-img-d mb-70">
-                           <div class="inner-img"><a href="#"><img src="assets/img/project/project-d-2.jpg" alt="" class="fluid"></a></div>
+                           <div class="inner-img"><a href="#"><img src="assets/img/project/project-d-2.jpg" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="fluid"></a></div>
                            <div class="project-img-content project-img-content-d">
                                <h4 class="project-sm-title project-title-d"><a href="project.html">Description</a></h4>
                                <p style="color:#000!important;">{{$vacancy->description}}</p>
@@ -103,7 +102,7 @@
                      </div>
                      <div class="col-xl-6 col-lg-6 mt-200">
                         <div class="project-img project-img-d mb-70">
-                           <div class="inner-img"><a href="project.html"><img src="assets/img/project/project-d-3.jpg" alt="" class="fluid"></a></div>
+                           <div class="inner-img"><a href="project.html"><img src="assets/img/project/project-d-3.jpg" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="fluid"></a></div>
                            <div class="project-img-content project-img-content-d">
                                <h4 class="project-sm-title project-title-d"><a href="project.html">Requirements</a></h4>
                                <p style="color:#000!important;">{{$vacancy->requirements}}</p>

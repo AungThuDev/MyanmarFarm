@@ -4,8 +4,9 @@
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>MyanmarFarm</title>
-   <meta name="description" content="">
+   <title>Embark on a Sustainable Agricultural Journey with Myanmar Farm - Nurturing Growth, Empowering Lives</title>
+   <meta name="description" content="Immerse yourself in the world of sustainable agriculture with Myanmar Farm. Discover innovative livestock farming practices, insights into natural resource management, and impactful community empowerment initiatives. Our website is a treasure trove of knowledge, offering articles that raise awareness about the intricate balance between farming, income generation, and community development. Join us at www.myanmarfarm.com.mm to cultivate a brighter, greener future.">
+   <meta name="keywords" content="Sustainable Agriculture Myanmar, Innovative Livestock Farming, Natural Resource Management Insights, Community Empowerment Initiatives, Myanmar Farm Knowledge Hub, Cultivating a Greener Future, Livestock Farming Practices, Sustainable Farming Articles, Myanmar Agriculture Initiatives, Myanmar Farm Website">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Place favicon.ico in the root directory -->
    <link rel="shortcut icon" type="image/x-icon" href={{asset("assets/img/logo/MyanmarFarm.png")}}>
@@ -155,40 +156,31 @@
          box-shadow: none;
          border: none;
       }
+      #social-links ul li a{
+         font-size: 20px;
+      }
+      .social-button {
+        display: inline-block;
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-top:16px;
+        padding-bottom: 16px; /* Adjust the padding as needed */
+        background-color: #9d6b34; /* Facebook blue color */
+        color: #fff; /* Text color */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s ease; /* Add a smooth transition */
+    }
+    .social-button:hover{
+      background-color: #fff;
+      border: 1px solid #9d6b34;
+      color: #9d6b34;
+    }
    </style>
    </style>
 </head>
 
 <body>
-   <!--[if lte IE 9]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-      <![endif]-->
-
-   <!-- Add your site or application content here -->
-
-   <!-- pre loader area start -->
-   <!-- <div id="loading">
-         <div id="loading-center">
-            <div id="loading-center-absolute">
-               <div class="loading-icon text-center d-sm-flex align-items-center justify-content-center">
-                  <img class="loading-logo mr-10" src="{{asset('assets/img/favicon.png')}}" alt="">
-                  <img src="assets/img/logo/MyanmarFarm.png" alt="">
-               </div>
-            </div>
-         </div>  
-      </div> -->
-   <!-- pre loader area end -->
-
-   <!-- back to top start -->
-   <!-- <div class="progress-wrap">
-         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" style="color: #9d6b34;">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-         </svg>
-         
-      </div> -->
-
-   <!-- back to top end -->
-
+   
    <!-- header -->
    <header>
       <div class="header__area">
@@ -222,7 +214,7 @@
                <div class="row align-items-center">
                   <div class="col-xl-2 col-lg-3 col-md-8 col-8">
                      <div class="logo">
-                        <a href="index.html"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt=""></a>
+                        <a href="{{url('/',app()->getLocale())}}"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth"></a>
                      </div>
                   </div>
                   <div class="col-xl-10 col-lg-10 col-md-4 col-4 d-flex align-items-center justify-content-end">
@@ -255,7 +247,7 @@
                <div class="row align-items-center">
                   <div class="col-xl-2 col-lg-3 col-md-8 col-8">
                      <div class="logo">
-                        <a href="index.html"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt=""></a>
+                        <a href="index.html"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Harmonious Livestock Grazing in Our Sustainable Farm"></a>
                      </div>
                   </div>
                   <div class="col-xl-10 col-lg-10 col-md-4 col-4 d-flex align-items-center justify-content-end">
@@ -291,76 +283,14 @@
    <!-- sidebar area start -->
    <div class="sidebar__area">
       <div class="sidebar__wrapper">
-         <!-- <div class="sidebar__close">
-               <button class="sidebar__close-btn sidebar__close-btn-3" id="sidebar__close-btn">
-                  <i class="fal fa-times"></i>
-               </button>
-            </div> -->
          <div class="sidebar__content">
             <div class="sidebar__logo mb-40">
                <a href="index.html">
-                  <img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="logo">
+                  <img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Empowering Communities - Impactful Agricultural Programs">
                </a>
             </div>
-            <!-- <div class="sidebar__search sidebar__search-3 mb-25">
-                  <form action="#">
-                     <input type="text" placeholder="What are you searching for?">
-                     <button type="submit" ><i class="far fa-search"></i></button>
-                  </form>
-               </div> -->
             <div class="mobile-menu fix"></div>
-            <!-- <div class="sidebar__text d-none d-lg-block">
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you a complete account of the system and expound the actual teachings of the great explore</p>
-               </div> -->
-            <!-- <div class="sidebar__img d-none d-lg-block mb-20">
-                  <div class="row gx-2">
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-7.jpg">
-                              <img src="{{asset('assets/img/project/project-7.jpg')}}" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-8.jpg">
-                              <img src="{{asset('assets/img/project/project-8.jpg')}}" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-9.jpg">
-                              <img src="{{asset('assets/img/project/project-9.jpg')}}" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-10.jpg">
-                              <img src="{{asset('assets/img/project/project-10.jpg')}}" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-13.jpg">
-                              <img src="{{asset('assets/img/project/project-13.jpg')}}" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-12.jpg">
-                              <img src="{{asset('assets/img/project/project-12.jpg')}}" alt="">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div> -->
-            <!-- <div class="sidebar__map d-none d-lg-block mb-15">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
-               </div> -->
+            
             <div class="sidebar__contact sidebar__contact-3 mt-30 mb-20">
                <h4>Contact Info</h4>
                <ul>
@@ -415,7 +345,7 @@
                   <div class="row align-items-center">
                      <div class="col-xl-6 col-lg-3 col-md-4 col-12">
                         <div class="footer-logo mb-20">
-                           <a href="#"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt=""></a>
+                           <a href="#"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Cultivating Change - Myanmar Farm Initiatives"></a>
                         </div>
                      </div>
                      <div class="col-xl-3 col-lg-4 col-md-4 col-12">
@@ -438,7 +368,6 @@
             <div class="row">
                <div class="col-xl-4 col-lg-4 col-md-4">
                   <div class="footer-widget footer-widget-2 footer-col-1 mb-40">
-                     <!-- <h5 class="footer-title-white footer-title mb-35">{{__('conclusion')}}</h5> -->
                      <p style="text-align: justify;">{{__('con-body')}}</p>
                      <div class="footer-social-icon-3 footer-social-icon mt-35">
                         <h4 class="social-icon-title">Social Connect</h4>
@@ -454,10 +383,10 @@
                      <h5 class="footer-sm-title footer-title-h3 footer-title mb-30">{{__('service')}}</h5>
                      <div class="footer-menu footer-menu-3">
                         <ul>
-                           <li><a href="">{{__('sell')}}</a></li>
-                           <li><a href="">{{__('dairy')}}</a></li>
-                           <li><a href="">{{__('cattle')}}</a></li>
-                           <li><a href="">{{__('farm')}}</a></li>
+                           <li style="margin-bottom: 13px;">{{__('sell')}}</li>
+                           <li style="margin-bottom: 13px;">{{__('dairy')}}</li>
+                           <li style="margin-bottom: 13px;">{{__('cattle')}}</li>
+                           <li style="margin-bottom: 13px;">{{__('farm')}}</li>
                         </ul>
                      </div>
                   </div>
@@ -468,10 +397,6 @@
                      <ul class="footer-menu footer-menu-3 footer-menu-c">
                         <li><a href="{{url('/',app()->getLocale())}}" class="@yield('home-active')">{{__('home')}}</a></li>
                         <li><a href="{{route('about',app()->getLocale())}}" class="@yield('about-active')">{{__('about')}}</a>
-                           <!-- <ul class="sub-menu-h1 sub-menu">
-                                       <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
-                                       <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
-                                    </ul> -->
                         </li>
                         <li><a href="{{route('csr',app()->getLocale())}}">{{__('csr-stretegy')}}</a></li>
                         <li><a href="{{route('partner',app()->getLocale())}}">{{__('partnership')}}</a></li>
@@ -489,22 +414,13 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                  <p class="mb-30 copy-right-text-2 copy-right-text-1">design & copyright by <a href="#">@BigTech International</a> - 2023</p>
+                  <p class="mb-30 copy-right-text-2 copy-right-text-1">design & copyright by <a href="http://bigtech.support/">@BigTech International</a> - 2023</p>
                </div>
-               <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                      <div class="payment-img mb-30 f-right">
-                          <a href="#"><img src="assets/img/service/payment-icon-2.png" alt=""></a>
-                      </div>
-                  </div> -->
             </div>
          </div>
       </div>
 
    </footer>
-
-
-
-
    <!-- footer -->
 
    <!-- JS here -->
@@ -527,6 +443,8 @@
    <script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
    <script src="{{asset('assets/js/imagesloaded.pkgd.min.js')}}"></script>
    <script src="{{asset('assets/js/main.js')}}"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+   <script src="{{ asset('js/share.js') }}"></script>
 
 
 

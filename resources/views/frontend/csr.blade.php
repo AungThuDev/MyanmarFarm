@@ -47,7 +47,7 @@
             <div class="container">
                <div class="chosse-video">
                   <div class="chosse-video-bg position-relative">
-                     <img src="{{asset('assets/img/C3.jpg')}}" alt="">
+                     <img src="{{asset('assets/img/C3.jpg')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                      <!-- <a href="https://www.youtube.com/watch?v=L4CpMr5BNls" class="play-icon play-icon-ab popup-video"><i class="fas fa-play"></i></a> -->
                   </div>
                </div>

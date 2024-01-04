@@ -26,12 +26,25 @@
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
-                <div class="card mb-4" style="max-width: 1200px; margin: auto">
+                <div class="card mb-4" style="max-width: 1200px; margin: auto;">
                     <div class="row">
                         
                         <div class="col-sm-12 col-lg-12 d-flex justify-content-center">
                             <div class="d-flex justify-content-center mb-3 mt-3">
-                            <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="Blog Image" width="1000" height="700"><br><br>
+                            <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="Blog Image" width="700" height="400"><br><br>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6 d-flex justify-content-center" style="margin: 0;padding:0;">
+                            <div class="d-flex justify-content-center mb-3 mt-3">
+                            <img src="{{ asset('storage/blogs/' . $blog->first_image) }}" alt="Blog Image" width="450" height="300"><br><br>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 d-flex justify-content-center" style="margin: 0;padding:0;">
+                            <div class="d-flex justify-content-center mb-3 mt-3">
+                            <img src="{{ asset('storage/blogs/' . $blog->second_image) }}" alt="Blog Image" width="450" height="300"><br><br>
                             </div>
                         </div>
                         
@@ -48,11 +61,15 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p class="p-3" style="text-align: justify">
-                                {{$blog->body}}
+                            <p class="p-3" style="text-align: justify;">
+                                {{$blog->first_body}}
                             </p>
                         </div>
-
+                        <div class="col-12">
+                            <p class="p-3" style="text-align: justify">
+                                {{$blog->second_body}}
+                            </p>
+                        </div>
                     </div>
                 </div>
 

@@ -35,19 +35,46 @@
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <label for="body">Description</label>
-                        <textarea class="form-control" name="body" cols="30" rows="10">{{$blog->body}}</textarea>
-                        @error('body')
+                        <label for="first_body">First Body</label>
+                        <textarea class="form-control" name="first_body" cols="30" rows="10">{{$blog->first_body}}</textarea>
+                        @error('first_body')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="second_body">Second Body</label>
+                        <textarea class="form-control" name="second_body" cols="30" rows="10">{{$blog->second_body}}</textarea>
+                        @error('second_body')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="" class="form-label">Content Image</label><br>
+                        <label for="" class="form-label">First Image</label><br>
                         
                         <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="Blog Image" width="200" height="130">
                         
                         <br><br><input type="file" name="image">
                         @error('image')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
+                   </div>
+                   <div class="form-group">
+                        <label for="" class="form-label">Second Image</label><br>
+                        
+                        <img src="{{ asset('storage/blogs/' . $blog->first_image) }}" alt="Blog Image" width="200" height="130">
+                        
+                        <br><br><input type="file" name="first_image">
+                        @error('first_image')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
+                   </div>
+                   <div class="form-group">
+                        <label for="" class="form-label">Third Image</label><br>
+                        
+                        <img src="{{ asset('storage/blogs/' . $blog->second_image) }}" alt="Blog Image" width="200" height="130">
+                        
+                        <br><br><input type="file" name="second_image">
+                        @error('second_image')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                    </div>

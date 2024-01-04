@@ -34,16 +34,37 @@
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <label for="body">Description</label>
-                        <textarea class="form-control" name="body" cols="30" rows="10"></textarea>
-                        @error('body')
+                        <label for="first_body">First Paragraph</label>
+                        <textarea class="form-control" name="first_body" cols="30" rows="10"></textarea>
+                        @error('first_body')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="second_body">Second Paragraph</label>
+                        <textarea class="form-control" name="second_body" cols="30" rows="10"></textarea>
+                        @error('second_body')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="" class="form-label">Content Image</label><br>
+                        <label for="" class="form-label">First Image</label><br>
                         <input type="file" name="image">
                         @error('image')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
+                   </div>
+                   <div class="form-group">
+                        <label for="" class="form-label">Second Image</label><br>
+                        <input type="file" name="first_image">
+                        @error('first_image')
+                            <p class="text-danger">{{ $message }}</p>
+                        @enderror
+                   </div>
+                   <div class="form-group">
+                        <label for="" class="form-label">Third Image</label><br>
+                        <input type="file" name="second_image">
+                        @error('second_image')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                    </div>

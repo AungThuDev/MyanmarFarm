@@ -63,17 +63,29 @@ class BlogController extends Controller
     {
         $request->validate([
             "title" => "required|string|max:255",
-            "body" => "required",
+            "first_body" => "required",
+            "second_body" => "required",
             "image" => "required|image|mimes:jpeg,png,jpg,gif",
+            'first_image' => 'required|image|mimes:jpeg,png,jpg,gif',
+            'second_image' => 'required|image|mimes:jpeg,png,jpg,gif',
         ]);
 
         $imagePath = $request->file('image')->store('public/blogs');
         $imageName = basename($imagePath);
 
+        $imagePath1 = $request->file('first_image')->store('public/blogs');
+        $imageName1 = basename($imagePath1);
+
+        $imagePath2 = $request->file('second_image')->store('public/blogs');
+        $imageName2 = basename($imagePath2);
+
         Blog::create([
             'title' => $request['title'],
-            'body' => $request['body'],
+            'first_body' => $request['first_body'],
+            'second_body' => $request['second_body'],
             'image' => $imageName,
+            'first_image' => $imageName1,
+            'second_image' => $imageName2,
         ]);
 
         return redirect('/admin/blogs')->with('create','Blog Created Successfully');
@@ -115,11 +127,15 @@ class BlogController extends Controller
         $blog = Blog::findOrFail($id);
         $request->validate([
             "title" => "required",
-            "body" => "required",
-            'image' => 'image|mimes:jpeg,png,jpg,gif',
+            "first_body" => "required",
+            "second_body" => "required",
+            // 'image' => 'image|mimes:jpeg,png,jpg,gif',
+            // 'first_image' => 'image|mimes:jpeg,png,jpg,gif',
+            // 'second_image' => 'image|mimes:jpeg,png,jpg,gif',
         ]);
         $blog->title = $request->title;
-        $blog->body = $request->body;
+        $blog->first_body = $request->first_body;
+        $blog->second_body = $request->second_body;
         if($request->file('image')){
             if($blog->image){
                 Storage::delete('public/blogs/'.$blog->image);
@@ -128,6 +144,24 @@ class BlogController extends Controller
             $imageName = basename($imagePath);
 
             $blog->image = $imageName;
+        }
+        if($request->file('first_image')){
+            if($blog->first_image){
+                Storage::delete('public/blogs/'.$blog->first_image);
+            }
+            $imagePath = $request->file('first_image')->store('public/blogs/');
+            $imageName = basename($imagePath);
+
+            $blog->first_image = $imageName;
+        }
+        if($request->file('second_image')){
+            if($blog->second_image){
+                Storage::delete('public/blogs/'.$blog->second_image);
+            }
+            $imagePath = $request->file('second_image')->store('public/blogs/');
+            $imageName = basename($imagePath);
+
+            $blog->second_image = $imageName;
         }
         $blog->save();
         return redirect('/admin/blogs')->with('update','Blog Updated Successfully');

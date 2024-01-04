@@ -74,25 +74,25 @@
             <div class="col-xl-12">
                <div class="tp-supporter__slider tp-supporter__slider-2 tp-supporter__slider-active owl-carousel text-center">
                   <div class="tp-supporter__thumb">
-                     <a href=""><img src="{{asset('assets/img/partner-logo/venue36.jpg')}}" width="150" height="150" alt="client-1"></a>
+                     <img src="{{asset('assets/img/partner-logo/venue36.jpg')}}" width="150" height="200" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                   </div>
                   <div class="tp-supporter__thumb">
-                     <a href=""><img src="{{asset('assets/img/partner-logo/mboss.png')}}" width="150" height="150" alt="client-1"></a>
+                     <img src="{{asset('assets/img/partner-logo/mboss.png')}}" width="150" height="200" alt="Harmonious Livestock Grazing in Our Sustainable Farm">
                   </div>
                   <div class="tp-supporter__thumb">
-                     <a href=""><img src="{{asset('assets/img/partner-logo/british.png')}}" width="150" height="150" alt="client-1"></a>
+                     <img src="{{asset('assets/img/partner-logo/british.png')}}" width="150" height="150" alt="Empowering Communities - Impactful Agricultural Programs">
                   </div>
                   <div class="tp-supporter__thumb">
-                     <a href=""><img src="{{asset('assets/img/partner-logo/golden.jpg')}}" width="150" height="150" alt="client-1"></a>
+                     <img src="{{asset('assets/img/partner-logo/golden.jpg')}}" width="150" height="150" alt="Cultivating Change - Myanmar Farm Initiatives">
                   </div>
                   <div class="tp-supporter__thumb">
-                     <a href=""><img src="{{asset('assets/img/partner-logo/M.jpg')}}" style="margin-top: 40px;" width="50" height="50" alt="client-1"></a>
+                     <img src="{{asset('assets/img/partner-logo/M.jpg')}}" style="margin-top: 40px;" width="50" height="50" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                   </div>
                   <div class="tp-supporter__thumb">
-                     <a href=""><img src="{{asset('assets/img/partner-logo/magency.jpg')}}" width="150" height="150" alt="client-1"></a>
+                     <img src="{{asset('assets/img/partner-logo/magency.jpg')}}" width="150" height="150" alt="Harmonious Livestock Grazing in Our Sustainable Farm">
                   </div>
                   <div class="tp-supporter__thumb">
-                     <a href=""><img src="{{asset('assets/img/partner-logo/farm.jpg')}}" width="150" height="150" alt="client-1"></a>
+                     <img src="{{asset('assets/img/partner-logo/farm.jpg')}}" width="150" height="150" alt="Empowering Communities - Impactful Agricultural Programs">
                   </div>
                </div>
             </div>
@@ -101,7 +101,7 @@
    </div>
    <!-- tp-supporter__area end -->
    <div class="background">
-      <img src="{{asset('assets/img/25.png')}}" alt="" class="img-fluid" style="width: 100%;background-repeat: no-repeat; background-size: cover;">
+      <img src="{{asset('assets/img/25.png')}}" alt="Cultivating Change - Myanmar Farm Initiatives" class="img-fluid" style="width: 100%;background-repeat: no-repeat; background-size: cover;">
    </div>
    <!-- collaborative-area-start -->
    <div class="collaborative-area pt-120 pb-55">
@@ -151,7 +151,7 @@
       <div class="container">
          <div class="chosse-video">
             <div class="chosse-video-bg position-relative">
-               <img src="{{asset('assets/img/C3.jpg')}}" alt="">
+               <img src="{{asset('assets/img/C3.jpg')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                <a href="https://www.youtube.com/watch?v=L4CpMr5BNls" class="play-icon play-icon-ab popup-video"><i class="fas fa-play"></i></a>
             </div>
          </div>
@@ -167,7 +167,7 @@
          <div class="row align-items-center">
             <div class="col-xl-5 col-lg-5">
                <div class="award-image text-center">
-                  <img src="{{asset('assets/img/C1.jpg')}}" alt="" class="img-fluid">
+                  <img src="{{asset('assets/img/C1.jpg')}}" alt="Harmonious Livestock Grazing in Our Sustainable Farm" class="img-fluid">
                </div>
             </div>
             <div class="col-xl-7 col-lg-7">
@@ -219,7 +219,7 @@
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="text-center">
-                     <img src="{{asset('assets/img/Cover-F.jpg')}}" style="width:500px;height: 700px;" alt="" class="img-fluid">
+                     <img src="{{asset('assets/img/Cover-F.jpg')}}" style="width:500px;height: 700px;" alt="Empowering Communities - Impactful Agricultural Programs" class="img-fluid">
                   </div>
                </div>
 
@@ -258,7 +258,7 @@
          <div class="container">
             <div class="chosse-video">
                <div class="chosse-video-bg position-relative">
-                  <img src="{{asset('assets/img/C3.jpg')}}" alt="">
+                  <img src="{{asset('assets/img/C3.jpg')}}" alt="Cultivating Change - Myanmar Farm Initiatives">
                </div>
             </div>
          </div>
@@ -274,12 +274,12 @@
             <div class="row">
                <div class="col-xl-6 col-lg-6">
                   <div class="text-center">
-                     <img src="{{asset('assets/img/location1.jpg')}}" style="width:750px;height: 420px;" alt="" class="img-fluid mb-2">
+                     <img src="{{asset('assets/img/location1.jpg')}}" style="width:750px;height: 420px;" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="img-fluid mb-2">
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="text-center">
-                     <img src="{{asset('assets/img/location2.jpg')}}" style="width:750px;height: 418px;" alt="" class="img-fluid">
+                     <img src="{{asset('assets/img/location2.jpg')}}" style="width:750px;height: 418px;" alt="Harmonious Livestock Grazing in Our Sustainable Farm" class="img-fluid">
                   </div>
                </div>
             </div>
@@ -303,7 +303,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
                <div class="latest-blog mb-30">
                   <div class="latest-blog-img">
-                     <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="Blog Image" width="410" height="220">
+                     <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="Empowering Communities - Impactful Agricultural Programs" width="410" height="220">
                      <div class="top-catagory">
                         <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}" class="postbox__meta">cattle farm</a>
                      </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Models\Blog;
+use Jorenvh\Share\Share;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Cache\RateLimiting\Limit;
@@ -16,9 +17,11 @@ class BlogController extends Controller
 //    }
    public function detail($language,$id)
    {
+          $shareInstance = new Share();
+          $share = $shareInstance->currentPage()->facebook();
         $blog = Blog::findOrFail($id);
         $popularblogs = Blog::latest()->take(4)->get();
-        return view('frontend.blogs.detail',compact('blog','popularblogs','language'));
+        return view('frontend.blogs.detail',compact('blog','popularblogs','language','share'));
    }
    
    public function search($language)
