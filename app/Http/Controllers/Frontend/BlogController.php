@@ -18,10 +18,14 @@ class BlogController extends Controller
    public function detail($language,$id)
    {
           $shareInstance = new Share();
-          $share = $shareInstance->currentPage()->facebook();
+          $sharefacebook = $shareInstance->currentPage()->facebook();
+          $shareInstancetwitter = new Share();
+          $sharetwitter = $shareInstancetwitter->currentPage()->twitter();
+          $shareInstancelink = new Share();
+          $sharelink = $shareInstancelink->currentPage()->linkedin('Extra linkedin summary can be passed here');
         $blog = Blog::findOrFail($id);
         $popularblogs = Blog::latest()->take(4)->get();
-        return view('frontend.blogs.detail',compact('blog','popularblogs','language','share'));
+        return view('frontend.blogs.detail',compact('blog','popularblogs','language','sharefacebook','sharetwitter','sharelink'));
    }
    
    public function search($language)

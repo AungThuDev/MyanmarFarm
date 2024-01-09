@@ -22,7 +22,7 @@
                         <h3 class="tp-section-title-h3 tp-section-title">Nourishment Made Beatutiful For Generations</h3>
                      </div>
                      <div class="serivces-cta-info">
-                        <a href="#" class="client-img"><img src="{{asset('assets/img/client/author.jpg')}}" alt="Empowering Communities - Impactful Agricultural Programs"></a>
+                        
                         <p><a href="mailto:info@myanmarfarm.com.mm"> info@myanmarfarm.com.mm </a> - Yangon/Myanmar</p>
                      </div>
                   </div>
@@ -105,7 +105,7 @@
                   <div class="row">
                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-30">
                         <div class="company-features-item company-features-item-2 mb-50">
-                           <div class="features-item features-item-2 text-center" id="service-sell" style="height: 35vh;">
+                           <div class="features-item features-item-2 text-center" id="service-sell" style="height: 350px;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/cow.png')}}" alt="Cultivating Change - Myanmar Farm Initiatives">
                               </div>
@@ -123,7 +123,7 @@
                      </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="company-features-item company-features-item-2 mb-50">
-                           <div class="features-item features-item-2 text-center" id="service-dairy" style="height: 35vh;">
+                           <div class="features-item features-item-2 text-center" id="service-dairy" style="height: 350px;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/product.png')}}" alt="Cultivating Change - Myanmar Farm Initiatives">
                               </div>
@@ -140,7 +140,7 @@
                      </div>
                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="company-features-item company-features-item-2 mb-50">
-                           <div class="features-item features-item-2 text-center" id="service" style="height: 35vh;">
+                           <div class="features-item features-item-2 text-center" id="service" style="height: 350px;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/shake.png')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                               </div>
@@ -158,7 +158,7 @@
                      </div>
                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="company-features-item company-features-item-2 mb-50">
-                           <div class="features-item features-item-2 text-center" id="service" style="height: 35vh;">
+                           <div class="features-item features-item-2 text-center" id="service" style="height: 350px;">
                               <div class="features-icon-2">
                                  <img src="{{asset('assets/img/icon/children.png')}}" alt= "Harmonious Livestock Grazing in Our Sustainable Farm">
                               </div>
@@ -199,7 +199,7 @@
                      <div class="chosse-main-info">
                         <div class="tp-section-wrap tp-section-wrap-h3 text-center">
                            <span class="asub-title">- Core Features -</span>
-                           <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">Why Chosse Us</h3>
+                           <h3 class="tp-section-title tp-section-title-h3-d"  style="color:#9d6b34!important;">Why Choose Us</h3>
                         </div>
                         <div class="row mt-80">
                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">

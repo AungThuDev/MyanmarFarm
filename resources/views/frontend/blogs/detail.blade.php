@@ -58,47 +58,59 @@
                   <p class="mt-25 mb-50" style="color: #000!important;text-align:justify;">{!! nl2br($blog->second_body) !!}</p>
                   <div class="row">
                      <div class="col-3" style="margin-left: 1px!important;">
-                     <a href="{{ url(app()->getLocale() . '/news') }}" class="read-btn">
-                        <i class="fal fa-arrow-circle-left"></i> Back
-                     </a>
+                        <a href="{{ url(app()->getLocale() . '/news') }}" class="read-btn">
+                           <i class="fal fa-arrow-circle-left"></i> Back
+                        </a>
                      </div>
                      <div class="col-2">
-                        <button>{!!$share!!}</button>
+                        <div class="btn-group" role="group">
+                           <button type="button" class="btn btn-primary dropdown-toggle read-btn" id="sharebtn" data-bs-toggle="dropdown" aria-expanded="false">
+                              Share
+                           </button>
+                           <ul class="dropdown-menu">
+                              <li><button class="dropdown-item">{!!$sharefacebook!!}</button></li>
+                              <li><button class="dropdown-item">{!!$sharetwitter!!}</button></li>
+                              <li><button class="dropdown-item">{!!$sharelink!!}</button></li>
+                           </ul>
+                           </ul>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
             <div class="col-xl-4 col-lg-4">
-               <div class="news-sidebar pl-10">
-                  <div class="row">
+            <div class="news-sidebar pl-10">
+               <div class="row">
 
-                     <div class="col-lg-12 col-md-12">
-                        <div class="widget">
-                           <h6 class="sidebar-title">Popular Feeds</h6>
-                           <div class="n-sidebar-feed">
-                              <ul>
-                                 @foreach($popularblogs as $blog)
-                                 <li>
-                                    <div class="feed-number">
-                                       <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="288" height="" alt="Cultivating Change - Myanmar Farm Initiatives"></a>
-                                    </div>
-                                    <div class="feed-content">
-                                       <h6><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a></h6>
-                                       <span class="feed-date">
-                                          <i class="fal fa-calendar-alt"></i> {{$blog->created_at}}
-                                       </span>
-                                    </div>
-                                    @endforeach
-                                 </li>
-                              </ul>
-                           </div>
+                  <div class="col-lg-12 col-md-12">
+                     <div class="widget">
+                        <h6 class="sidebar-title">Popular Feeds</h6>
+                        <div class="n-sidebar-feed">
+                           <ul>
+                              @foreach($popularblogs as $blog)
+                              <li>
+                                 <div class="feed-number">
+                                    <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ asset('storage/blogs/' . $blog->image) }}" width="288" height="" alt="Cultivating Change - Myanmar Farm Initiatives"></a>
+                                 </div>
+                                 <div class="feed-content">
+                                    <h6><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a></h6>
+                                    <span class="feed-date">
+                                       <i class="fal fa-calendar-alt"></i> {{$blog->created_at}}
+                                    </span>
+                                 </div>
+                                 @endforeach
+                              </li>
+                           </ul>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+         </div>
+         
       </div>
+   </div>
    </div>
    <!-- news-detalis-area-end  -->
 </main>

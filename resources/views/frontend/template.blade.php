@@ -175,6 +175,23 @@
       border: 1px solid #9d6b34;
       color: #9d6b34;
     }
+    #sharebtn{
+      border-radius: 0%;
+      background-color: #9d6b34;
+      border: 1px solid #9d6b34;
+    }
+    #sharebtn:hover,#sharebtn:active{
+      border-radius: 0%;
+      outline: none;
+      box-shadow: none;
+      background-color: #fff;
+      color: #9d6b34;
+      border: 1px solid #9d6b34;
+    }
+    #sharebtn:focus{
+      outline: none;
+      box-shadow: none;
+    }
    </style>
    </style>
 </head>
