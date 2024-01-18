@@ -124,7 +124,7 @@
                                                     <li>
                                                         <div class="feed-number">
                                                             <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img
-                                                                    src="{{ asset('storage/blogs/' . $blog->image) }}"
+                                                                    src="{{ $blog->image }}"
                                                                     width="288" height=""
                                                                     alt="Cultivating Change - Myanmar Farm Initiatives"></a>
                                                         </div>
