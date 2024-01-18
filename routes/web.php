@@ -13,18 +13,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/test',function(){
-    $blog = Blog::first();
-    $path = '/blogs/lqvPpZfIElV5B38vY1m9vC5uF9i6TPSVsYjK7OVp.jpg';
-    $image = $blog->image;
-    dd(basename($image));
-    $result = \Illuminate\Support\Facades\Storage::delete($path);
-    dd([$path, $result]);
 
-});
 
 Auth::routes([
      // Registration Routes...
+    'register' => false,
     'reset' => false, // Password Reset Routes...
     'verify' => false, // Email Verification Routes...
     'confirm' => false,

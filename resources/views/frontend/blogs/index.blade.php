@@ -50,7 +50,7 @@
                   @forelse($blogs as $blog)
                   <div class="col-lg-4 col-md-6 c2 c3 c4 c5">
                       <div class="project-img mb-70">
-                          <div class="inner-img"><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ $blog->image }}" style="width:420px;height:270px;" alt="Empowering Communities - Impactful Agricultural Programs" class="fluid"></a></div>
+                          <div class="inner-img"><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img src="{{ '/storage/blogs/' . $blog->image }}" style="width:420px;height:270px;" alt="Empowering Communities - Impactful Agricultural Programs" class="fluid"></a></div>
                           <div class="project-img-content">
                               <h4 class="project-sm-title" style="color:#9d6b34;font-size: 15px!important;font-weight:900;"><a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a></h4>
                           </div>
