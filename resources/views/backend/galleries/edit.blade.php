@@ -36,7 +36,7 @@
             </div>
             <div class="form-group">
                 <label for="image">Image</label><br>
-                <img src="{{ asset('storage/gallery/' . $gallery->image) }}" alt="Project Image" width="200" height="130"><br><br>
+                <img src="{{ $gallery->image }}" alt="Project Image" width="200" height="130"><br><br>
                 <input type="file" name="image" id="image" value="{{old('image')}}">
                 @error('image')
                     <p class="text-danger">{{ $message }}</p>

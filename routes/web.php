@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/test',function(){
+    $blog = Blog::first();
+    $path = '/blogs/lqvPpZfIElV5B38vY1m9vC5uF9i6TPSVsYjK7OVp.jpg';
+    $image = $blog->image;
+    dd(basename($image));
+    $result = \Illuminate\Support\Facades\Storage::delete($path);
+    dd([$path, $result]);
 
+});
 
 Auth::routes([
      // Registration Routes...
@@ -30,12 +38,12 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
     Route::resource('/galleries',App\Http\Controllers\Backend\GalleryController::class);
 });
 
-    
+
     Route::redirect('/','/en');
     Route::prefix('/{language}')->group(function(){
-    Route::get('/',function($language){
-        return view('frontend.index',compact('language'));
-    });
+        Route::get('/', function ($language) {
+            return view('frontend.index', compact('language'));
+        });
     Route::get('/about',function($language){
         $aboutblogs = Blog::latest()->take(3)->get();
         return view('frontend.about',compact('aboutblogs','language'));
@@ -71,7 +79,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function(){
 
     });
 
-    
+
 
 
 

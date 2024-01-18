@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     use HasFactory;
-    protected $fillable = ['title','first_body','second_body','image','first_image','second_image'];
-    
+    protected $fillable = ['title','first_body','second_body','image', 'video'];
+
+    public function images()
+    {
+        return $this->hasMany(blogImages::class);
+    }
+
 }

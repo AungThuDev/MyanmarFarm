@@ -27,28 +27,25 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="card mb-4" style="max-width: 1200px; margin: auto;">
-                    <div class="row">
-                        
-                        <div class="col-sm-12 col-lg-12 d-flex justify-content-center">
-                            <div class="d-flex justify-content-center mb-3 mt-3">
-                            <img src="{{ asset('storage/blogs/' . $blog->image) }}" alt="Blog Image" width="700" height="400"><br><br>
-                            </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div>
+                            <img src="{{ $blog->image }}" style="width: 100%;">
                         </div>
-                        
+                        @if ($blog->video)
+                            <div class="video-container">
+                                {!! $blog->video !!}
+                            </div>
+                        @endif
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-6 d-flex justify-content-center" style="margin: 0;padding:0;">
-                            <div class="d-flex justify-content-center mb-3 mt-3">
-                            <img src="{{ asset('storage/blogs/' . $blog->first_image) }}" alt="Blog Image" width="450" height="300"><br><br>
-                            </div>
+                    @if(count($blog->images))
+                        <div class="row" style="margin: auto">
+                            @foreach($blog->images as $image)
+                                <div class="col" style="max-width: 200px;">
+                                    <img src="{{ $image->image }}" alt="Blog Image" style="width: 100%;">
+                                </div>
+                            @endforeach
                         </div>
-                        <div class="col-sm-12 col-lg-6 d-flex justify-content-center" style="margin: 0;padding:0;">
-                            <div class="d-flex justify-content-center mb-3 mt-3">
-                            <img src="{{ asset('storage/blogs/' . $blog->second_image) }}" alt="Blog Image" width="450" height="300"><br><br>
-                            </div>
-                        </div>
-                        
-                    </div>
+                    @endif
                 </div>
                 <div class="card mb-3" style="max-width: 1200px; margin: auto">
                     <div class="row">
@@ -77,6 +74,19 @@
         </div>
         <!-- /.content -->
     </div>
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+        }
 
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 
 @endsection

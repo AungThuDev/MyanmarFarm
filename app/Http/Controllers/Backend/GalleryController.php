@@ -18,13 +18,13 @@ class GalleryController extends Controller
     public function index(Request $request)
     {
         if($request->ajax()){
-            
+
             $gallery = Gallery::query();
             return DataTables::of($gallery)
             ->editColumn('image',function($each){
-                
-                    return '<img src="'.asset("storage/gallery/" . $each->image).'" class="img-thumbnail" width="100" height="100"/>';
-                
+
+                    return '<img src="'.$each->image.'" class="img-thumbnail" width="100" height="100"/>';
+
             })
             ->addColumn('action',function($each){
                 $edit_icon = '<a href="'.route('admin.galleries.edit',$each->id).'" class="btn btn-warning" style="margin-right:10px;"><i class="fas fa-user-edit"></i>&nbsp;Edit</a>';
@@ -60,10 +60,8 @@ class GalleryController extends Controller
             'name' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
         ]);
-        
 
-        $imagePath = $request->file('image')->store('public/gallery');
-        $imageName = basename($imagePath);
+        $imageName = '/storage/' . $request->file('image')->store('gallery');
 
         Gallery::create([
             'name' => $request['name'],
@@ -112,10 +110,9 @@ class GalleryController extends Controller
         $gallery->name = $request->name;
         if($request->file('image')){
             if($gallery->image){
-                Storage::delete('public/gallery/'.$gallery->image);
+                Storage::delete('/gallery/' . basename($gallery->image));
             }
-            $imagePath = $request->file('image')->store('public/gallery/');
-            $imageName = basename($imagePath);
+            $imageName = '/storage/' . $request->file('image')->store('gallery');
 
             $gallery->image = $imageName;
         }
@@ -133,7 +130,7 @@ class GalleryController extends Controller
     {
         $gallery = Gallery::findOrFail($id);
         if ($gallery->image) {
-            Storage::delete('public/gallery/' . $gallery->image);
+            Storage::delete('/gallery/' . basename($gallery->image));
         }
         $gallery->delete();
 

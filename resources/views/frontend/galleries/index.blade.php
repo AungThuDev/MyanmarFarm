@@ -19,7 +19,7 @@
                                           <span style="color: #fff;">{{__('gallery')}}</span>
                                        </li>
                                     </ul>
-                                 </nav> 
+                                 </nav>
                               </nav>
                             </div>
                             <h3 class="breadcrumb-title breadcrumb-title-sd mt-30" style="color: #fff!important;">{{__('gallery')}}</h3>
@@ -29,7 +29,7 @@
             </div>
          </div>
          <!-- page__title -end -->
-         
+
          <!-- gallery-area-start -->
          <div class="gallery-area pt-120 pb-90">
             <div class="container">
@@ -38,7 +38,7 @@
                   @forelse($galleries as $gallery)
                   <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                      <div class="card mb-30" style="width: 25rem;">
-                        <img src="{{asset('storage/gallery/' . $gallery->image)}}" width="250px" height="240px" class="card-img-top" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
+                        <img src="{{ $gallery->image }}" width="250px" height="240px" class="card-img-top" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                         <div class="card-body">
                            <p class="card-text text-dark">{{$gallery->name}}</p>
                         </div>
@@ -48,17 +48,17 @@
                   <div class="col-lg-12 col-md-12">
                      <h3 style="color: #9d6b34!important;" class="d-flex justify-content-center">No Photo Here.......</h3>
                   </div>
-                  @endforelse 
-                  
+                  @endforelse
+
                </div>
                 <div class="d-flex justify-content-center">
                     {{$galleries->links()}}
                 </div>
-                    
-              
+
+
             </div>
          </div>
          <!-- gallery-area-end -->
       </main>
-      
+
 @endsection

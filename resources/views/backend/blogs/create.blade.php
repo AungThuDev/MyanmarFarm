@@ -49,27 +49,22 @@
                     </div>
                     <div class="form-group">
                         <label for="" class="form-label">First Image</label><br>
-                        <input type="file" name="image">
+                        <input type="file" name="image" accept="image/*">
                         @error('image')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                    </div>
                    <div class="form-group">
-                        <label for="" class="form-label">Second Image</label><br>
-                        <input type="file" name="first_image">
-                        @error('first_image')
+                        <label for="" class="form-label">Images (Optional)</label><br>
+                        <input type="file" name="images[]" accept="image/*" multiple>
+                        @error('images')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                    </div>
-                   <div class="form-group">
-                        <label for="" class="form-label">Third Image</label><br>
-                        <input type="file" name="second_image">
-                        @error('second_image')
-                            <p class="text-danger">{{ $message }}</p>
-                        @enderror
-                   </div>
+                    <label for="video">Video(Optional)</label>
+                    <input class="form-control" type="text" name="video" id="video" placeholder="Enter Youtube iframe tag">
                     <br><br>
- 
+
                     <button type="submit" id="saveButton" class="btn btn-success"><i class="fas fa-save" style="margin-right: 5px;"></i>Save Article</button>
         </form>
         <!-- <p id="message" class="text-danger"></p> -->
@@ -97,8 +92,8 @@
             {
                 fileCountMessage.textContent = 'You can only upload to ' + maxFiles + ' files';
                 button.disabled = true;
-            } 
-            
+            }
+
             else {
 
                 fileCountMessage.textContent = '';
