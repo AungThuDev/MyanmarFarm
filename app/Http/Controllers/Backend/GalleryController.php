@@ -23,7 +23,7 @@ class GalleryController extends Controller
             return DataTables::of($gallery)
             ->editColumn('image',function($each){
 
-                    return '<img src="'.$each->image.'" class="img-thumbnail" width="100" height="100"/>';
+                    return '<img src="'.asset("storage/gallery/" . $each->image).'" class="img-thumbnail" width="100" height="100"/>';
 
             })
             ->addColumn('action',function($each){
@@ -61,7 +61,8 @@ class GalleryController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
         ]);
 
-        $imageName = '/storage/' . $request->file('image')->store('gallery');
+        $path = $request->file('image')->store('/public/gallery');
+        $imageName = basename($path);
 
         Gallery::create([
             'name' => $request['name'],
@@ -110,9 +111,10 @@ class GalleryController extends Controller
         $gallery->name = $request->name;
         if($request->file('image')){
             if($gallery->image){
-                Storage::delete('/gallery/' . basename($gallery->image));
+                Storage::delete('/public/gallery/' . basename($gallery->image));
             }
-            $imageName = '/storage/' . $request->file('image')->store('gallery');
+            $path = $request->file('image')->store('/public/gallery');
+            $imageName = basename($path);
 
             $gallery->image = $imageName;
         }
@@ -130,7 +132,7 @@ class GalleryController extends Controller
     {
         $gallery = Gallery::findOrFail($id);
         if ($gallery->image) {
-            Storage::delete('/gallery/' . basename($gallery->image));
+            Storage::delete('/public/gallery/' . basename($gallery->image));
         }
         $gallery->delete();
 

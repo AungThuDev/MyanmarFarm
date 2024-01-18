@@ -67,7 +67,8 @@ class BlogController extends Controller
             'images.*' => 'image|mimes:jpeg,png,jpg,gif'
         ]);
 
-        $imageName = '/storage/' . $request->file('image')->store('blogs');
+        $path = $request->file('image')->store('/public/blogs');
+        $imageName = basename($path);
 
         if ($request['video']) {
             $validated['video'] = $request['video'];
@@ -75,19 +76,15 @@ class BlogController extends Controller
 
         $validated['image'] = $imageName;
 
-//        $imagePath1 = $request->file('first_image')->store('public/blogs');
-//        $imageName1 = basename($imagePath1);
-//
-//        $imagePath2 = $request->file('second_image')->store('public/blogs');
-//        $imageName2 = basename($imagePath2);
-
         $blog = Blog::create($validated);
 
         if ($request->file('images')) {
             $images = [];
 
             foreach ($request->file('images') as $image) {
-                $images[] = new blogImages(['image' => '/storage/' . $image->store('blogs')]);
+                $path = $image->store('/public/blogs');
+                $imageName = basename($path);
+                $images[] = new blogImages(['image' => $imageName]);
             }
 
             $blog->images()->saveMany($images);
@@ -140,9 +137,10 @@ class BlogController extends Controller
         $blog->second_body = $request->second_body;
         if ($request->file('image')) {
             if ($blog->image) {
-                Storage::delete('/blogs/' . basename($blog->image));
+                Storage::delete('/public/blogs/' . basename($blog->image));
             }
-            $imageName = '/storage/' . $request->file('image')->store('blogs');
+            $path = $request->file('image')->store('/public/blogs');
+            $imageName = basename($path);
 
             $blog->image = $imageName;
         }
@@ -151,10 +149,10 @@ class BlogController extends Controller
         if (count($imagesArray) > 0) {
             foreach ($imagesArray as $id => $image) {
                 $blogImage = blogImages::findOrFail($id);
-                Storage::delete('/blogs/' . basename($blogImage->image));
+                Storage::delete('/public/blogs/' . basename($blogImage->image));
 
                 $blogImage->update([
-                    'image' => '/storage/' . $image->store('blogs')
+                    'image' => basename($image->store('/public/blogs'))
                 ]);
             }
         }
@@ -177,11 +175,11 @@ class BlogController extends Controller
     {
         $blog = Blog::findOrFail($id);
         if ($blog->image) {
-            Storage::delete('/blogs/' . basename($blog->image));
+            Storage::delete('/public/blogs/' . basename($blog->image));
         }
         $blogImages = $blog->images;
         foreach($blogImages as $blogImage) {
-            Storage::delete('/blogs/' . basename($blogImage->image));
+            Storage::delete('/public/blogs/' . basename($blogImage->image));
         }
         $blog->delete();
         return 'success';

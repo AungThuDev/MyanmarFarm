@@ -54,7 +54,7 @@
                     <div class="form-group">
                         <label for="" class="form-label">Featured Image</label><br>
 
-                        <img src="{{ $blog->image }}" alt="Blog Image" style="width: 200px;">
+                        <img src="{{ '/storage/blogs/' . $blog->image }}" alt="Blog Image" style="width: 200px;">
 
                         <br><br><input type="file" name="image" accept="image/*">
                         @error('image')
@@ -68,7 +68,7 @@
                             <div class="row">
                                 @foreach($blog->images as $image)
                                     <div class="col-6 col-md-3 col-lg-3 mb-3">
-                                        <img src="{{ $image->image }}" style="width: 100%; height: 160px;">
+                                        <img src="{{ '/storage/blogs/' . $image->image }}" style="width: 100%; height: 160px;">
                                         <input class="form-control" type="file" accept="image/*" name="{{ $image->id }}" id="">
                                     </div>
                                 @endforeach

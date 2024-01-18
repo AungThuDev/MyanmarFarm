@@ -27,12 +27,12 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="card mb-4" style="max-width: 1200px; margin: auto;">
-                    <div class="d-flex justify-content-between mb-3">
-                        <div>
-                            <img src="{{ $blog->image }}" style="width: 100%;">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <img src="{{ '/storage/blogs/' . $blog->image }}" style="width: 100%;">
                         </div>
                         @if ($blog->video)
-                            <div class="video-container">
+                            <div class="video-container col">
                                 {!! $blog->video !!}
                             </div>
                         @endif
@@ -41,7 +41,7 @@
                         <div class="row" style="margin: auto">
                             @foreach($blog->images as $image)
                                 <div class="col" style="max-width: 200px;">
-                                    <img src="{{ $image->image }}" alt="Blog Image" style="width: 100%;">
+                                    <img src="{{ '/storage/blogs/' . $image->image }}" alt="Blog Image" style="width: 100%;">
                                 </div>
                             @endforeach
                         </div>

@@ -45,7 +45,7 @@
                                 <li><i class="fal fa-calendar-alt"></i>{{$blog->created_at}}</li>
                             </ul>
                             <div class="news-thumb mt-40">
-                                <img src="{{ $blog->image }}" width="850" height="450"
+                                <img src="{{ '/storage/blogs/' . $blog->image }}" width="850" height="450"
                                      alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="img-fluid">
                             </div>
                             <h4 class="news-title mt-60" style="color: #9d6b34;">
@@ -56,7 +56,7 @@
                             <div class="row">
                                 @foreach($blog->images as $image)
                                     <div class="col-12 col-lg-6 col-md-6 mb-4">
-                                        <img class="img-fluid" src="{{ $image->image }}" style="width:100%; height: 250px;">
+                                        <img class="img-fluid" src="{{ '/storage/blogs/' . $image->image }}" style="width:100%; height: 250px;">
                                     </div>
                                 @endforeach
                             </div>
@@ -124,7 +124,7 @@
                                                     <li>
                                                         <div class="feed-number">
                                                             <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}"><img
-                                                                    src="{{ $blog->image }}"
+                                                                    src="{{ '/storage/blogs/' . $blog->image }}"
                                                                     width="288" height=""
                                                                     alt="Cultivating Change - Myanmar Farm Initiatives"></a>
                                                         </div>
