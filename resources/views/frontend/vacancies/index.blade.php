@@ -67,7 +67,7 @@
                   </div>
                   @endforelse
                   <div class="d-flex justify-content-center">
-                     {{$vacancies->links()}}
+                     
                   </div>
                   </div>
             </div>  

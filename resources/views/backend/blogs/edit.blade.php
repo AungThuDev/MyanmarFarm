@@ -28,31 +28,31 @@
                     @csrf
                     @method("PUT")
                     <div class="form-group mb-3">
-                        <label class="form-label" for="title">Title</label>
+                        <label class="form-label" for="title">Title (Required)<span style="color: red;">*</span></label>
                         <input type="text" name="title" class="form-control" placeholder="Title"
-                               value="{{$blog->title}}">
+                               value="{{ old('title') ?? $blog->title}}">
                         @error('title')
                         <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <label for="first_body">First Body</label>
+                        <label for="first_body">First Body(Required)<span style="color: red;">*</span></label>
                         <textarea class="form-control" name="first_body" cols="30"
-                                  rows="10">{{$blog->first_body}}</textarea>
+                                  rows="10">{{ old('first_body') ?? $blog->first_body}}</textarea>
                         @error('first_body')
                         <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <label for="second_body">Second Body</label>
+                        <label for="second_body">Second Body(Required)<span style="color: red;">*</span></label>
                         <textarea class="form-control" name="second_body" cols="30"
-                                  rows="10">{{$blog->second_body}}</textarea>
+                                  rows="10">{{ old('second_body') ?? $blog->second_body}}</textarea>
                         @error('second_body')
                         <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="" class="form-label">Featured Image</label><br>
+                        <label for="" class="form-label">Featured Image(Required)<span style="color: red;">*</span></label><br>
 
                         <img src="{{ '/storage/blogs/' . $blog->image }}" alt="Blog Image" style="width: 200px;">
 
@@ -83,7 +83,7 @@
                             {!! $blog->video !!}
                         </div>
                     @endif
-                    <input class="form-control" type="text" name="video" id="video" value="{{ $blog->video }}" placeholder="Enter Youtube iframe tag">
+                    <input class="form-control" type="text" name="video" id="video" value="{{ old('video') ??   $blog->video }}" placeholder="Enter Youtube iframe tag">
 
                     <br><br>
 

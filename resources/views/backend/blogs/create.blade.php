@@ -27,28 +27,28 @@
         <form action="{{route('admin.blogs.store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group mb-3">
-                        <label class="form-label" for="title">Title</label>
-                        <input type="text" name="title" class="form-control" placeholder="Title">
+                        <label class="form-label" for="title">Title (Required)<span style="color: red;">*</span></label>
+                        <input type="text" name="title" class="form-control" placeholder="Title" value="{{ old('title') }}">
                         @error('title')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <label for="first_body">First Paragraph</label>
-                        <textarea class="form-control" name="first_body" cols="30" rows="10"></textarea>
+                        <label for="first_body">First Paragraph (Required)<span style="color: red;">*</span></label>
+                        <textarea class="form-control" name="first_body" cols="30" rows="10">{{ old('first_body') }}</textarea>
                         @error('first_body')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <label for="second_body">Second Paragraph</label>
-                        <textarea class="form-control" name="second_body" cols="30" rows="10"></textarea>
+                        <label for="second_body">Second Paragraph (Required)<span style="color: red;">*</span></label>
+                        <textarea class="form-control" name="second_body" cols="30" rows="10">{{old('second_body') }}</textarea>
                         @error('second_body')
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="" class="form-label">First Image</label><br>
+                        <label for="" class="form-label">First Image (Required)<span style="color: red;">*</span></label><br>
                         <input type="file" name="image" accept="image/*">
                         @error('image')
                             <p class="text-danger">{{ $message }}</p>
@@ -62,7 +62,7 @@
                         @enderror
                    </div>
                     <label for="video">Video(Optional)</label>
-                    <input class="form-control" type="text" name="video" id="video" placeholder="Enter Youtube iframe tag">
+                    <input class="form-control" type="text" name="video" id="video" placeholder="Enter Youtube iframe tag" value="{{ old('video') }}">
                     <br><br>
 
                     <button type="submit" id="saveButton" class="btn btn-success"><i class="fas fa-save" style="margin-right: 5px;"></i>Save Article</button>

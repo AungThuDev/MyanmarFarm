@@ -61,7 +61,7 @@
                       <h3 style="color: #9d6b34!important;" class="d-flex justify-content-center">No Blogs here....</h3>
                   </div>
                   @endforelse
-                  {{$blogs->links()}}
+                  
             </div>
             </div>
          </div>

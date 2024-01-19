@@ -28,7 +28,7 @@
             @csrf
             @method('PUT')
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Name(Required)<span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="name" name="name" value="{{$gallery->name}}">
                 @error('name')
                     <p class="text-danger">{{ $message }}</p>

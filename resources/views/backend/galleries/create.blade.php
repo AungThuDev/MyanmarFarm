@@ -27,14 +27,14 @@
         <form action="{{route('admin.galleries.store')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Name(Required)<span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="name" name="name" value="{{old('name')}}">
                 @error('name')
                     <p class="text-danger">{{ $message }}</p>
                 @enderror
             </div>
             <div class="form-group">
-                <label for="image">Image</label><br>
+                <label for="image">Image(Required)<span style="color: red;">*</span></label><br>
                 <input type="file" name="image" id="image" value="{{old('image')}}">
                 @error('image')
                     <p class="text-danger">{{ $message }}</p>

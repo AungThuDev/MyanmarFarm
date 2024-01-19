@@ -29,7 +29,7 @@
 
                         <div class="row mt-3">
                             <div class="col-6">
-                                <label for="title">Job Title</label>
+                                <label for="title">Job Title(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="title" id="title" value="{{old('title')}}">
                                 @error('title')
                                 <p class="text-danger">{{ $message }}</p>
@@ -37,7 +37,7 @@
                             </div>
 
                             <div class="col-6">
-                                <label for="type">Job Type</label>
+                                <label for="type">Job Type(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="type" id="type" value="{{old('type')}}">
                                 @error('type')
                                 <p class="text-danger">{{ $message }}</p>
@@ -47,7 +47,7 @@
 
                         <div class="row mt-3">
                             <div class="col-6">
-                                <label for="salary">Salary</label>
+                                <label for="salary">Salary(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="salary" id="salary" value="{{old('salary')}}">
                                 @error('salary')
                                 <p class="text-danger">{{ $message }}</p>
@@ -55,7 +55,7 @@
                             </div>
 
                             <div class="col-6">
-                                <label for="working_hours">Working Hours</label>
+                                <label for="working_hours">Working Hours(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="working_hours" id="working_hours" value="{{old('working_hours')}}">
                                 @error('working_hours')
                                 <p class="text-danger">{{ $message }}</p>
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="mt-3">
-                            <label style="margin-right: 10px;">Genders:</label>
+                            <label style="margin-right: 10px;">Genders:(Required)<span style="color: red;">*</span></label>
 
                             <label for="male">Male</label>
                             <input type="checkbox" name="genders[]"
@@ -83,7 +83,7 @@
 
                         <div class="row mt-3">
                             <div class="col-6">
-                                <label for="post_qty">Posts</label>
+                                <label for="post_qty">Posts Quantity(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="post_qty" id="post_qty" value="{{old('post_qty')}}">
                                 @error('post_qty')
                                 <p class="text-danger">{{ $message }}</p>
@@ -91,7 +91,7 @@
                             </div>
 
                             <div class="col-6">
-                                <label for="deadline">Deadline</label>
+                                <label for="deadline">Deadline(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="date" name="deadline" id="deadline" value="{{old('deadline')}}">
                                 @error('deadline')
                                 <p class="text-danger">{{ $message }}</p>
@@ -101,7 +101,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12">
-                                <label for="description">Descriptions</label>
+                                <label for="description">Descriptions(Required)<span style="color: red;">*</span></label>
                                 <textarea class="form-control" rows="8" name="description" id="description">{{ old('description') }}</textarea>
                                 @error('description')
                                 <p class="text-danger">{{ $message }}</p>
@@ -111,7 +111,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12">
-                                <label for="requirements">Requirements</label>
+                                <label for="requirements">Requirements(Required)<span style="color: red;">*</span></label>
                                 <textarea class="form-control" rows="8" name="requirements" id="requirements">{{ old('requirements') }}</textarea>
                                 @error('requirements')
                                 <p class="text-danger">{{ $message }}</p>
@@ -121,7 +121,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12">
-                                <label for="benefits">Benefits</label>
+                                <label for="benefits">Benefits(Required)<span style="color: red;">*</span></label>
                                 <textarea class="form-control" rows="4" name="benefits" id="benefits">{{ old('benefits') }}</textarea>
                                 @error('benefits')
                                 <p class="text-danger">{{ $message }}</p>
@@ -131,7 +131,7 @@
 
                         <div class="row mt-3">
                             <div class="col-6">
-                                <label for="email">Email</label>
+                                <label for="email">Email(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="email" id="email" value="{{old('email')}}">
                                 @error('email')
                                 <p class="text-danger">{{ $message }}</p>
@@ -139,7 +139,7 @@
                             </div>
 
                             <div class="col-6">
-                                <label for="phone">Phone</label>
+                                <label for="phone">Phone(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="phone" id="phone" value="{{old('phone')}}">
                                 @error('phone')
                                 <p class="text-danger">{{ $message }}</p>
@@ -149,7 +149,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12">
-                                <label for="address">Address</label>
+                                <label for="address">Address(Required)<span style="color: red;">*</span></label>
                                 <input class="form-control" type="text" name="address" id="address" value="{{old('address')}}">
                                 @error('address')
                                 <p class="text-danger">{{ $message }}</p>

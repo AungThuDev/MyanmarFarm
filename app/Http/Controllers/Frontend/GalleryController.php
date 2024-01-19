@@ -10,7 +10,7 @@ class GalleryController extends Controller
 {
    public function index($language)
    {
-    $galleries = Gallery::latest()->paginate(9);
+    $galleries = Gallery::all();
     return view('frontend.galleries.index',compact('galleries','language'));
    }
 }
