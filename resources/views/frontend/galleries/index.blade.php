@@ -37,8 +37,8 @@
 
                   @forelse($galleries as $gallery)
                   <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                     <div class="card mb-30" style="width: 25rem;">
-                        <img src="{{ '/storage/gallery/' . $gallery->image }}" width="250px" height="240px" class="card-img-top" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
+                     <div class="card mb-30" style="width: 100%;">
+                        <img src="{{ '/storage/gallery/' . $gallery->image }}" width="100%" height="240px" class="card-img-top" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth">
                         <div class="card-body">
                            <p class="card-text text-dark">{{$gallery->name}}</p>
                         </div>
