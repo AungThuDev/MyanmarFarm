@@ -52,7 +52,7 @@
 
                </div>
                 <div class="d-flex justify-content-center">
-                    
+                    {{$galleries->links()}}
                 </div>
 
 

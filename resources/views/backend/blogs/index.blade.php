@@ -46,7 +46,7 @@
 @section('script')
     <script>
         var table = $('#table').DataTable({
-            'serverSide': false,
+            'serverSide': true,
             'processing': true,
             'ajax': {
                 url: '/admin/blogs/',

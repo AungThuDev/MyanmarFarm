@@ -10,7 +10,7 @@ class VacancyController extends Controller
 {
     public function index($language)
     {
-        $vacancies = Vacancy::all();
+        $vacancies = Vacancy::latest()->paginate(12);
         return view('frontend.vacancies.index',compact('vacancies','language'));
     }
     public function detail($language,$id)

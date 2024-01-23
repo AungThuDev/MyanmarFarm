@@ -56,11 +56,15 @@
                           </div>
                       </div>
                   </div>
+                  
                   @empty
                   <div class="col-lg-12 col-md-12 c2 c3 c4 c5">
                       <h3 style="color: #9d6b34!important;" class="d-flex justify-content-center">No Blogs here....</h3>
                   </div>
                   @endforelse
+                  <div class="d-flex justify-content-center">
+                  {{$blogs->links()}}
+                  </div>
                   
             </div>
             </div>
