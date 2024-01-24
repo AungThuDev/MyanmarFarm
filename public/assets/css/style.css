@@ -777,6 +777,10 @@ body:not(.modal-open) {
   .header__area-top-bar {
     display: none;
   }
+  .share-btn{
+    margin-left:50px;
+  }
+  
 }
 
 .headerinfo ul li {
@@ -816,6 +820,8 @@ body:not(.modal-open) {
   margin-right: 60px;
   position: relative;
 }
+
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .main-menu ul li {
     margin-right: 40px;

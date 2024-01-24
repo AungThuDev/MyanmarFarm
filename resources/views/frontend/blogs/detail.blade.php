@@ -61,18 +61,6 @@
                                 @endforeach
                             </div>
 
-                            {{--                            <div class="row">--}}
-                            {{--                                <div class="col-lg-6 col-md-12 col-sm-12">--}}
-                            {{--                                    <img src="{{ asset('storage/blogs/' . $blog->first_image) }}"--}}
-                            {{--                                         alt="Harmonious Livestock Grazing in Our Sustainable Farm"--}}
-                            {{--                                         style="width:420px;height:250px;" class="img-fluid">--}}
-                            {{--                                </div>--}}
-                            {{--                                <div class="col-lg-6 col-md-12 col-sm-12">--}}
-                            {{--                                    <img src="{{ asset('storage/blogs/' . $blog->second_image) }}"--}}
-                            {{--                                         alt="Cultivating Change - Myanmar Farm Initiatives"--}}
-                            {{--                                         style="width:420px;height:250px;" class="img-fluid">--}}
-                            {{--                                </div>--}}
-                            {{--                            </div>--}}
                             <p class="mt-25 mb-50"
                                style="color: #000!important;text-align:justify;">{!! nl2br($blog->second_body) !!}</p>
                             @if($blog->video)
@@ -83,12 +71,12 @@
                             @endif
 
                             <div class="row">
-                                <div class="col-3" style="margin-left: 1px!important;">
+                                <div class="col-3 back-btn" style="margin-left: 1px!important;">
                                     <a href="{{ url(app()->getLocale() . '/news') }}" class="read-btn">
                                         <i class="fal fa-arrow-circle-left"></i> Back
                                     </a>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-2 share-btn">
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-primary dropdown-toggle read-btn"
                                                 id="sharebtn" data-bs-toggle="dropdown" aria-expanded="false">
