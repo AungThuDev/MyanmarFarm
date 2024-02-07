@@ -2,7 +2,7 @@
 @section('about-active','active')
 @section('content')
 <!-- page__title -start -->
-<div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-135" data-background="{{asset('assets/img/beefcattle3.jpg')}}" class="img-fluid" style="background-repeat: no-repeat; background-size:cover;">
+<div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-135" data-background="{{asset('assets/img/images/beefcattle3-min.webp')}}" class="img-fluid" style="background-repeat: no-repeat; background-size:cover;">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -48,7 +48,7 @@
     <div class="container">
         <div class="chosse-video">
             <div class="chosse-video-bg position-relative">
-                <img src="{{asset('assets/img/20.png')}}" alt="Cultivating Change - Myanmar Farm Initiatives">
+                <img src="{{asset('assets/img/images/20-min.webp')}}" alt="Cultivating Change - Myanmar Farm Initiatives">
                 
                 <!-- <a href="https://www.youtube.com/watch?v=L4CpMr5BNls" class="play-icon play-icon-ab popup-video"><i class="fas fa-play"></i></a> -->
             </div>

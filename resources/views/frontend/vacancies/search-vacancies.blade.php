@@ -3,7 +3,7 @@
 @section('content')
 <main>
          <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
+         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/images/beefcattle3-min.webp')}}" style="background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -50,7 +50,7 @@
                   @forelse($vacancies as $vacancy)
                   <div class="col-lg-4 col-md-6 c2 c3 c4 c5">
                         <div class="project-img mb-70">
-                           <div class="inner-img"><a href="#"><img src="{{asset('assets/img/job.jpeg')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="fluid"></a></div>
+                           <div class="inner-img"><a href="#"><img src="{{asset('assets/img/images/job-min (1).jpeg')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="fluid"></a></div>
                            <div class="project-img-content">
                               <h4 class="project-sm-title"><a href="{{ url(app()->getLocale() . '/vacancies/' . $vacancy->id . '/detail') }}">
                                {{$vacancy->title}}

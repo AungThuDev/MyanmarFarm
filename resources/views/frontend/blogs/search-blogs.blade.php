@@ -3,7 +3,7 @@
 @section('content')
 <main>
    <!-- page__title -start -->
-   <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
+   <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/images/beefcattle3-min.webp')}}" style="background-repeat: no-repeat; background-size:cover;">
       <div class="container">
          <div class="row">
             <div class="col-xl-12">

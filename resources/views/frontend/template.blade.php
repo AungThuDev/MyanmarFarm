@@ -9,21 +9,27 @@
    <meta name="keywords" content="Sustainable Agriculture Myanmar, Innovative Livestock Farming, Natural Resource Management Insights, Community Empowerment Initiatives, Myanmar Farm Knowledge Hub, Cultivating a Greener Future, Livestock Farming Practices, Sustainable Farming Articles, Myanmar Agriculture Initiatives, Myanmar Farm Website">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href={{asset("assets/img/logo/MyanmarFarm.png")}}>
+   <link rel="shortcut icon" type="image/x-icon" href={{asset("assets/img/images/home/MyanmarFarm-min.webp")}}>
    <!-- CSS here -->
-   <link rel="stylesheet" href="{{asset('assets/css/preloader.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
    <link rel="stylesheet" href="{{asset('assets/css/meanmenu.css')}}">
    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/css/swiper-bundle.css')}}">
+   
+
+   
    <link rel="stylesheet" href="{{asset('assets/css/backToTop.css')}}">
    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
    <link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/flaticon/flaticon.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/css/fontAwesome5Pro.css')}}">
+   
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
    <link rel="stylesheet" href="{{asset('assets/css/default.css')}}">
-   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+   <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
    <style>
       select {
          appearance: none;
@@ -207,15 +213,15 @@
                   <div class="col-xl-6 col-lg-6 col-md-8 col-sm-6">
                      <div class="headerinfo">
                         <ul>
-                           <li><a href="mailto:info@myanmarfarm.com.mm"><i class="fal fa-envelope"></i>info@myanmarfarm.com.mm</a></li>
-                           <li class="d-none d-md-inline-block"><a href="#"><i class="fal fa-map-marker-alt"></i>No.(36), Alanpya Pagoda Road, Yangon, Myanmar</a></li>
+                           <li><a href="mailto:info@myanmarfarm.com.mm"><i class="far fa-envelope"></i>info@myanmarfarm.com.mm</a></li>
+                           <li class="d-none d-md-inline-block"><a href="#"><i class="fas fa-map-marker-alt"></i>No.(36), Alanpya Pagoda Road, Yangon, Myanmar</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6">
                      <div class="soical__icon">
                         <ul>
-                           <li><a href="tel:09-888828181" style="color: #fff;"><i class="fal fa-phone-alt"></i>&nbsp;&nbsp;09-888828181</a></li>
+                           <li><a href="tel:09-888828181" style="color: #fff;"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;09-888828181</a></li>
                            <li><a href="https://www.facebook.com/MyanmarFarm.2007/"><i class="fab fa-facebook-f"></i></a></li>
                            <li><a href="https://www.youtube.com/@MyanmarFarm"><i class="fab fa-youtube"></i></a></li>
                            <li><a href="https://www.linkedin.com/company/myanmarfarm/"><i class="fab fa-linkedin"></i></a></li>
@@ -231,7 +237,7 @@
                <div class="row align-items-center">
                   <div class="col-xl-2 col-lg-3 col-md-8 col-8">
                      <div class="logo">
-                        <a href="{{url('/',app()->getLocale())}}"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth"></a>
+                        <a href="{{url('/',app()->getLocale())}}"><img src="{{asset('assets/img/images/home/MyanmarFarm-min.webp')}}" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth"></a>
                      </div>
                   </div>
                   <div class="col-xl-10 col-lg-10 col-md-4 col-4 d-flex align-items-center justify-content-end">
@@ -254,7 +260,7 @@
                         </nav>
                      </div>
                      <div class="side-menu-icon d-lg-none text-end">
-                        <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a>
+                        <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fas fa-bars" style="color:#9d6b34;"></i></a>
                      </div>
                   </div>
                </div>
@@ -264,7 +270,7 @@
                <div class="row align-items-center">
                   <div class="col-xl-2 col-lg-3 col-md-8 col-8">
                      <div class="logo">
-                        <a href="index.html"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Harmonious Livestock Grazing in Our Sustainable Farm"></a>
+                        <a href="index.html"><img src="{{asset('assets/img/images/home/MyanmarFarm-min.webp')}}" alt="Harmonious Livestock Grazing in Our Sustainable Farm"></a>
                      </div>
                   </div>
                   <div class="col-xl-10 col-lg-10 col-md-4 col-4 d-flex align-items-center justify-content-end">
@@ -287,7 +293,7 @@
                         </nav>
                      </div>
                      <div class="side-menu-icon d-lg-none text-end">
-                        <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a>
+                        <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fas fa-bars" style="color:#9d6b34;"></i></a>
                      </div>
                   </div>
                </div>
@@ -302,8 +308,8 @@
       <div class="sidebar__wrapper">
          <div class="sidebar__content">
             <div class="sidebar__logo mb-40">
-               <a href="index.html">
-                  <img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Empowering Communities - Impactful Agricultural Programs">
+               <a href="">
+                  <img src="{{asset('assets/img/images/home/MyanmarFarm-min.webp')}}" alt="Empowering Communities - Impactful Agricultural Programs">
                </a>
             </div>
             <div class="mobile-menu fix"></div>
@@ -313,7 +319,7 @@
                <ul>
                   <li class="d-flex align-items-center">
                      <div class="sidebar__contact-icon mr-15">
-                        <i class="fal fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                      </div>
                      <div class="sidebar__contact-text">
                         <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">{{__('address-no')}} <br>{{__('township')}}</a>
@@ -321,7 +327,7 @@
                   </li>
                   <li class="d-flex align-items-center">
                      <div class="sidebar__contact-icon mr-15">
-                        <i class="far fa-phone"></i>
+                        <i class="fas fa-phone"></i>
                      </div>
                      <div class="sidebar__contact-text">
                         <a href="tel:09-888828181">{{__('no')}}</a>
@@ -329,7 +335,7 @@
                   </li>
                   <li class="d-flex align-items-center">
                      <div class="sidebar__contact-icon mr-15">
-                        <i class="fal fa-envelope"></i>
+                        <i class="fas fa-envelope"></i>
                      </div>
                      <div class="sidebar__contact-text">
                         <a href="mailto:@info@venue36group.com">@info@myanmarfarm.com.mm</a>
@@ -362,7 +368,7 @@
                   <div class="row align-items-center">
                      <div class="col-xl-6 col-lg-3 col-md-4 col-12">
                         <div class="footer-logo mb-20">
-                           <a href="#"><img src="{{asset('assets/img/logo/MyanmarFarm.png')}}" alt="Cultivating Change - Myanmar Farm Initiatives"></a>
+                           <a href="#"><img src="{{asset('assets/img/images/home/MyanmarFarm-min.webp')}}" alt="Cultivating Change - Myanmar Farm Initiatives"></a>
                         </div>
                      </div>
                      <div class="col-xl-3 col-lg-4 col-md-4 col-12">
@@ -442,14 +448,14 @@
 
    <!-- JS here -->
    <script src="{{asset('assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
-
-
-
    <script src="{{asset('assets/js/vendor/waypoints.min.js')}}"></script>
-   <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
    <script src="{{asset('assets/js/meanmenu.js')}}"></script>
-   <script src="{{asset('assets/js/swiper-bundle.min.js')}}"></script>
-   <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+   <!-- <script src="{{asset('assets/js/swiper-bundle.min.js')}}"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="{{asset('assets/js/magnific-popup.min.js')}}"></script>
    <script src="{{asset('assets/js/parallax.min.js')}}"></script>
    <!-- <script src="{{asset('assets/js/backToTop.js')}}"></script> -->

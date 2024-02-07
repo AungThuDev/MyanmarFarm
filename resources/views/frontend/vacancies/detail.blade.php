@@ -3,7 +3,7 @@
 @section('content')
 <main>
         <!-- page__title -start -->
-         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/beefcattle3.jpg')}}" style="background-repeat: no-repeat; background-size:cover;">
+         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140" data-background="{{asset('assets/img/images/beefcattle3-min.webp')}}" style="background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                   <div class="row">
                      <div class="col-xl-12">
@@ -36,88 +36,76 @@
                <div class="row">
                   <div class="col-xl-10 col-lg-10 col-md-10">
                      <div class="project-details-image">
-                        <img src="{{asset('assets/img/project/job.jpeg')}}" width="1105" height="570" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="img-fluid">
+                        <img src="{{asset('assets/img/images/job-min.jpeg')}}" width="1105" height="570" alt="Joyful Farmers at Myanmar Farm - Nurturing Growth" class="img-fluid">
                      </div>
                   </div>
                </div>
-               
+
                <div class="project-icon-boxs mt-60">
                   <div class="row">
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
-                           <i class="flaticon-price-tag" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title">Job Title <br> {{$vacancy->title}}</h6>
+                           <i class="fas fa-briefcase"></i>
+                           <h6 class="icon-box-title" style="font-size: 18px;">Job Title <br> <span style="font-size: 15px;">{{$vacancy->title}}</span></h6>
                         </div>
                      </div>
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
-                           <i class="flaticon-farmer-2" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title">Job Type <br>{{$vacancy->type}}</h6>
+                        <i class="fas fa-tractor"></i>
+                           <h6 class="icon-box-title" style="font-size: 18px;">Job Type <br><span style="font-size: 15px;">{{$vacancy->type}}</span></h6>
                         </div>
                      </div>
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
                         <i class="far fa-clock" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title">Working Hours <br>{{$vacancy->working_hours}}</h6>
+                           <h6 class="icon-box-title" style="font-size: 18px;">Working Hours <br><span style="font-size: 15px;">{{$vacancy->working_hours}}</span></h6>
                         </div>
                      </div>
                   </div>
+               </div>
+
+               <div class="project-d-descriptiopn mt-70">
+                  <h4 style="font-size: 30px;color:#9d6b34!important;">Description</h4><hr style="width: 170px;border-bottom:2px solid #9d6b34;">
+                  <!-- <p class="pl-110 pt-25" style="color: #000!important;font-size:20px;">escription</p><br><br> -->
+                  <p class="pt-15" style="color: #000!important;">{{$vacancy->description}}</p>
+               </div>
+               
+               <div class="project-d-descriptiopn mt-70">
+               <h4 style="font-size: 30px;color:#9d6b34!important;">Requirements</h4><hr style="width: 200px;border-bottom:2px solid #9d6b34;">
+                  <!-- <p class="pl-110 pt-25" style="color: #000!important;font-size:20px;">escription</p><br><br> -->
+                  <p class="pt-15" style="color: #000!important;">{{$vacancy->requirements}}</p>
+               </div>
+               <div class="project-d-descriptiopn mt-70">
+               <h4 style="font-size: 30px;color:#9d6b34!important;">Benifits</h4><hr style="width: 120px;border-bottom:2px solid #9d6b34;">
+                  <!-- <p class="pl-110 pt-25" style="color: #000!important;font-size:20px;">escription</p><br><br> -->
+                  <p class="pt-15" style="color: #000!important;">{{$vacancy->benefits}}</p>
                </div>
                <div class="project-icon-boxs mt-60">
                   <div class="row">
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
                         <i class="fas fa-phone-alt" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title">Phone No. <br> {{$vacancy->phone}}</h6>
+                           <h6 class="icon-box-title" style="font-size: 18px;">Phone No. <br> <span style="font-size: 15px;">{{$vacancy->phone}}</span></h6>
                         </div>
                      </div>
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
                            <i class="far fa-envelope-open" style="color: #9d6b34;"></i>
-                           <!-- <h6 class="icon-box-title" style="font-size: 20px;">Email Address <br>{{$vacancy->email}}</h6> -->
-                           <a href="mailto:{{$vacancy->email}}" class="icon-box-title" style="font-size: 20px;">Email Address <br>{{$vacancy->email}}</a>
+                           
+                           <h6 class="icon-box-title" style="font-size: 18px;">Email<br> <a href="mailto:{{$vacancy->email}}"><span style="font-size: 15px;">{{$vacancy->email}}</span></a></h6>
                         </div>
                      </div>
                      <div class="col-xl-4 col-lg-4">
                         <div class="single-box mb-30">
                            <i class="fas fa-map-marker-alt" style="color: #9d6b34;"></i>
-                           <h6 class="icon-box-title"> Address <br>{{$vacancy->address}}</h6>
+                           <h6 class="icon-box-title" style="font-size: 18px;"> Address <br><span style="font-size: 15px;">{{$vacancy->address}}</span></h6>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="project-dt mt-60 ">
-                  <div class="row">
-                     <div class="col-xl-6 col-lg-6 mt-10">
-                        <div class="project-img project-img-d mb-70">
-                           
-                           <div class="project-img-content project-img-content-d">
-                               <h4 class="project-sm-title project-title-d"><a href="project.html">Description</a></h4>
-                               <p style="color:#000!important;">{{$vacancy->description}}</p>
-                                 <div class="bg-shape">
-                                    <span>01</span>
-                                 </div>
-                           </div>
-                       </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-6 mt-60">
-                        <div class="project-img project-img-d mb-70">
-                           
-                           <div class="project-img-content project-img-content-d">
-                               <h4 class="project-sm-title project-title-d"><a href="project.html">Requirements</a></h4>
-                               <p style="color:#000!important;">{{$vacancy->requirements}}</p>
-                               <h4 class="project-sm-title project-title-d"><a href="project.html">Benefits</a></h4>
-                               <p style="color:#000!important;">{{$vacancy->benefits}}</p>
-                                 <div class="bg-shape">
-                                    <span>02</span>
-                                 </div>
-                           </div>
-                       </div>
-                     </div>
-                  </div>
-               </div>
-               <a href="{{ url(app()->getLocale() . '/vacancies') }}" class="read-btn mb-10" style="margin-left:43px;">
-                  <i class="fal fa-arrow-circle-left"></i> Back
+               
+               <a href="{{ url(app()->getLocale() . '/vacancies') }}" class="read-btn mb-10" style="margin-left:3px;">
+                  <i class="fas fa-arrow-circle-left"></i> Back
                </a>
                <div class="services-nevigation services-nevigation-2">
                   

@@ -4,7 +4,7 @@
     <main>
         <!-- page__title -start -->
         <div class="page__title align-items-center theme-bg-primary-h1 pt-140 pb-140"
-             data-background="{{asset('assets/img/beefcattle3.jpg')}}"
+             data-background="{{asset('assets/img/images/beefcattle3-min.webp')}}"
              style="background-repeat: no-repeat; background-size:cover;">
             <div class="container">
                 <div class="row">
@@ -73,7 +73,7 @@
                             <div class="row">
                                 <div class="col-3 back-btn" style="margin-left: 1px!important;">
                                     <a href="{{ url(app()->getLocale() . '/news') }}" class="read-btn">
-                                        <i class="fal fa-arrow-circle-left"></i> Back
+                                        <i class="fas fa-arrow-circle-left"></i> Back
                                     </a>
                                 </div>
                                 <div class="col-2 share-btn">
@@ -121,7 +121,7 @@
                                                                 <a href="{{ url(app()->getLocale() . '/news/' . $blog->id . '/detail') }}">{{$blog->title}}</a>
                                                             </h6>
                                                             <span class="feed-date">
-                                       <i class="fal fa-calendar-alt"></i> {{$blog->created_at}}
+                                       <i class="fas fa-calendar-alt"></i> {{$blog->created_at}}
                                     </span>
                                                         </div>
                                                         @endforeach
