@@ -8,7 +8,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/img/logo/MyanmarFarm.png')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/img/images/home/MyanmarFarm-min.webp')}}">
 
     <style>
         .container{
@@ -29,7 +29,6 @@
             background-color: #ecb41c;
             border: solid 1px #ecb41c;
         }
-
     </style>
 </head>
 <body>
@@ -43,7 +42,7 @@
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="imgcontainer text-center">
-                            <img src="{{asset ('assets/img/Myanmar Farm-A.png')}}" style="width: 430px; height: 300px;"  alt="">
+                            <img src="{{asset ('assets/img/images/home/MyanmarFarm-min.webp')}}" style="width: 430px; height: 300px;"  alt="">
                             </div>
 
                             <div class="mb-3">
