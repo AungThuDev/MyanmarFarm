@@ -91,7 +91,7 @@
             <div class="container">
                <div class="chosse-video">
                   <div class="chosse-video-bg position-relative">
-                     <img src="{{asset('assets/img/images/9-min.png')}}" alt= "Harmonious Livestock Grazing in Our Sustainable Farm">
+                     <img src="{{asset('assets/img/images/9-min.webp')}}" alt= "Harmonious Livestock Grazing in Our Sustainable Farm">
                      <!-- <a href="https://www.youtube.com/watch?v=L4CpMr5BNls" class="play-icon play-icon-ab popup-video"><i class="fas fa-play"></i></a> -->
                   </div>
                </div>
